@@ -1,0 +1,1356 @@
+2025-09-30 09:39:05,650 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-09-30 09:39:05,672 - INFO - 已有 0 条新闻被分析过
+2025-09-30 09:39:05,676 - INFO - 获取最新的 30 条新闻，其中 30 条未分析
+2025-09-30 09:39:05,676 - INFO - 开始处理最新的 30 条未分析新闻
+2025-09-30 09:39:05,676 - INFO - 开始逐条分析 30 条新闻
+2025-09-30 09:39:05,677 - INFO - 处理新闻 1/30
+2025-09-30 09:39:05,677 - INFO - 开始分析新闻: 【瑞声科技：全新1G6P WLG镜头和超聚光棱镜“联袂上市”...
+2025-09-30 09:39:05,861 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-30 09:39:05,861 - INFO - 分析完成，耗时: 0.18秒
+2025-09-30 09:39:05,862 - ERROR - DeepSeek API请求失败 (状态码: 401): {"error":{"message":"Authentication Fails, Your api key: ****65c7 is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:39:05,862 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:39:10,864 - INFO - 开始分析新闻: 【瑞声科技：全新1G6P WLG镜头和超聚光棱镜“联袂上市”...
+2025-09-30 09:39:11,064 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-30 09:39:11,066 - INFO - 分析完成，耗时: 0.20秒
+2025-09-30 09:39:11,067 - ERROR - DeepSeek API请求失败 (状态码: 401): {"error":{"message":"Authentication Fails, Your api key: ****65c7 is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:39:11,067 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:39:16,073 - INFO - 开始分析新闻: 【瑞声科技：全新1G6P WLG镜头和超聚光棱镜“联袂上市”...
+2025-09-30 09:39:16,282 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-30 09:39:16,284 - INFO - 分析完成，耗时: 0.21秒
+2025-09-30 09:39:16,284 - ERROR - DeepSeek API请求失败 (状态码: 401): {"error":{"message":"Authentication Fails, Your api key: ****65c7 is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:39:16,285 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:39:16,285 - WARNING - 新闻 1/30 分析结果为空
+2025-09-30 09:39:18,289 - INFO - 处理新闻 2/30
+2025-09-30 09:39:18,290 - INFO - 开始分析新闻: 【刘小涛任江苏省政府党组书记】江苏省委决定：刘小涛同志任省政...
+2025-09-30 09:39:18,374 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-30 09:39:18,375 - INFO - 分析完成，耗时: 0.09秒
+2025-09-30 09:39:18,376 - ERROR - DeepSeek API请求失败 (状态码: 401): {"error":{"message":"Authentication Fails, Your api key: ****65c7 is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:39:18,376 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:39:23,383 - INFO - 开始分析新闻: 【刘小涛任江苏省政府党组书记】江苏省委决定：刘小涛同志任省政...
+2025-09-30 09:39:23,556 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-30 09:39:23,557 - INFO - 分析完成，耗时: 0.17秒
+2025-09-30 09:39:23,558 - ERROR - DeepSeek API请求失败 (状态码: 401): {"error":{"message":"Authentication Fails, Your api key: ****65c7 is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:39:23,558 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:53:48,031 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-09-30 09:53:48,053 - INFO - 已有 0 条新闻被分析过
+2025-09-30 09:53:48,057 - INFO - 获取最新的 30 条新闻，其中 30 条未分析
+2025-09-30 09:53:48,057 - INFO - 开始处理最新的 30 条未分析新闻
+2025-09-30 09:53:48,057 - INFO - 开始逐条分析 30 条新闻
+2025-09-30 09:53:48,057 - INFO - 处理新闻 1/30
+2025-09-30 09:53:48,057 - INFO - 开始分析新闻: 【瑞声科技：全新1G6P WLG镜头和超聚光棱镜“联袂上市”...
+2025-09-30 09:53:48,521 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:53:48,522 - INFO - 分析完成，耗时: 0.46秒
+2025-09-30 09:53:48,523 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:53:48,523 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:53:53,531 - INFO - 开始分析新闻: 【瑞声科技：全新1G6P WLG镜头和超聚光棱镜“联袂上市”...
+2025-09-30 09:53:54,092 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:53:54,093 - INFO - 分析完成，耗时: 0.56秒
+2025-09-30 09:53:54,094 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:53:54,094 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:53:59,102 - INFO - 开始分析新闻: 【瑞声科技：全新1G6P WLG镜头和超聚光棱镜“联袂上市”...
+2025-09-30 09:53:59,804 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:53:59,806 - INFO - 分析完成，耗时: 0.70秒
+2025-09-30 09:53:59,806 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:53:59,807 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:53:59,807 - WARNING - 新闻 1/30 分析结果为空
+2025-09-30 09:54:01,811 - INFO - 处理新闻 2/30
+2025-09-30 09:54:01,812 - INFO - 开始分析新闻: 【刘小涛任江苏省政府党组书记】江苏省委决定：刘小涛同志任省政...
+2025-09-30 09:54:02,217 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:02,219 - INFO - 分析完成，耗时: 0.41秒
+2025-09-30 09:54:02,220 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:02,220 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:54:07,226 - INFO - 开始分析新闻: 【刘小涛任江苏省政府党组书记】江苏省委决定：刘小涛同志任省政...
+2025-09-30 09:54:07,871 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:07,873 - INFO - 分析完成，耗时: 0.65秒
+2025-09-30 09:54:07,874 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:07,874 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:54:12,881 - INFO - 开始分析新闻: 【刘小涛任江苏省政府党组书记】江苏省委决定：刘小涛同志任省政...
+2025-09-30 09:54:13,336 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:13,338 - INFO - 分析完成，耗时: 0.46秒
+2025-09-30 09:54:13,339 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:13,339 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:54:13,339 - WARNING - 新闻 2/30 分析结果为空
+2025-09-30 09:54:15,344 - INFO - 处理新闻 3/30
+2025-09-30 09:54:15,345 - INFO - 开始分析新闻: 【中控技术：工业具身智能突破传统AI局限，实现生产流程自优化...
+2025-09-30 09:54:15,755 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:15,756 - INFO - 分析完成，耗时: 0.41秒
+2025-09-30 09:54:15,757 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:15,757 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:54:20,766 - INFO - 开始分析新闻: 【中控技术：工业具身智能突破传统AI局限，实现生产流程自优化...
+2025-09-30 09:54:21,288 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:21,289 - INFO - 分析完成，耗时: 0.52秒
+2025-09-30 09:54:21,290 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:21,290 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:54:26,297 - INFO - 开始分析新闻: 【中控技术：工业具身智能突破传统AI局限，实现生产流程自优化...
+2025-09-30 09:54:26,778 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:26,780 - INFO - 分析完成，耗时: 0.48秒
+2025-09-30 09:54:26,781 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:26,782 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:54:26,782 - WARNING - 新闻 3/30 分析结果为空
+2025-09-30 09:54:28,789 - INFO - 处理新闻 4/30
+2025-09-30 09:54:28,789 - INFO - 开始分析新闻: 【欧洲央行管委雷恩：应采取大胆行动 使欧元成为“稳定之锚”】...
+2025-09-30 09:54:29,141 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:29,143 - INFO - 分析完成，耗时: 0.35秒
+2025-09-30 09:54:29,144 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:29,144 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:54:34,147 - INFO - 开始分析新闻: 【欧洲央行管委雷恩：应采取大胆行动 使欧元成为“稳定之锚”】...
+2025-09-30 09:54:34,877 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:34,878 - INFO - 分析完成，耗时: 0.73秒
+2025-09-30 09:54:34,879 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:34,879 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:54:39,886 - INFO - 开始分析新闻: 【欧洲央行管委雷恩：应采取大胆行动 使欧元成为“稳定之锚”】...
+2025-09-30 09:54:40,383 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:40,385 - INFO - 分析完成，耗时: 0.50秒
+2025-09-30 09:54:40,385 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:40,385 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:54:40,386 - WARNING - 新闻 4/30 分析结果为空
+2025-09-30 09:54:42,389 - INFO - 处理新闻 5/30
+2025-09-30 09:54:42,390 - INFO - 开始分析新闻: 印度央行：隔夜加权平均拆借利率将继续作为货币政策的操作目标。...
+2025-09-30 09:54:42,747 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:42,749 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:54:42,749 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:42,750 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:54:47,755 - INFO - 开始分析新闻: 印度央行：隔夜加权平均拆借利率将继续作为货币政策的操作目标。...
+2025-09-30 09:54:48,251 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:48,253 - INFO - 分析完成，耗时: 0.50秒
+2025-09-30 09:54:48,254 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:48,254 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:54:53,262 - INFO - 开始分析新闻: 印度央行：隔夜加权平均拆借利率将继续作为货币政策的操作目标。...
+2025-09-30 09:54:53,758 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:53,760 - INFO - 分析完成，耗时: 0.50秒
+2025-09-30 09:54:53,761 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:53,761 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:54:53,761 - WARNING - 新闻 5/30 分析结果为空
+2025-09-30 09:54:55,765 - INFO - 处理新闻 6/30
+2025-09-30 09:54:55,766 - INFO - 开始分析新闻: 【国务院安委办部署切实做好中秋国庆假期和第四季度安全生产工作...
+2025-09-30 09:54:56,123 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:54:56,125 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:54:56,125 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:54:56,126 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:55:01,133 - INFO - 开始分析新闻: 【国务院安委办部署切实做好中秋国庆假期和第四季度安全生产工作...
+2025-09-30 09:55:01,666 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:01,668 - INFO - 分析完成，耗时: 0.53秒
+2025-09-30 09:55:01,668 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:01,669 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:55:06,677 - INFO - 开始分析新闻: 【国务院安委办部署切实做好中秋国庆假期和第四季度安全生产工作...
+2025-09-30 09:55:07,307 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:07,309 - INFO - 分析完成，耗时: 0.63秒
+2025-09-30 09:55:07,309 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:07,310 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:55:07,310 - WARNING - 新闻 6/30 分析结果为空
+2025-09-30 09:55:09,314 - INFO - 处理新闻 7/30
+2025-09-30 09:55:09,316 - INFO - 开始分析新闻: 【宁波航运交易所有限公司经营范围增加“人工智能理论与算法软件...
+2025-09-30 09:55:09,677 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:09,678 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:55:09,679 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:09,679 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:55:14,687 - INFO - 开始分析新闻: 【宁波航运交易所有限公司经营范围增加“人工智能理论与算法软件...
+2025-09-30 09:55:15,192 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:15,194 - INFO - 分析完成，耗时: 0.51秒
+2025-09-30 09:55:15,195 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:15,195 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:55:20,202 - INFO - 开始分析新闻: 【宁波航运交易所有限公司经营范围增加“人工智能理论与算法软件...
+2025-09-30 09:55:20,715 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:20,717 - INFO - 分析完成，耗时: 0.51秒
+2025-09-30 09:55:20,718 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:20,718 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:55:20,718 - WARNING - 新闻 7/30 分析结果为空
+2025-09-30 09:55:22,722 - INFO - 处理新闻 8/30
+2025-09-30 09:55:22,723 - INFO - 开始分析新闻: 【拓荆科技：员工平台拟减持1%股份】拓荆科技公告，11个员工...
+2025-09-30 09:55:23,124 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:23,126 - INFO - 分析完成，耗时: 0.40秒
+2025-09-30 09:55:23,127 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:23,127 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:55:28,134 - INFO - 开始分析新闻: 【拓荆科技：员工平台拟减持1%股份】拓荆科技公告，11个员工...
+2025-09-30 09:55:28,616 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:28,618 - INFO - 分析完成，耗时: 0.48秒
+2025-09-30 09:55:28,619 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:28,619 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:55:33,627 - INFO - 开始分析新闻: 【拓荆科技：员工平台拟减持1%股份】拓荆科技公告，11个员工...
+2025-09-30 09:55:34,082 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:34,084 - INFO - 分析完成，耗时: 0.46秒
+2025-09-30 09:55:34,085 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:34,085 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:55:34,085 - WARNING - 新闻 8/30 分析结果为空
+2025-09-30 09:55:36,089 - INFO - 处理新闻 9/30
+2025-09-30 09:55:36,090 - INFO - 开始分析新闻: 【财达证券：国控运营7-9月减持3%】财达证券公告，股东河北...
+2025-09-30 09:55:36,447 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:36,448 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:55:36,449 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:36,449 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:55:41,456 - INFO - 开始分析新闻: 【财达证券：国控运营7-9月减持3%】财达证券公告，股东河北...
+2025-09-30 09:55:42,070 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:42,072 - INFO - 分析完成，耗时: 0.62秒
+2025-09-30 09:55:42,073 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:42,073 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:55:47,080 - INFO - 开始分析新闻: 【财达证券：国控运营7-9月减持3%】财达证券公告，股东河北...
+2025-09-30 09:55:47,645 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:47,647 - INFO - 分析完成，耗时: 0.57秒
+2025-09-30 09:55:47,648 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:47,648 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:55:47,649 - WARNING - 新闻 9/30 分析结果为空
+2025-09-30 09:55:49,652 - INFO - 处理新闻 10/30
+2025-09-30 09:55:49,653 - INFO - 开始分析新闻: 上海铜库存减少3745吨。 (2025-09-30 17:3...
+2025-09-30 09:55:50,008 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:50,010 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:55:50,010 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:50,011 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:55:55,017 - INFO - 开始分析新闻: 上海铜库存减少3745吨。 (2025-09-30 17:3...
+2025-09-30 09:55:55,490 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:55:55,491 - INFO - 分析完成，耗时: 0.47秒
+2025-09-30 09:55:55,492 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:55:55,492 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:56:00,498 - INFO - 开始分析新闻: 上海铜库存减少3745吨。 (2025-09-30 17:3...
+2025-09-30 09:56:00,942 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:00,943 - INFO - 分析完成，耗时: 0.45秒
+2025-09-30 09:56:00,944 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:00,944 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:56:00,944 - WARNING - 新闻 10/30 分析结果为空
+2025-09-30 09:56:02,948 - INFO - 处理新闻 11/30
+2025-09-30 09:56:02,949 - INFO - 开始分析新闻: 【教育部副部长杜江峰访问阿塞拜疆】当地时间9月28日至29日...
+2025-09-30 09:56:03,309 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:03,311 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:56:03,311 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:03,312 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:56:08,318 - INFO - 开始分析新闻: 【教育部副部长杜江峰访问阿塞拜疆】当地时间9月28日至29日...
+2025-09-30 09:56:08,768 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:08,771 - INFO - 分析完成，耗时: 0.45秒
+2025-09-30 09:56:08,771 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:08,772 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:56:13,779 - INFO - 开始分析新闻: 【教育部副部长杜江峰访问阿塞拜疆】当地时间9月28日至29日...
+2025-09-30 09:56:14,256 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:14,257 - INFO - 分析完成，耗时: 0.48秒
+2025-09-30 09:56:14,257 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:14,258 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:56:14,258 - WARNING - 新闻 11/30 分析结果为空
+2025-09-30 09:56:16,260 - INFO - 处理新闻 12/30
+2025-09-30 09:56:16,261 - INFO - 开始分析新闻: 上海铝库存减少1029吨。 (2025-09-30 17:3...
+2025-09-30 09:56:16,622 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:16,625 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:56:16,625 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:16,626 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:56:21,633 - INFO - 开始分析新闻: 上海铝库存减少1029吨。 (2025-09-30 17:3...
+2025-09-30 09:56:22,080 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:22,082 - INFO - 分析完成，耗时: 0.45秒
+2025-09-30 09:56:22,083 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:22,083 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:56:27,093 - INFO - 开始分析新闻: 上海铝库存减少1029吨。 (2025-09-30 17:3...
+2025-09-30 09:56:27,560 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:27,561 - INFO - 分析完成，耗时: 0.47秒
+2025-09-30 09:56:27,562 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:27,562 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:56:27,562 - WARNING - 新闻 12/30 分析结果为空
+2025-09-30 09:56:29,566 - INFO - 处理新闻 13/30
+2025-09-30 09:56:29,567 - INFO - 开始分析新闻: 现货铂金下跌逾4%，至每盎司1524.23美元。 (2025...
+2025-09-30 09:56:29,943 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:29,945 - INFO - 分析完成，耗时: 0.38秒
+2025-09-30 09:56:29,945 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:29,946 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:56:34,952 - INFO - 开始分析新闻: 现货铂金下跌逾4%，至每盎司1524.23美元。 (2025...
+2025-09-30 09:56:35,564 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:35,566 - INFO - 分析完成，耗时: 0.61秒
+2025-09-30 09:56:35,567 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:35,567 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:56:40,575 - INFO - 开始分析新闻: 现货铂金下跌逾4%，至每盎司1524.23美元。 (2025...
+2025-09-30 09:56:41,037 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:41,038 - INFO - 分析完成，耗时: 0.46秒
+2025-09-30 09:56:41,039 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:41,039 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:56:41,039 - WARNING - 新闻 13/30 分析结果为空
+2025-09-30 09:56:43,044 - INFO - 处理新闻 14/30
+2025-09-30 09:56:43,045 - INFO - 开始分析新闻: 摩根大通将通用汽车目标价从60美元上调至80美元。 (202...
+2025-09-30 09:56:43,535 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:43,538 - INFO - 分析完成，耗时: 0.49秒
+2025-09-30 09:56:43,538 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:43,539 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:56:48,544 - INFO - 开始分析新闻: 摩根大通将通用汽车目标价从60美元上调至80美元。 (202...
+2025-09-30 09:56:48,991 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:48,992 - INFO - 分析完成，耗时: 0.45秒
+2025-09-30 09:56:48,993 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:48,993 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:56:54,000 - INFO - 开始分析新闻: 摩根大通将通用汽车目标价从60美元上调至80美元。 (202...
+2025-09-30 09:56:54,516 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:54,517 - INFO - 分析完成，耗时: 0.52秒
+2025-09-30 09:56:54,518 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:54,518 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:56:54,518 - WARNING - 新闻 14/30 分析结果为空
+2025-09-30 09:56:56,522 - INFO - 处理新闻 15/30
+2025-09-30 09:56:56,522 - INFO - 开始分析新闻: 【山煤国际：公司董事长孟君离任】山煤国际(600546)9月...
+2025-09-30 09:56:56,875 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:56:56,877 - INFO - 分析完成，耗时: 0.35秒
+2025-09-30 09:56:56,877 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:56:56,878 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:57:01,886 - INFO - 开始分析新闻: 【山煤国际：公司董事长孟君离任】山煤国际(600546)9月...
+2025-09-30 09:57:02,357 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:02,359 - INFO - 分析完成，耗时: 0.47秒
+2025-09-30 09:57:02,359 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:02,360 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:57:07,363 - INFO - 开始分析新闻: 【山煤国际：公司董事长孟君离任】山煤国际(600546)9月...
+2025-09-30 09:57:07,887 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:07,889 - INFO - 分析完成，耗时: 0.53秒
+2025-09-30 09:57:07,890 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:07,890 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:57:07,891 - WARNING - 新闻 15/30 分析结果为空
+2025-09-30 09:57:09,895 - INFO - 处理新闻 16/30
+2025-09-30 09:57:09,897 - INFO - 开始分析新闻: 【芯碁微装：控股股东拟减持2.00%股份】芯碁微装公告，控股...
+2025-09-30 09:57:10,256 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:10,259 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:57:10,260 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:10,260 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:57:15,268 - INFO - 开始分析新闻: 【芯碁微装：控股股东拟减持2.00%股份】芯碁微装公告，控股...
+2025-09-30 09:57:15,751 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:15,753 - INFO - 分析完成，耗时: 0.49秒
+2025-09-30 09:57:15,754 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:15,754 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:57:20,763 - INFO - 开始分析新闻: 【芯碁微装：控股股东拟减持2.00%股份】芯碁微装公告，控股...
+2025-09-30 09:57:21,338 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:21,340 - INFO - 分析完成，耗时: 0.58秒
+2025-09-30 09:57:21,340 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:21,340 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:57:21,341 - WARNING - 新闻 16/30 分析结果为空
+2025-09-30 09:57:23,345 - INFO - 处理新闻 17/30
+2025-09-30 09:57:23,346 - INFO - 开始分析新闻: 南向资金今日大幅净买入154.8亿元。港股通（沪）方面，阿里...
+2025-09-30 09:57:23,701 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:23,703 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:57:23,704 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:23,705 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:57:28,712 - INFO - 开始分析新闻: 南向资金今日大幅净买入154.8亿元。港股通（沪）方面，阿里...
+2025-09-30 09:57:29,277 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:29,278 - INFO - 分析完成，耗时: 0.57秒
+2025-09-30 09:57:29,279 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:29,279 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:57:34,286 - INFO - 开始分析新闻: 南向资金今日大幅净买入154.8亿元。港股通（沪）方面，阿里...
+2025-09-30 09:57:34,879 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:34,882 - INFO - 分析完成，耗时: 0.60秒
+2025-09-30 09:57:34,882 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:34,883 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:57:34,883 - WARNING - 新闻 17/30 分析结果为空
+2025-09-30 09:57:36,887 - INFO - 处理新闻 18/30
+2025-09-30 09:57:36,888 - INFO - 开始分析新闻: 【特朗普过去24小时都忙了什么？（2025-09-30）】
+...
+2025-09-30 09:57:37,248 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:37,250 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:57:37,251 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:37,252 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:57:42,259 - INFO - 开始分析新闻: 【特朗普过去24小时都忙了什么？（2025-09-30）】
+...
+2025-09-30 09:57:42,727 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:42,729 - INFO - 分析完成，耗时: 0.47秒
+2025-09-30 09:57:42,729 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:42,730 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:57:47,737 - INFO - 开始分析新闻: 【特朗普过去24小时都忙了什么？（2025-09-30）】
+...
+2025-09-30 09:57:48,256 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:48,257 - INFO - 分析完成，耗时: 0.52秒
+2025-09-30 09:57:48,258 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:48,258 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:57:48,258 - WARNING - 新闻 18/30 分析结果为空
+2025-09-30 09:57:50,262 - INFO - 处理新闻 19/30
+2025-09-30 09:57:50,263 - INFO - 开始分析新闻: 【盛和资源：盛和新加坡完成收购匹克公司100%股权】盛和资源...
+2025-09-30 09:57:50,683 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:50,684 - INFO - 分析完成，耗时: 0.42秒
+2025-09-30 09:57:50,685 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:50,685 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:57:55,691 - INFO - 开始分析新闻: 【盛和资源：盛和新加坡完成收购匹克公司100%股权】盛和资源...
+2025-09-30 09:57:56,219 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:57:56,221 - INFO - 分析完成，耗时: 0.53秒
+2025-09-30 09:57:56,222 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:57:56,222 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:58:01,228 - INFO - 开始分析新闻: 【盛和资源：盛和新加坡完成收购匹克公司100%股权】盛和资源...
+2025-09-30 09:58:01,688 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:01,690 - INFO - 分析完成，耗时: 0.46秒
+2025-09-30 09:58:01,690 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:01,691 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:58:01,691 - WARNING - 新闻 19/30 分析结果为空
+2025-09-30 09:58:03,696 - INFO - 处理新闻 20/30
+2025-09-30 09:58:03,696 - INFO - 开始分析新闻: 【广药集团与分众传媒达成战略合作】9月29日，广州医药集团有...
+2025-09-30 09:58:04,141 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:04,143 - INFO - 分析完成，耗时: 0.45秒
+2025-09-30 09:58:04,143 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:04,144 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:58:09,151 - INFO - 开始分析新闻: 【广药集团与分众传媒达成战略合作】9月29日，广州医药集团有...
+2025-09-30 09:58:09,635 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:09,636 - INFO - 分析完成，耗时: 0.48秒
+2025-09-30 09:58:09,637 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:09,637 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:58:14,641 - INFO - 开始分析新闻: 【广药集团与分众传媒达成战略合作】9月29日，广州医药集团有...
+2025-09-30 09:58:15,119 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:15,121 - INFO - 分析完成，耗时: 0.48秒
+2025-09-30 09:58:15,121 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:15,122 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:58:15,122 - WARNING - 新闻 20/30 分析结果为空
+2025-09-30 09:58:17,127 - INFO - 处理新闻 21/30
+2025-09-30 09:58:17,127 - INFO - 开始分析新闻: 【上海汽车集团股份有限公司召回部分科莱威纯电动汽车】日前，上...
+2025-09-30 09:58:17,615 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:17,617 - INFO - 分析完成，耗时: 0.49秒
+2025-09-30 09:58:17,617 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:17,618 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:58:22,625 - INFO - 开始分析新闻: 【上海汽车集团股份有限公司召回部分科莱威纯电动汽车】日前，上...
+2025-09-30 09:58:23,099 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:23,101 - INFO - 分析完成，耗时: 0.48秒
+2025-09-30 09:58:23,102 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:23,102 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:58:28,104 - INFO - 开始分析新闻: 【上海汽车集团股份有限公司召回部分科莱威纯电动汽车】日前，上...
+2025-09-30 09:58:28,585 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:28,588 - INFO - 分析完成，耗时: 0.48秒
+2025-09-30 09:58:28,588 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:28,589 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:58:28,589 - WARNING - 新闻 21/30 分析结果为空
+2025-09-30 09:58:30,593 - INFO - 处理新闻 22/30
+2025-09-30 09:58:30,594 - INFO - 开始分析新闻: 以色列外长：哈马斯对战争的持续负有全部责任。 (2025-0...
+2025-09-30 09:58:30,953 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:30,954 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:58:30,954 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:30,955 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:58:35,963 - INFO - 开始分析新闻: 以色列外长：哈马斯对战争的持续负有全部责任。 (2025-0...
+2025-09-30 09:58:36,449 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:36,451 - INFO - 分析完成，耗时: 0.49秒
+2025-09-30 09:58:36,451 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:36,451 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:58:41,457 - INFO - 开始分析新闻: 以色列外长：哈马斯对战争的持续负有全部责任。 (2025-0...
+2025-09-30 09:58:41,916 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:41,919 - INFO - 分析完成，耗时: 0.46秒
+2025-09-30 09:58:41,919 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:41,920 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:58:41,920 - WARNING - 新闻 22/30 分析结果为空
+2025-09-30 09:58:43,924 - INFO - 处理新闻 23/30
+2025-09-30 09:58:43,925 - INFO - 开始分析新闻: 以色列外长：我们希望看到一个不同的加沙，一个非军事化、去极端...
+2025-09-30 09:58:44,292 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:44,294 - INFO - 分析完成，耗时: 0.37秒
+2025-09-30 09:58:44,295 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:44,295 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:58:49,302 - INFO - 开始分析新闻: 以色列外长：我们希望看到一个不同的加沙，一个非军事化、去极端...
+2025-09-30 09:58:49,769 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:49,771 - INFO - 分析完成，耗时: 0.47秒
+2025-09-30 09:58:49,772 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:49,772 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:58:54,779 - INFO - 开始分析新闻: 以色列外长：我们希望看到一个不同的加沙，一个非军事化、去极端...
+2025-09-30 09:58:55,233 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:55,235 - INFO - 分析完成，耗时: 0.46秒
+2025-09-30 09:58:55,236 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:55,236 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:58:55,237 - WARNING - 新闻 23/30 分析结果为空
+2025-09-30 09:58:57,241 - INFO - 处理新闻 24/30
+2025-09-30 09:58:57,242 - INFO - 开始分析新闻: 【同花顺：股东凯士顺减持69.91万股股份实施完成】同花顺(...
+2025-09-30 09:58:57,644 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:58:57,646 - INFO - 分析完成，耗时: 0.40秒
+2025-09-30 09:58:57,646 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:58:57,647 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:59:02,654 - INFO - 开始分析新闻: 【同花顺：股东凯士顺减持69.91万股股份实施完成】同花顺(...
+2025-09-30 09:59:03,160 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:03,163 - INFO - 分析完成，耗时: 0.51秒
+2025-09-30 09:59:03,164 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:03,164 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:59:08,171 - INFO - 开始分析新闻: 【同花顺：股东凯士顺减持69.91万股股份实施完成】同花顺(...
+2025-09-30 09:59:08,629 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:08,630 - INFO - 分析完成，耗时: 0.46秒
+2025-09-30 09:59:08,631 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:08,631 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:59:08,632 - WARNING - 新闻 24/30 分析结果为空
+2025-09-30 09:59:10,636 - INFO - 处理新闻 25/30
+2025-09-30 09:59:10,637 - INFO - 开始分析新闻: 【本田技研工业（中国）投资有限公司召回1415辆进口CRF1...
+2025-09-30 09:59:10,991 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:10,992 - INFO - 分析完成，耗时: 0.36秒
+2025-09-30 09:59:10,992 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:10,993 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:59:15,998 - INFO - 开始分析新闻: 【本田技研工业（中国）投资有限公司召回1415辆进口CRF1...
+2025-09-30 09:59:16,479 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:16,482 - INFO - 分析完成，耗时: 0.48秒
+2025-09-30 09:59:16,482 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:16,483 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:59:21,489 - INFO - 开始分析新闻: 【本田技研工业（中国）投资有限公司召回1415辆进口CRF1...
+2025-09-30 09:59:21,942 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:21,944 - INFO - 分析完成，耗时: 0.45秒
+2025-09-30 09:59:21,945 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:21,946 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:59:21,946 - WARNING - 新闻 25/30 分析结果为空
+2025-09-30 09:59:23,948 - INFO - 处理新闻 26/30
+2025-09-30 09:59:23,950 - INFO - 开始分析新闻: 以色列外长：我们一直希望结束加沙战争，我们更愿意通过外交手段...
+2025-09-30 09:59:24,422 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:24,424 - INFO - 分析完成，耗时: 0.47秒
+2025-09-30 09:59:24,424 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:24,424 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:59:29,431 - INFO - 开始分析新闻: 以色列外长：我们一直希望结束加沙战争，我们更愿意通过外交手段...
+2025-09-30 09:59:29,938 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:29,940 - INFO - 分析完成，耗时: 0.51秒
+2025-09-30 09:59:29,941 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:29,941 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:59:34,948 - INFO - 开始分析新闻: 以色列外长：我们一直希望结束加沙战争，我们更愿意通过外交手段...
+2025-09-30 09:59:35,408 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:35,409 - INFO - 分析完成，耗时: 0.46秒
+2025-09-30 09:59:35,409 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:35,410 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:59:35,410 - WARNING - 新闻 26/30 分析结果为空
+2025-09-30 09:59:37,414 - INFO - 处理新闻 27/30
+2025-09-30 09:59:37,415 - INFO - 开始分析新闻: 【得力官方就辞退跛脚员工致歉】得力集团公告称，网络上出现关于...
+2025-09-30 09:59:37,853 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:37,855 - INFO - 分析完成，耗时: 0.44秒
+2025-09-30 09:59:37,856 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:37,856 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:59:42,863 - INFO - 开始分析新闻: 【得力官方就辞退跛脚员工致歉】得力集团公告称，网络上出现关于...
+2025-09-30 09:59:43,320 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:43,322 - INFO - 分析完成，耗时: 0.46秒
+2025-09-30 09:59:43,322 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:43,322 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 09:59:48,329 - INFO - 开始分析新闻: 【得力官方就辞退跛脚员工致歉】得力集团公告称，网络上出现关于...
+2025-09-30 09:59:48,815 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:48,817 - INFO - 分析完成，耗时: 0.49秒
+2025-09-30 09:59:48,817 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:48,817 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 09:59:48,818 - WARNING - 新闻 27/30 分析结果为空
+2025-09-30 09:59:50,822 - INFO - 处理新闻 28/30
+2025-09-30 09:59:50,823 - INFO - 开始分析新闻: 【雅创电子：控股股东解除质押5.05%公司股份】雅创电子公告...
+2025-09-30 09:59:51,254 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:51,256 - INFO - 分析完成，耗时: 0.43秒
+2025-09-30 09:59:51,257 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:51,257 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 09:59:56,264 - INFO - 开始分析新闻: 【雅创电子：控股股东解除质押5.05%公司股份】雅创电子公告...
+2025-09-30 09:59:56,764 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 09:59:56,766 - INFO - 分析完成，耗时: 0.50秒
+2025-09-30 09:59:56,767 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 09:59:56,767 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 10:00:01,773 - INFO - 开始分析新闻: 【雅创电子：控股股东解除质押5.05%公司股份】雅创电子公告...
+2025-09-30 10:00:02,522 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 10:00:02,524 - INFO - 分析完成，耗时: 0.75秒
+2025-09-30 10:00:02,524 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 10:00:02,525 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 10:00:02,525 - WARNING - 新闻 28/30 分析结果为空
+2025-09-30 10:00:04,529 - INFO - 处理新闻 29/30
+2025-09-30 10:00:04,531 - INFO - 开始分析新闻: 【果麦文化：刘方完成0.05%减持】果麦文化公告，部分高级管...
+2025-09-30 10:00:04,896 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 10:00:04,898 - INFO - 分析完成，耗时: 0.37秒
+2025-09-30 10:00:04,899 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 10:00:04,900 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 10:00:09,906 - INFO - 开始分析新闻: 【果麦文化：刘方完成0.05%减持】果麦文化公告，部分高级管...
+2025-09-30 10:00:10,401 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 10:00:10,403 - INFO - 分析完成，耗时: 0.50秒
+2025-09-30 10:00:10,404 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 10:00:10,404 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 10:00:15,411 - INFO - 开始分析新闻: 【果麦文化：刘方完成0.05%减持】果麦文化公告，部分高级管...
+2025-09-30 10:00:15,901 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 10:00:15,904 - INFO - 分析完成，耗时: 0.49秒
+2025-09-30 10:00:15,904 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 10:00:15,905 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 10:00:15,905 - WARNING - 新闻 29/30 分析结果为空
+2025-09-30 10:00:17,910 - INFO - 处理新闻 30/30
+2025-09-30 10:00:17,911 - INFO - 开始分析新闻: 【瑞可达今日大宗交易平价成交130万股，成交额9765.6万...
+2025-09-30 10:00:18,279 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 10:00:18,281 - INFO - 分析完成，耗时: 0.37秒
+2025-09-30 10:00:18,282 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 10:00:18,283 - WARNING - 分析结果为空，重试 1/2
+2025-09-30 10:00:23,289 - INFO - 开始分析新闻: 【瑞可达今日大宗交易平价成交130万股，成交额9765.6万...
+2025-09-30 10:00:23,752 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 10:00:23,754 - INFO - 分析完成，耗时: 0.46秒
+2025-09-30 10:00:23,754 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 10:00:23,754 - WARNING - 分析结果为空，重试 2/2
+2025-09-30 10:00:28,762 - INFO - 开始分析新闻: 【瑞可达今日大宗交易平价成交130万股，成交额9765.6万...
+2025-09-30 10:00:29,273 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-09-30 10:00:29,274 - INFO - 分析完成，耗时: 0.51秒
+2025-09-30 10:00:29,275 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-09-30 10:00:29,275 - WARNING - 分析结果为空，重试 3/2
+2025-09-30 10:00:29,276 - WARNING - 新闻 30/30 分析结果为空
+2025-09-30 10:00:31,279 - WARNING - 没有有效的分析结果
+2025-10-09 09:51:03,071 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-09 09:51:03,073 - ERROR - 加载配置文件出错: [Errno 2] No such file or directory: 'config/config.json'
+2025-10-09 09:51:15,629 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-09 09:51:15,651 - INFO - 已有 0 条新闻被分析过
+2025-10-09 09:51:15,658 - INFO - 获取最新的 30 条新闻，其中 30 条未分析
+2025-10-09 09:51:15,659 - INFO - 开始处理最新的 30 条未分析新闻
+2025-10-09 09:51:15,659 - INFO - 开始逐条分析 30 条新闻
+2025-10-09 09:51:15,659 - INFO - 处理新闻 1/30
+2025-10-09 09:51:15,659 - INFO - 开始分析新闻: 法拉利美股盘前跌超5%，公司预计2030年营收约90亿欧元；...
+2025-10-09 09:51:16,446 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-09 09:51:16,448 - INFO - 分析完成，耗时: 0.79秒
+2025-10-09 09:51:16,449 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-09 09:51:16,450 - WARNING - 分析结果为空，重试 1/2
+2025-10-09 09:51:21,457 - INFO - 开始分析新闻: 法拉利美股盘前跌超5%，公司预计2030年营收约90亿欧元；...
+2025-10-09 09:51:22,003 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-09 09:51:22,005 - INFO - 分析完成，耗时: 0.55秒
+2025-10-09 09:51:22,006 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-09 09:51:22,006 - WARNING - 分析结果为空，重试 2/2
+2025-10-09 09:51:27,013 - INFO - 开始分析新闻: 法拉利美股盘前跌超5%，公司预计2030年营收约90亿欧元；...
+2025-10-09 09:51:27,590 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-09 09:51:27,591 - INFO - 分析完成，耗时: 0.58秒
+2025-10-09 09:51:27,592 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-09 09:51:27,592 - WARNING - 分析结果为空，重试 3/2
+2025-10-09 09:51:27,592 - WARNING - 新闻 1/30 分析结果为空
+2025-10-09 09:51:29,596 - INFO - 处理新闻 2/30
+2025-10-09 09:51:29,597 - INFO - 开始分析新闻: 【中指研究院：国庆中秋假期期间，北京、上海、深圳等城市新房网...
+2025-10-09 09:51:29,971 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-09 09:51:29,973 - INFO - 分析完成，耗时: 0.38秒
+2025-10-09 09:51:29,973 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-09 09:51:29,974 - WARNING - 分析结果为空，重试 1/2
+2025-10-09 09:51:34,982 - INFO - 开始分析新闻: 【中指研究院：国庆中秋假期期间，北京、上海、深圳等城市新房网...
+2025-10-09 09:51:36,176 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-09 09:51:36,178 - INFO - 分析完成，耗时: 1.20秒
+2025-10-09 09:51:36,178 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-09 09:51:36,179 - WARNING - 分析结果为空，重试 2/2
+2025-10-09 09:51:41,186 - INFO - 开始分析新闻: 【中指研究院：国庆中秋假期期间，北京、上海、深圳等城市新房网...
+2025-10-09 09:51:41,856 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-09 09:51:41,858 - INFO - 分析完成，耗时: 0.67秒
+2025-10-09 09:51:41,859 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-09 09:51:41,860 - WARNING - 分析结果为空，重试 3/2
+2025-10-09 09:51:41,860 - WARNING - 新闻 2/30 分析结果为空
+2025-10-09 09:51:43,864 - INFO - 处理新闻 3/30
+2025-10-09 09:51:43,865 - INFO - 开始分析新闻: 【盛屯矿业：不存在应披露而未披露的重大事项和风险事项】盛屯矿...
+2025-10-09 09:51:44,302 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-09 09:51:44,304 - INFO - 分析完成，耗时: 0.44秒
+2025-10-09 09:51:44,304 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-09 09:51:44,305 - WARNING - 分析结果为空，重试 1/2
+2025-10-09 09:51:49,312 - INFO - 开始分析新闻: 【盛屯矿业：不存在应披露而未披露的重大事项和风险事项】盛屯矿...
+2025-10-09 09:51:50,039 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-09 09:51:50,041 - INFO - 分析完成，耗时: 0.73秒
+2025-10-09 09:51:50,042 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-09 09:51:50,042 - WARNING - 分析结果为空，重试 2/2
+2025-10-09 09:51:55,055 - INFO - 开始分析新闻: 【盛屯矿业：不存在应披露而未披露的重大事项和风险事项】盛屯矿...
+2025-10-09 09:51:55,569 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-09 09:51:55,571 - INFO - 分析完成，耗时: 0.52秒
+2025-10-09 09:51:55,572 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-09 09:51:55,572 - WARNING - 分析结果为空，重试 3/2
+2025-10-09 09:51:55,573 - WARNING - 新闻 3/30 分析结果为空
+2025-10-09 09:51:57,577 - INFO - 处理新闻 4/30
+2025-10-09 09:51:57,578 - INFO - 开始分析新闻: 【威龙股份：收到民事起诉状 涉案金额1017万元】威龙股份公...
+2025-10-09 09:51:58,024 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-09 09:51:58,025 - INFO - 分析完成，耗时: 0.45秒
+2025-10-09 09:51:58,026 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-09 09:51:58,026 - WARNING - 分析结果为空，重试 1/2
+2025-10-09 09:52:03,033 - INFO - 开始分析新闻: 【威龙股份：收到民事起诉状 涉案金额1017万元】威龙股份公...
+2025-10-09 09:52:03,989 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-09 09:52:03,991 - INFO - 分析完成，耗时: 0.96秒
+2025-10-09 09:52:03,991 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-09 09:52:03,992 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:41:01,065 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-10 01:41:01,066 - ERROR - 加载配置文件出错: [Errno 2] No such file or directory: 'config/config.json'
+2025-10-10 01:41:44,853 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-10 01:41:44,877 - INFO - 已有 0 条新闻被分析过
+2025-10-10 01:41:44,884 - INFO - 获取最新的 30 条新闻，其中 30 条未分析
+2025-10-10 01:41:44,885 - INFO - 开始处理最新的 30 条未分析新闻
+2025-10-10 01:41:44,885 - INFO - 开始逐条分析 30 条新闻
+2025-10-10 01:41:44,885 - INFO - 处理新闻 1/30
+2025-10-10 01:41:44,885 - INFO - 开始分析新闻: 法拉利美股盘前跌超5%，公司预计2030年营收约90亿欧元；...
+2025-10-10 01:41:45,383 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:41:45,385 - INFO - 分析完成，耗时: 0.50秒
+2025-10-10 01:41:45,386 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:41:45,386 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 01:41:50,393 - INFO - 开始分析新闻: 法拉利美股盘前跌超5%，公司预计2030年营收约90亿欧元；...
+2025-10-10 01:41:50,852 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:41:50,854 - INFO - 分析完成，耗时: 0.46秒
+2025-10-10 01:41:50,854 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:41:50,855 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:41:55,862 - INFO - 开始分析新闻: 法拉利美股盘前跌超5%，公司预计2030年营收约90亿欧元；...
+2025-10-10 01:41:56,340 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:41:56,343 - INFO - 分析完成，耗时: 0.48秒
+2025-10-10 01:41:56,343 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:41:56,344 - WARNING - 分析结果为空，重试 3/2
+2025-10-10 01:41:56,344 - WARNING - 新闻 1/30 分析结果为空
+2025-10-10 01:41:58,348 - INFO - 处理新闻 2/30
+2025-10-10 01:41:58,348 - INFO - 开始分析新闻: 【中指研究院：国庆中秋假期期间，北京、上海、深圳等城市新房网...
+2025-10-10 01:41:58,799 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:41:58,801 - INFO - 分析完成，耗时: 0.45秒
+2025-10-10 01:41:58,802 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:41:58,802 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 01:42:03,808 - INFO - 开始分析新闻: 【中指研究院：国庆中秋假期期间，北京、上海、深圳等城市新房网...
+2025-10-10 01:42:04,279 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:04,280 - INFO - 分析完成，耗时: 0.47秒
+2025-10-10 01:42:04,281 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:04,281 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:42:09,288 - INFO - 开始分析新闻: 【中指研究院：国庆中秋假期期间，北京、上海、深圳等城市新房网...
+2025-10-10 01:42:09,770 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:09,772 - INFO - 分析完成，耗时: 0.48秒
+2025-10-10 01:42:09,772 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:09,772 - WARNING - 分析结果为空，重试 3/2
+2025-10-10 01:42:09,773 - WARNING - 新闻 2/30 分析结果为空
+2025-10-10 01:42:11,776 - INFO - 处理新闻 3/30
+2025-10-10 01:42:11,776 - INFO - 开始分析新闻: 【盛屯矿业：不存在应披露而未披露的重大事项和风险事项】盛屯矿...
+2025-10-10 01:42:12,138 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:12,140 - INFO - 分析完成，耗时: 0.36秒
+2025-10-10 01:42:12,141 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:12,141 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 01:42:17,148 - INFO - 开始分析新闻: 【盛屯矿业：不存在应披露而未披露的重大事项和风险事项】盛屯矿...
+2025-10-10 01:42:17,621 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:17,623 - INFO - 分析完成，耗时: 0.48秒
+2025-10-10 01:42:17,624 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:17,624 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:42:22,631 - INFO - 开始分析新闻: 【盛屯矿业：不存在应披露而未披露的重大事项和风险事项】盛屯矿...
+2025-10-10 01:42:23,128 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:23,130 - INFO - 分析完成，耗时: 0.50秒
+2025-10-10 01:42:23,131 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:23,131 - WARNING - 分析结果为空，重试 3/2
+2025-10-10 01:42:23,131 - WARNING - 新闻 3/30 分析结果为空
+2025-10-10 01:42:25,136 - INFO - 处理新闻 4/30
+2025-10-10 01:42:25,137 - INFO - 开始分析新闻: 【威龙股份：收到民事起诉状 涉案金额1017万元】威龙股份公...
+2025-10-10 01:42:25,506 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:25,508 - INFO - 分析完成，耗时: 0.37秒
+2025-10-10 01:42:25,509 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:25,509 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 01:42:30,512 - INFO - 开始分析新闻: 【威龙股份：收到民事起诉状 涉案金额1017万元】威龙股份公...
+2025-10-10 01:42:30,997 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:30,999 - INFO - 分析完成，耗时: 0.49秒
+2025-10-10 01:42:30,999 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:30,999 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:42:36,002 - INFO - 开始分析新闻: 【威龙股份：收到民事起诉状 涉案金额1017万元】威龙股份公...
+2025-10-10 01:42:36,456 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:36,458 - INFO - 分析完成，耗时: 0.46秒
+2025-10-10 01:42:36,459 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:36,459 - WARNING - 分析结果为空，重试 3/2
+2025-10-10 01:42:36,459 - WARNING - 新闻 4/30 分析结果为空
+2025-10-10 01:42:38,464 - INFO - 处理新闻 5/30
+2025-10-10 01:42:38,464 - INFO - 开始分析新闻: 【自然资源部与中国气象局联合发布地质灾害黄色预警】自然资源部...
+2025-10-10 01:42:38,819 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:38,820 - INFO - 分析完成，耗时: 0.36秒
+2025-10-10 01:42:38,821 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:38,821 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 01:42:43,827 - INFO - 开始分析新闻: 【自然资源部与中国气象局联合发布地质灾害黄色预警】自然资源部...
+2025-10-10 01:42:44,303 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:44,305 - INFO - 分析完成，耗时: 0.48秒
+2025-10-10 01:42:44,306 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:44,307 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:42:49,315 - INFO - 开始分析新闻: 【自然资源部与中国气象局联合发布地质灾害黄色预警】自然资源部...
+2025-10-10 01:42:49,777 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:49,778 - INFO - 分析完成，耗时: 0.46秒
+2025-10-10 01:42:49,779 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:49,779 - WARNING - 分析结果为空，重试 3/2
+2025-10-10 01:42:49,780 - WARNING - 新闻 5/30 分析结果为空
+2025-10-10 01:42:51,784 - INFO - 处理新闻 6/30
+2025-10-10 01:42:51,784 - INFO - 开始分析新闻: 【对冲基金借助期权押注美元年末上涨】据交易员透露，全球对冲基...
+2025-10-10 01:42:52,141 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:52,143 - INFO - 分析完成，耗时: 0.36秒
+2025-10-10 01:42:52,143 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:52,143 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 01:42:57,149 - INFO - 开始分析新闻: 【对冲基金借助期权押注美元年末上涨】据交易员透露，全球对冲基...
+2025-10-10 01:42:57,616 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:42:57,617 - INFO - 分析完成，耗时: 0.47秒
+2025-10-10 01:42:57,618 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:42:57,618 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:43:02,625 - INFO - 开始分析新闻: 【对冲基金借助期权押注美元年末上涨】据交易员透露，全球对冲基...
+2025-10-10 01:43:03,119 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:03,122 - INFO - 分析完成，耗时: 0.50秒
+2025-10-10 01:43:03,122 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:03,123 - WARNING - 分析结果为空，重试 3/2
+2025-10-10 01:43:03,123 - WARNING - 新闻 6/30 分析结果为空
+2025-10-10 01:43:05,129 - INFO - 处理新闻 7/30
+2025-10-10 01:43:05,130 - INFO - 开始分析新闻: 【英国首相斯塔默携创纪录数量英企访印 莫迪称此次来访为两国关...
+2025-10-10 01:43:05,604 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:05,606 - INFO - 分析完成，耗时: 0.48秒
+2025-10-10 01:43:05,607 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:05,607 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 01:43:10,614 - INFO - 开始分析新闻: 【英国首相斯塔默携创纪录数量英企访印 莫迪称此次来访为两国关...
+2025-10-10 01:43:11,084 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:11,086 - INFO - 分析完成，耗时: 0.47秒
+2025-10-10 01:43:11,086 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:11,087 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:43:16,094 - INFO - 开始分析新闻: 【英国首相斯塔默携创纪录数量英企访印 莫迪称此次来访为两国关...
+2025-10-10 01:43:16,594 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:16,595 - INFO - 分析完成，耗时: 0.50秒
+2025-10-10 01:43:16,595 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:16,596 - WARNING - 分析结果为空，重试 3/2
+2025-10-10 01:43:16,596 - WARNING - 新闻 7/30 分析结果为空
+2025-10-10 01:43:18,601 - INFO - 处理新闻 8/30
+2025-10-10 01:43:18,602 - INFO - 开始分析新闻: 【神开股份：增资山东未来机器人有限公司至0.9585%】神开...
+2025-10-10 01:43:18,968 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:18,969 - INFO - 分析完成，耗时: 0.37秒
+2025-10-10 01:43:18,970 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:18,970 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 01:43:23,977 - INFO - 开始分析新闻: 【神开股份：增资山东未来机器人有限公司至0.9585%】神开...
+2025-10-10 01:43:24,449 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:24,451 - INFO - 分析完成，耗时: 0.47秒
+2025-10-10 01:43:24,452 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:24,453 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:43:29,460 - INFO - 开始分析新闻: 【神开股份：增资山东未来机器人有限公司至0.9585%】神开...
+2025-10-10 01:43:29,987 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:29,989 - INFO - 分析完成，耗时: 0.53秒
+2025-10-10 01:43:29,990 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:29,990 - WARNING - 分析结果为空，重试 3/2
+2025-10-10 01:43:29,990 - WARNING - 新闻 8/30 分析结果为空
+2025-10-10 01:43:31,994 - INFO - 处理新闻 9/30
+2025-10-10 01:43:31,995 - INFO - 开始分析新闻: 【云深处发布首款人形机器人】10月9日，根据云深处公众号，云...
+2025-10-10 01:43:32,355 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:32,356 - INFO - 分析完成，耗时: 0.36秒
+2025-10-10 01:43:32,357 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:32,357 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 01:43:37,364 - INFO - 开始分析新闻: 【云深处发布首款人形机器人】10月9日，根据云深处公众号，云...
+2025-10-10 01:43:37,857 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:37,859 - INFO - 分析完成，耗时: 0.49秒
+2025-10-10 01:43:37,859 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:37,860 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:43:42,866 - INFO - 开始分析新闻: 【云深处发布首款人形机器人】10月9日，根据云深处公众号，云...
+2025-10-10 01:43:43,345 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:43,346 - INFO - 分析完成，耗时: 0.48秒
+2025-10-10 01:43:43,346 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:43,347 - WARNING - 分析结果为空，重试 3/2
+2025-10-10 01:43:43,347 - WARNING - 新闻 9/30 分析结果为空
+2025-10-10 01:43:45,350 - INFO - 处理新闻 10/30
+2025-10-10 01:43:45,351 - INFO - 开始分析新闻: 【江西铜业 ：股票交易异常波动 公司目前生产经营活动一切正常...
+2025-10-10 01:43:45,716 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:45,719 - INFO - 分析完成，耗时: 0.37秒
+2025-10-10 01:43:45,720 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:45,720 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 01:43:50,728 - INFO - 开始分析新闻: 【江西铜业 ：股票交易异常波动 公司目前生产经营活动一切正常...
+2025-10-10 01:43:51,192 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:51,194 - INFO - 分析完成，耗时: 0.47秒
+2025-10-10 01:43:51,195 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:51,195 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:43:56,199 - INFO - 开始分析新闻: 【江西铜业 ：股票交易异常波动 公司目前生产经营活动一切正常...
+2025-10-10 01:43:56,668 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:56,670 - INFO - 分析完成，耗时: 0.47秒
+2025-10-10 01:43:56,672 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:56,673 - WARNING - 分析结果为空，重试 3/2
+2025-10-10 01:43:56,673 - WARNING - 新闻 10/30 分析结果为空
+2025-10-10 01:43:58,674 - INFO - 处理新闻 11/30
+2025-10-10 01:43:58,675 - INFO - 开始分析新闻: 【华贸物流：控股股东拟0.645亿元-1.29亿元增持公司股...
+2025-10-10 01:43:59,058 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:43:59,060 - INFO - 分析完成，耗时: 0.39秒
+2025-10-10 01:43:59,060 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:43:59,061 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 01:44:04,067 - INFO - 开始分析新闻: 【华贸物流：控股股东拟0.645亿元-1.29亿元增持公司股...
+2025-10-10 01:44:04,534 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:44:04,536 - INFO - 分析完成，耗时: 0.47秒
+2025-10-10 01:44:04,536 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:44:04,537 - WARNING - 分析结果为空，重试 2/2
+2025-10-10 01:44:09,538 - INFO - 开始分析新闻: 【华贸物流：控股股东拟0.645亿元-1.29亿元增持公司股...
+2025-10-10 01:44:10,025 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:44:10,026 - INFO - 分析完成，耗时: 0.49秒
+2025-10-10 01:44:10,026 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:44:10,026 - WARNING - 分析结果为空，重试 3/2
+2025-10-10 01:44:10,027 - WARNING - 新闻 11/30 分析结果为空
+2025-10-10 01:44:12,031 - INFO - 处理新闻 12/30
+2025-10-10 01:44:12,032 - INFO - 开始分析新闻: 【华北制药：子公司产品头孢丙烯获得《化学原料药上市申请批准通...
+2025-10-10 01:44:12,394 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-10 01:44:12,395 - INFO - 分析完成，耗时: 0.36秒
+2025-10-10 01:44:12,395 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-10 01:44:12,396 - WARNING - 分析结果为空，重试 1/2
+2025-10-10 16:34:06,663 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-10 16:34:06,664 - ERROR - 加载配置文件出错: [Errno 2] No such file or directory: 'config/config.json'
+2025-10-10 16:34:43,888 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-10 16:34:43,909 - INFO - 已有 0 条新闻被分析过
+2025-10-10 16:34:43,910 - INFO - 获取最新的 30 条新闻，其中 0 条未分析
+2025-10-10 16:34:43,910 - INFO - 最近30条新闻都已分析过
+2025-10-10 16:34:56,370 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-10 16:34:56,391 - INFO - 已有 0 条新闻被分析过
+2025-10-10 16:34:56,392 - INFO - 获取最新的 30 条新闻，其中 0 条未分析
+2025-10-10 16:34:56,392 - INFO - 最近30条新闻都已分析过
+2025-10-10 16:45:00,687 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-10 16:45:00,687 - ERROR - 加载配置文件出错: [Errno 2] No such file or directory: 'config/config.json'
+2025-10-10 16:45:28,253 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-10 16:45:28,274 - INFO - 已有 0 条新闻被分析过
+2025-10-10 16:45:28,275 - INFO - 获取最新的 30 条新闻，其中 0 条未分析
+2025-10-10 16:45:28,275 - INFO - 最近30条新闻都已分析过
+2025-10-10 17:08:04,423 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-10 17:08:04,423 - ERROR - 加载配置文件出错: [Errno 2] No such file or directory: 'config/config.json'
+2025-10-10 17:08:22,812 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-10 17:08:22,833 - INFO - 已有 0 条新闻被分析过
+2025-10-10 17:08:22,833 - INFO - 获取最新的 30 条新闻，其中 0 条未分析
+2025-10-10 17:08:22,834 - INFO - 最近30条新闻都已分析过
+2025-10-13 08:20:40,492 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-13 08:20:40,493 - ERROR - 加载配置文件出错: [Errno 2] No such file or directory: 'config/config.json'
+2025-10-13 08:21:30,503 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-13 08:21:30,524 - INFO - 已有 0 条新闻被分析过
+2025-10-13 08:21:30,528 - INFO - 获取最新的 30 条新闻，其中 30 条未分析
+2025-10-13 08:21:30,528 - INFO - 开始处理最新的 30 条未分析新闻
+2025-10-13 08:21:30,528 - INFO - 开始逐条分析 30 条新闻
+2025-10-13 08:21:30,528 - INFO - 处理新闻 1/30
+2025-10-13 08:21:30,528 - INFO - 开始分析新闻: 36氪获悉，京东方Ａ公告，公司于2025年10月10日收到副...
+2025-10-13 08:21:31,363 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:21:31,365 - INFO - 分析完成，耗时: 0.84秒
+2025-10-13 08:21:31,366 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:21:31,366 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:21:36,374 - INFO - 开始分析新闻: 36氪获悉，京东方Ａ公告，公司于2025年10月10日收到副...
+2025-10-13 08:21:36,881 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:21:36,883 - INFO - 分析完成，耗时: 0.51秒
+2025-10-13 08:21:36,883 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:21:36,884 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:21:41,891 - INFO - 开始分析新闻: 36氪获悉，京东方Ａ公告，公司于2025年10月10日收到副...
+2025-10-13 08:21:42,400 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:21:42,402 - INFO - 分析完成，耗时: 0.51秒
+2025-10-13 08:21:42,402 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:21:42,403 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:21:42,403 - WARNING - 新闻 1/30 分析结果为空
+2025-10-13 08:21:44,406 - INFO - 处理新闻 2/30
+2025-10-13 08:21:44,407 - INFO - 开始分析新闻: 财联社10月10日电，现货白银向上触及51美元/盎司，日内上...
+2025-10-13 08:21:44,764 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:21:44,765 - INFO - 分析完成，耗时: 0.36秒
+2025-10-13 08:21:44,766 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:21:44,766 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:21:49,775 - INFO - 开始分析新闻: 财联社10月10日电，现货白银向上触及51美元/盎司，日内上...
+2025-10-13 08:21:50,262 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:21:50,263 - INFO - 分析完成，耗时: 0.49秒
+2025-10-13 08:21:50,264 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:21:50,264 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:21:55,268 - INFO - 开始分析新闻: 财联社10月10日电，现货白银向上触及51美元/盎司，日内上...
+2025-10-13 08:21:55,753 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:21:55,756 - INFO - 分析完成，耗时: 0.49秒
+2025-10-13 08:21:55,756 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:21:55,757 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:21:55,757 - WARNING - 新闻 2/30 分析结果为空
+2025-10-13 08:21:57,761 - INFO - 处理新闻 3/30
+2025-10-13 08:21:57,762 - INFO - 开始分析新闻: 【世茂集团：前三季度销售额约192亿元 同比降24.19%】...
+2025-10-13 08:21:58,194 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:21:58,196 - INFO - 分析完成，耗时: 0.43秒
+2025-10-13 08:21:58,197 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:21:58,197 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:22:03,204 - INFO - 开始分析新闻: 【世茂集团：前三季度销售额约192亿元 同比降24.19%】...
+2025-10-13 08:22:03,674 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:03,676 - INFO - 分析完成，耗时: 0.47秒
+2025-10-13 08:22:03,677 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:03,678 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:22:08,687 - INFO - 开始分析新闻: 【世茂集团：前三季度销售额约192亿元 同比降24.19%】...
+2025-10-13 08:22:09,180 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:09,182 - INFO - 分析完成，耗时: 0.49秒
+2025-10-13 08:22:09,182 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:09,182 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:22:09,183 - WARNING - 新闻 3/30 分析结果为空
+2025-10-13 08:22:11,188 - INFO - 处理新闻 4/30
+2025-10-13 08:22:11,189 - INFO - 开始分析新闻: 现货白银站上51美元/盎司，日内涨4.07%。 (2025-...
+2025-10-13 08:22:11,558 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:11,560 - INFO - 分析完成，耗时: 0.37秒
+2025-10-13 08:22:11,561 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:11,561 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:22:16,568 - INFO - 开始分析新闻: 现货白银站上51美元/盎司，日内涨4.07%。 (2025-...
+2025-10-13 08:22:17,111 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:17,118 - INFO - 分析完成，耗时: 0.55秒
+2025-10-13 08:22:17,119 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:17,119 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:22:22,125 - INFO - 开始分析新闻: 现货白银站上51美元/盎司，日内涨4.07%。 (2025-...
+2025-10-13 08:22:22,641 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:22,643 - INFO - 分析完成，耗时: 0.52秒
+2025-10-13 08:22:22,643 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:22,644 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:22:22,644 - WARNING - 新闻 4/30 分析结果为空
+2025-10-13 08:22:24,649 - INFO - 处理新闻 5/30
+2025-10-13 08:22:24,650 - INFO - 开始分析新闻: 市场消息：1-8月期间泰国燃料使用量下降0.5%。 (202...
+2025-10-13 08:22:25,097 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:25,099 - INFO - 分析完成，耗时: 0.45秒
+2025-10-13 08:22:25,099 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:25,100 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:22:30,102 - INFO - 开始分析新闻: 市场消息：1-8月期间泰国燃料使用量下降0.5%。 (202...
+2025-10-13 08:22:30,627 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:30,628 - INFO - 分析完成，耗时: 0.53秒
+2025-10-13 08:22:30,629 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:30,629 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:22:35,636 - INFO - 开始分析新闻: 市场消息：1-8月期间泰国燃料使用量下降0.5%。 (202...
+2025-10-13 08:22:36,126 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:36,127 - INFO - 分析完成，耗时: 0.49秒
+2025-10-13 08:22:36,127 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:36,127 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:22:36,128 - WARNING - 新闻 5/30 分析结果为空
+2025-10-13 08:22:38,131 - INFO - 处理新闻 6/30
+2025-10-13 08:22:38,132 - INFO - 开始分析新闻: 10月10日，据交易所数据显示，9月A股新开户数293.72...
+2025-10-13 08:22:38,514 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:38,516 - INFO - 分析完成，耗时: 0.38秒
+2025-10-13 08:22:38,517 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:38,517 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:22:43,523 - INFO - 开始分析新闻: 10月10日，据交易所数据显示，9月A股新开户数293.72...
+2025-10-13 08:22:44,041 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:44,044 - INFO - 分析完成，耗时: 0.52秒
+2025-10-13 08:22:44,044 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:44,045 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:22:49,052 - INFO - 开始分析新闻: 10月10日，据交易所数据显示，9月A股新开户数293.72...
+2025-10-13 08:22:49,597 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:49,600 - INFO - 分析完成，耗时: 0.55秒
+2025-10-13 08:22:49,600 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:49,601 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:22:49,601 - WARNING - 新闻 6/30 分析结果为空
+2025-10-13 08:22:51,604 - INFO - 处理新闻 7/30
+2025-10-13 08:22:51,605 - INFO - 开始分析新闻: 【江西井冈山市政府原副市长王克康接受监察调查】据江西省纪委监...
+2025-10-13 08:22:52,029 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:52,031 - INFO - 分析完成，耗时: 0.43秒
+2025-10-13 08:22:52,032 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:52,032 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:22:57,038 - INFO - 开始分析新闻: 【江西井冈山市政府原副市长王克康接受监察调查】据江西省纪委监...
+2025-10-13 08:22:57,509 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:22:57,511 - INFO - 分析完成，耗时: 0.47秒
+2025-10-13 08:22:57,512 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:22:57,512 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:23:02,520 - INFO - 开始分析新闻: 【江西井冈山市政府原副市长王克康接受监察调查】据江西省纪委监...
+2025-10-13 08:23:03,090 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:03,093 - INFO - 分析完成，耗时: 0.57秒
+2025-10-13 08:23:03,094 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:03,094 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:23:03,095 - WARNING - 新闻 7/30 分析结果为空
+2025-10-13 08:23:05,098 - INFO - 处理新闻 8/30
+2025-10-13 08:23:05,099 - INFO - 开始分析新闻: 财联社10月10日电，谷歌回应英国将其搜索服务纳入战略市场地...
+2025-10-13 08:23:05,655 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:05,657 - INFO - 分析完成，耗时: 0.56秒
+2025-10-13 08:23:05,658 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:05,658 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:23:10,666 - INFO - 开始分析新闻: 财联社10月10日电，谷歌回应英国将其搜索服务纳入战略市场地...
+2025-10-13 08:23:11,383 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:11,386 - INFO - 分析完成，耗时: 0.72秒
+2025-10-13 08:23:11,386 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:11,387 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:23:16,397 - INFO - 开始分析新闻: 财联社10月10日电，谷歌回应英国将其搜索服务纳入战略市场地...
+2025-10-13 08:23:16,914 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:16,916 - INFO - 分析完成，耗时: 0.52秒
+2025-10-13 08:23:16,917 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:16,917 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:23:16,918 - WARNING - 新闻 8/30 分析结果为空
+2025-10-13 08:23:18,921 - INFO - 处理新闻 9/30
+2025-10-13 08:23:18,922 - INFO - 开始分析新闻: 世茂集团：9月合约销售额19.0亿元人民币，上年同期29.4...
+2025-10-13 08:23:19,371 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:19,373 - INFO - 分析完成，耗时: 0.45秒
+2025-10-13 08:23:19,374 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:19,374 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:23:24,382 - INFO - 开始分析新闻: 世茂集团：9月合约销售额19.0亿元人民币，上年同期29.4...
+2025-10-13 08:23:24,853 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:24,857 - INFO - 分析完成，耗时: 0.47秒
+2025-10-13 08:23:24,858 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:24,859 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:23:29,865 - INFO - 开始分析新闻: 世茂集团：9月合约销售额19.0亿元人民币，上年同期29.4...
+2025-10-13 08:23:31,365 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:31,367 - INFO - 分析完成，耗时: 1.50秒
+2025-10-13 08:23:31,368 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:31,368 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:23:31,368 - WARNING - 新闻 9/30 分析结果为空
+2025-10-13 08:23:33,372 - INFO - 处理新闻 10/30
+2025-10-13 08:23:33,373 - INFO - 开始分析新闻: 市场消息：委内瑞拉和美国就报价进行了数月的讨论。 (2025...
+2025-10-13 08:23:33,812 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:33,814 - INFO - 分析完成，耗时: 0.44秒
+2025-10-13 08:23:33,814 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:33,815 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:23:38,822 - INFO - 开始分析新闻: 市场消息：委内瑞拉和美国就报价进行了数月的讨论。 (2025...
+2025-10-13 08:23:39,339 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:39,341 - INFO - 分析完成，耗时: 0.52秒
+2025-10-13 08:23:39,342 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:39,343 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:23:44,350 - INFO - 开始分析新闻: 市场消息：委内瑞拉和美国就报价进行了数月的讨论。 (2025...
+2025-10-13 08:23:44,819 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:44,821 - INFO - 分析完成，耗时: 0.47秒
+2025-10-13 08:23:44,822 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:44,823 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:23:44,823 - WARNING - 新闻 10/30 分析结果为空
+2025-10-13 08:23:46,827 - INFO - 处理新闻 11/30
+2025-10-13 08:23:46,828 - INFO - 开始分析新闻: 马来西亚总理：提议出台网络犯罪法案以打击金融诈骗和网络威胁。...
+2025-10-13 08:23:47,225 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:47,227 - INFO - 分析完成，耗时: 0.40秒
+2025-10-13 08:23:47,228 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:47,228 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:23:52,236 - INFO - 开始分析新闻: 马来西亚总理：提议出台网络犯罪法案以打击金融诈骗和网络威胁。...
+2025-10-13 08:23:52,704 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:52,706 - INFO - 分析完成，耗时: 0.47秒
+2025-10-13 08:23:52,707 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:52,707 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:23:57,714 - INFO - 开始分析新闻: 马来西亚总理：提议出台网络犯罪法案以打击金融诈骗和网络威胁。...
+2025-10-13 08:23:58,288 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:23:58,290 - INFO - 分析完成，耗时: 0.58秒
+2025-10-13 08:23:58,291 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:23:58,291 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:23:58,292 - WARNING - 新闻 11/30 分析结果为空
+2025-10-13 08:24:00,296 - INFO - 处理新闻 12/30
+2025-10-13 08:24:00,298 - INFO - 开始分析新闻: 马来西亚政府在一份报告中于周五警告，若美国取消对马来西亚半导...
+2025-10-13 08:24:00,677 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:00,680 - INFO - 分析完成，耗时: 0.38秒
+2025-10-13 08:24:00,680 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:00,681 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:24:05,688 - INFO - 开始分析新闻: 马来西亚政府在一份报告中于周五警告，若美国取消对马来西亚半导...
+2025-10-13 08:24:06,157 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:06,158 - INFO - 分析完成，耗时: 0.47秒
+2025-10-13 08:24:06,158 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:06,158 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:24:11,166 - INFO - 开始分析新闻: 马来西亚政府在一份报告中于周五警告，若美国取消对马来西亚半导...
+2025-10-13 08:24:11,659 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:11,661 - INFO - 分析完成，耗时: 0.50秒
+2025-10-13 08:24:11,662 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:11,662 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:24:11,663 - WARNING - 新闻 12/30 分析结果为空
+2025-10-13 08:24:13,666 - INFO - 处理新闻 13/30
+2025-10-13 08:24:13,667 - INFO - 开始分析新闻: 谷歌就英国将其搜索服务列为具有战略市场地位一事表态：在此过程...
+2025-10-13 08:24:14,054 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:14,057 - INFO - 分析完成，耗时: 0.39秒
+2025-10-13 08:24:14,058 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:14,058 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:24:19,066 - INFO - 开始分析新闻: 谷歌就英国将其搜索服务列为具有战略市场地位一事表态：在此过程...
+2025-10-13 08:24:19,564 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:19,566 - INFO - 分析完成，耗时: 0.50秒
+2025-10-13 08:24:19,567 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:19,567 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:24:24,574 - INFO - 开始分析新闻: 谷歌就英国将其搜索服务列为具有战略市场地位一事表态：在此过程...
+2025-10-13 08:24:25,114 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:25,115 - INFO - 分析完成，耗时: 0.54秒
+2025-10-13 08:24:25,116 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:25,116 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:24:25,116 - WARNING - 新闻 13/30 分析结果为空
+2025-10-13 08:24:27,120 - INFO - 处理新闻 14/30
+2025-10-13 08:24:27,122 - INFO - 开始分析新闻: 【9月A股新开户数294万户 同比增长61%】财联社10月1...
+2025-10-13 08:24:27,569 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:27,571 - INFO - 分析完成，耗时: 0.45秒
+2025-10-13 08:24:27,571 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:27,572 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:24:32,578 - INFO - 开始分析新闻: 【9月A股新开户数294万户 同比增长61%】财联社10月1...
+2025-10-13 08:24:33,100 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:33,102 - INFO - 分析完成，耗时: 0.52秒
+2025-10-13 08:24:33,103 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:33,103 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:24:38,110 - INFO - 开始分析新闻: 【9月A股新开户数294万户 同比增长61%】财联社10月1...
+2025-10-13 08:24:38,590 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:38,592 - INFO - 分析完成，耗时: 0.48秒
+2025-10-13 08:24:38,593 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:38,594 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:24:38,595 - WARNING - 新闻 14/30 分析结果为空
+2025-10-13 08:24:40,602 - INFO - 处理新闻 15/30
+2025-10-13 08:24:40,603 - INFO - 开始分析新闻: 市场消息：内瑞拉在谈判中向美国提出了在石油和矿产领域的股份。...
+2025-10-13 08:24:40,960 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:40,961 - INFO - 分析完成，耗时: 0.36秒
+2025-10-13 08:24:40,962 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:40,962 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:24:45,970 - INFO - 开始分析新闻: 市场消息：内瑞拉在谈判中向美国提出了在石油和矿产领域的股份。...
+2025-10-13 08:24:46,431 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:46,433 - INFO - 分析完成，耗时: 0.46秒
+2025-10-13 08:24:46,434 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:46,434 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:24:51,437 - INFO - 开始分析新闻: 市场消息：内瑞拉在谈判中向美国提出了在石油和矿产领域的股份。...
+2025-10-13 08:24:51,942 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:51,944 - INFO - 分析完成，耗时: 0.51秒
+2025-10-13 08:24:51,945 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:51,945 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:24:51,946 - WARNING - 新闻 15/30 分析结果为空
+2025-10-13 08:24:53,949 - INFO - 处理新闻 16/30
+2025-10-13 08:24:53,950 - INFO - 开始分析新闻: 英国竞争与市场管理局：确认谷歌的Gemini AI助手不在此...
+2025-10-13 08:24:54,310 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:54,312 - INFO - 分析完成，耗时: 0.36秒
+2025-10-13 08:24:54,313 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:54,313 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:24:59,319 - INFO - 开始分析新闻: 英国竞争与市场管理局：确认谷歌的Gemini AI助手不在此...
+2025-10-13 08:24:59,830 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:24:59,832 - INFO - 分析完成，耗时: 0.51秒
+2025-10-13 08:24:59,832 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:24:59,832 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:25:04,839 - INFO - 开始分析新闻: 英国竞争与市场管理局：确认谷歌的Gemini AI助手不在此...
+2025-10-13 08:25:05,357 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:25:05,359 - INFO - 分析完成，耗时: 0.52秒
+2025-10-13 08:25:05,360 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:25:05,361 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:25:05,361 - WARNING - 新闻 16/30 分析结果为空
+2025-10-13 08:25:07,365 - INFO - 处理新闻 17/30
+2025-10-13 08:25:07,365 - INFO - 开始分析新闻: 企查查APP显示，近日，广州谷硅动力科技有限公司成立，法定代...
+2025-10-13 08:25:07,815 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:25:07,816 - INFO - 分析完成，耗时: 0.45秒
+2025-10-13 08:25:07,817 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:25:07,817 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:25:12,826 - INFO - 开始分析新闻: 企查查APP显示，近日，广州谷硅动力科技有限公司成立，法定代...
+2025-10-13 08:25:13,345 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:25:13,347 - INFO - 分析完成，耗时: 0.52秒
+2025-10-13 08:25:13,348 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:25:13,349 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:25:18,356 - INFO - 开始分析新闻: 企查查APP显示，近日，广州谷硅动力科技有限公司成立，法定代...
+2025-10-13 08:25:19,079 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:25:19,081 - INFO - 分析完成，耗时: 0.73秒
+2025-10-13 08:25:19,082 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:25:19,082 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:25:19,083 - WARNING - 新闻 17/30 分析结果为空
+2025-10-13 08:25:21,087 - INFO - 处理新闻 18/30
+2025-10-13 08:25:21,089 - INFO - 开始分析新闻: 国务院总理李强日前签署国务院令，公布《生物医学新技术临床研究...
+2025-10-13 08:25:21,539 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:25:21,541 - INFO - 分析完成，耗时: 0.45秒
+2025-10-13 08:25:21,542 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:25:21,543 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:25:26,551 - INFO - 开始分析新闻: 国务院总理李强日前签署国务院令，公布《生物医学新技术临床研究...
+2025-10-13 08:25:27,169 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:25:27,172 - INFO - 分析完成，耗时: 0.62秒
+2025-10-13 08:25:27,172 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:25:27,173 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 08:25:32,180 - INFO - 开始分析新闻: 国务院总理李强日前签署国务院令，公布《生物医学新技术临床研究...
+2025-10-13 08:25:32,660 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:25:32,661 - INFO - 分析完成，耗时: 0.48秒
+2025-10-13 08:25:32,662 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:25:32,663 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 08:25:32,663 - WARNING - 新闻 18/30 分析结果为空
+2025-10-13 08:25:34,666 - INFO - 处理新闻 19/30
+2025-10-13 08:25:34,667 - INFO - 开始分析新闻: 财联社10月10日电，香港交易所信息显示，贝莱德（Black...
+2025-10-13 08:25:35,262 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 08:25:35,264 - INFO - 分析完成，耗时: 0.60秒
+2025-10-13 08:25:35,265 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 08:25:35,265 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 08:25:40,272 - INFO - 开始分析新闻: 财联社10月10日电，香港交易所信息显示，贝莱德（Black...
+2025-10-13 09:00:53,873 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-13 09:00:53,895 - INFO - 已有 0 条新闻被分析过
+2025-10-13 09:00:53,903 - INFO - 获取最新的 30 条新闻，其中 30 条未分析
+2025-10-13 09:00:53,903 - INFO - 开始处理最新的 30 条未分析新闻
+2025-10-13 09:00:53,903 - INFO - 开始逐条分析 30 条新闻
+2025-10-13 09:00:53,903 - INFO - 处理新闻 1/30
+2025-10-13 09:00:53,903 - INFO - 开始分析新闻: 台湾证交所加权股价指数开低2%报26,762.60点。 (2...
+2025-10-13 09:00:54,459 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 09:00:54,461 - INFO - 分析完成，耗时: 0.56秒
+2025-10-13 09:00:54,462 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 09:00:54,462 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 09:00:59,469 - INFO - 开始分析新闻: 台湾证交所加权股价指数开低2%报26,762.60点。 (2...
+2025-10-13 09:00:59,944 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 09:00:59,946 - INFO - 分析完成，耗时: 0.48秒
+2025-10-13 09:00:59,946 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 09:00:59,947 - WARNING - 分析结果为空，重试 2/2
+2025-10-13 09:01:04,953 - INFO - 开始分析新闻: 台湾证交所加权股价指数开低2%报26,762.60点。 (2...
+2025-10-13 09:01:05,454 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 09:01:05,456 - INFO - 分析完成，耗时: 0.50秒
+2025-10-13 09:01:05,457 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 09:01:05,457 - WARNING - 分析结果为空，重试 3/2
+2025-10-13 09:01:05,458 - WARNING - 新闻 1/30 分析结果为空
+2025-10-13 09:01:07,459 - INFO - 处理新闻 2/30
+2025-10-13 09:01:07,460 - INFO - 开始分析新闻: 财联社10月13日电，富时中国A50指数期货在上一交易日夜盘...
+2025-10-13 09:01:07,826 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 09:01:07,827 - INFO - 分析完成，耗时: 0.37秒
+2025-10-13 09:01:07,828 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 09:01:07,829 - WARNING - 分析结果为空，重试 1/2
+2025-10-13 09:01:12,835 - INFO - 开始分析新闻: 财联社10月13日电，富时中国A50指数期货在上一交易日夜盘...
+2025-10-13 09:01:13,345 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-13 09:01:13,347 - INFO - 分析完成，耗时: 0.51秒
+2025-10-13 09:01:13,347 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-13 09:01:13,347 - WARNING - 分析结果为空，重试 2/2
+2025-10-14 09:41:45,096 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-14 09:41:45,098 - ERROR - 加载配置文件出错: [Errno 2] No such file or directory: 'config/config.json'
+2025-10-19 18:51:56,603 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-19 18:51:56,604 - ERROR - 加载配置文件出错: [Errno 2] No such file or directory: 'config/config.json'
+2025-10-19 18:52:22,936 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-19 18:52:22,961 - INFO - 已有 0 条新闻被分析过
+2025-10-19 18:52:22,976 - INFO - 获取最新的 30 条新闻，其中 30 条未分析
+2025-10-19 18:52:22,978 - INFO - 开始处理最新的 30 条未分析新闻
+2025-10-19 18:52:22,978 - INFO - 开始逐条分析 30 条新闻
+2025-10-19 18:52:22,978 - INFO - 处理新闻 1/30
+2025-10-19 18:52:22,978 - INFO - 开始分析新闻: 镇洋发展公告，公司与宁波石墨烯创新中心有限公司签署了《关于协...
+2025-10-19 18:52:23,502 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-19 18:52:23,504 - INFO - 分析完成，耗时: 0.53秒
+2025-10-19 18:52:23,504 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-19 18:52:23,505 - WARNING - 分析结果为空，重试 1/2
+2025-10-19 18:52:28,508 - INFO - 开始分析新闻: 镇洋发展公告，公司与宁波石墨烯创新中心有限公司签署了《关于协...
+2025-10-19 18:52:29,002 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-19 18:52:29,004 - INFO - 分析完成，耗时: 0.50秒
+2025-10-19 18:52:29,005 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-19 18:52:29,006 - WARNING - 分析结果为空，重试 2/2
+2025-10-19 18:52:34,013 - INFO - 开始分析新闻: 镇洋发展公告，公司与宁波石墨烯创新中心有限公司签署了《关于协...
+2025-10-19 18:52:34,491 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-19 18:52:34,493 - INFO - 分析完成，耗时: 0.48秒
+2025-10-19 18:52:34,494 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-19 18:52:34,495 - WARNING - 分析结果为空，重试 3/2
+2025-10-19 18:52:34,495 - WARNING - 新闻 1/30 分析结果为空
+2025-10-19 18:52:36,500 - INFO - 处理新闻 2/30
+2025-10-19 18:52:36,501 - INFO - 开始分析新闻: 【巴人权机构称以军已36次违反停火协议 致7人死亡】当地时间...
+2025-10-19 18:52:36,909 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-19 18:52:36,912 - INFO - 分析完成，耗时: 0.41秒
+2025-10-19 18:52:36,912 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-19 18:52:36,912 - WARNING - 分析结果为空，重试 1/2
+2025-10-19 18:52:41,919 - INFO - 开始分析新闻: 【巴人权机构称以军已36次违反停火协议 致7人死亡】当地时间...
+2025-10-19 18:52:42,404 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-19 18:52:42,407 - INFO - 分析完成，耗时: 0.49秒
+2025-10-19 18:52:42,408 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-19 18:52:42,408 - WARNING - 分析结果为空，重试 2/2
+2025-10-19 18:52:47,415 - INFO - 开始分析新闻: 【巴人权机构称以军已36次违反停火协议 致7人死亡】当地时间...
+2025-10-19 18:52:47,970 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-19 18:52:47,973 - INFO - 分析完成，耗时: 0.56秒
+2025-10-19 18:52:47,973 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-19 18:52:47,974 - WARNING - 分析结果为空，重试 3/2
+2025-10-19 18:52:47,974 - WARNING - 新闻 2/30 分析结果为空
+2025-10-19 18:52:49,978 - INFO - 处理新闻 3/30
+2025-10-19 18:52:49,979 - INFO - 开始分析新闻: 印度央行认为卢比受到投机性攻击，将进一步干预。 (2025-...
+2025-10-19 18:52:50,337 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-19 18:52:50,338 - INFO - 分析完成，耗时: 0.36秒
+2025-10-19 18:52:50,339 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-19 18:52:50,339 - WARNING - 分析结果为空，重试 1/2
+2025-10-19 18:52:55,347 - INFO - 开始分析新闻: 印度央行认为卢比受到投机性攻击，将进一步干预。 (2025-...
+2025-10-19 18:52:55,812 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-19 18:52:55,814 - INFO - 分析完成，耗时: 0.47秒
+2025-10-19 18:52:55,814 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-19 18:52:55,814 - WARNING - 分析结果为空，重试 2/2
+2025-10-19 18:53:00,822 - INFO - 开始分析新闻: 印度央行认为卢比受到投机性攻击，将进一步干预。 (2025-...
+2025-10-19 18:53:01,551 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-19 18:53:01,553 - INFO - 分析完成，耗时: 0.73秒
+2025-10-19 18:53:01,554 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-19 18:53:01,554 - WARNING - 分析结果为空，重试 3/2
+2025-10-19 18:53:01,555 - WARNING - 新闻 3/30 分析结果为空
+2025-10-19 23:04:20,192 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-19 23:04:20,193 - ERROR - 加载配置文件出错: [Errno 2] No such file or directory: 'config/config.json'
+2025-10-23 10:31:04,289 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-23 10:31:04,290 - ERROR - 加载配置文件出错: [Errno 2] No such file or directory: 'config/config.json'
+2025-10-23 10:31:25,819 - INFO - 启动分析: 最大新闻数 30, 并行数量 3
+2025-10-23 10:31:25,847 - INFO - 已有 0 条新闻被分析过
+2025-10-23 10:31:25,868 - INFO - 获取最新的 30 条新闻，其中 30 条未分析
+2025-10-23 10:31:25,869 - INFO - 开始处理最新的 30 条未分析新闻
+2025-10-23 10:31:25,869 - INFO - 开始逐条分析 30 条新闻
+2025-10-23 10:31:25,869 - INFO - 处理新闻 1/30
+2025-10-23 10:31:25,869 - INFO - 开始分析新闻: 韩国央行行长：市场随全球趋势而波动，目前不存在泡沫担忧。 (...
+2025-10-23 10:31:26,363 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:31:26,364 - INFO - 分析完成，耗时: 0.50秒
+2025-10-23 10:31:26,365 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:31:26,365 - WARNING - 分析结果为空，重试 1/2
+2025-10-23 10:31:31,372 - INFO - 开始分析新闻: 韩国央行行长：市场随全球趋势而波动，目前不存在泡沫担忧。 (...
+2025-10-23 10:31:31,873 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:31:31,875 - INFO - 分析完成，耗时: 0.50秒
+2025-10-23 10:31:31,876 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:31:31,876 - WARNING - 分析结果为空，重试 2/2
+2025-10-23 10:31:36,878 - INFO - 开始分析新闻: 韩国央行行长：市场随全球趋势而波动，目前不存在泡沫担忧。 (...
+2025-10-23 10:31:37,333 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:31:37,335 - INFO - 分析完成，耗时: 0.46秒
+2025-10-23 10:31:37,336 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:31:37,336 - WARNING - 分析结果为空，重试 3/2
+2025-10-23 10:31:37,336 - WARNING - 新闻 1/30 分析结果为空
+2025-10-23 10:31:39,340 - INFO - 处理新闻 2/30
+2025-10-23 10:31:39,340 - INFO - 开始分析新闻: 记者从国铁集团获悉，今年前三季度，国家铁路累计发送货物30....
+2025-10-23 10:31:39,694 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:31:39,696 - INFO - 分析完成，耗时: 0.36秒
+2025-10-23 10:31:39,697 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:31:39,697 - WARNING - 分析结果为空，重试 1/2
+2025-10-23 10:31:44,704 - INFO - 开始分析新闻: 记者从国铁集团获悉，今年前三季度，国家铁路累计发送货物30....
+2025-10-23 10:31:45,170 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:31:45,172 - INFO - 分析完成，耗时: 0.47秒
+2025-10-23 10:31:45,172 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:31:45,173 - WARNING - 分析结果为空，重试 2/2
+2025-10-23 10:31:50,180 - INFO - 开始分析新闻: 记者从国铁集团获悉，今年前三季度，国家铁路累计发送货物30....
+2025-10-23 10:31:50,650 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:31:50,653 - INFO - 分析完成，耗时: 0.47秒
+2025-10-23 10:31:50,654 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:31:50,654 - WARNING - 分析结果为空，重试 3/2
+2025-10-23 10:31:50,654 - WARNING - 新闻 2/30 分析结果为空
+2025-10-23 10:31:52,658 - INFO - 处理新闻 3/30
+2025-10-23 10:31:52,659 - INFO - 开始分析新闻: 焦煤连续主力合约日内涨3%，现报1233.00元/吨。 (2...
+2025-10-23 10:31:53,014 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:31:53,016 - INFO - 分析完成，耗时: 0.36秒
+2025-10-23 10:31:53,017 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:31:53,017 - WARNING - 分析结果为空，重试 1/2
+2025-10-23 10:31:58,019 - INFO - 开始分析新闻: 焦煤连续主力合约日内涨3%，现报1233.00元/吨。 (2...
+2025-10-23 10:31:58,465 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:31:58,467 - INFO - 分析完成，耗时: 0.45秒
+2025-10-23 10:31:58,467 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:31:58,468 - WARNING - 分析结果为空，重试 2/2
+2025-10-23 10:32:03,477 - INFO - 开始分析新闻: 焦煤连续主力合约日内涨3%，现报1233.00元/吨。 (2...
+2025-10-23 10:32:03,950 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:32:03,952 - INFO - 分析完成，耗时: 0.48秒
+2025-10-23 10:32:03,953 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:32:03,953 - WARNING - 分析结果为空，重试 3/2
+2025-10-23 10:32:03,954 - WARNING - 新闻 3/30 分析结果为空
+2025-10-23 10:32:05,958 - INFO - 处理新闻 4/30
+2025-10-23 10:32:05,959 - INFO - 开始分析新闻: 【特朗普将拆除整个白宫东翼建宴会厅 项目预算升至3亿美元】美...
+2025-10-23 10:32:06,319 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:32:06,320 - INFO - 分析完成，耗时: 0.36秒
+2025-10-23 10:32:06,321 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:32:06,321 - WARNING - 分析结果为空，重试 1/2
+2025-10-23 10:32:11,328 - INFO - 开始分析新闻: 【特朗普将拆除整个白宫东翼建宴会厅 项目预算升至3亿美元】美...
+2025-10-23 10:32:11,795 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:32:11,797 - INFO - 分析完成，耗时: 0.47秒
+2025-10-23 10:32:11,798 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:32:11,799 - WARNING - 分析结果为空，重试 2/2
+2025-10-23 10:32:16,806 - INFO - 开始分析新闻: 【特朗普将拆除整个白宫东翼建宴会厅 项目预算升至3亿美元】美...
+2025-10-23 10:32:17,271 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:32:17,273 - INFO - 分析完成，耗时: 0.47秒
+2025-10-23 10:32:17,273 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:32:17,273 - WARNING - 分析结果为空，重试 3/2
+2025-10-23 10:32:17,274 - WARNING - 新闻 4/30 分析结果为空
+2025-10-23 10:32:19,279 - INFO - 处理新闻 5/30
+2025-10-23 10:32:19,280 - INFO - 开始分析新闻: 韩国央行行长李昌镛：与其他国家相比，韩国股市价格并不算高。 ...
+2025-10-23 10:32:19,676 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:32:19,678 - INFO - 分析完成，耗时: 0.40秒
+2025-10-23 10:32:19,678 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:32:19,679 - WARNING - 分析结果为空，重试 1/2
+2025-10-23 10:32:24,683 - INFO - 开始分析新闻: 韩国央行行长李昌镛：与其他国家相比，韩国股市价格并不算高。 ...
+2025-10-23 10:32:25,144 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:32:25,145 - INFO - 分析完成，耗时: 0.46秒
+2025-10-23 10:32:25,146 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:32:25,146 - WARNING - 分析结果为空，重试 2/2
+2025-10-23 10:32:30,153 - INFO - 开始分析新闻: 韩国央行行长李昌镛：与其他国家相比，韩国股市价格并不算高。 ...
+2025-10-23 10:32:30,648 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:32:30,650 - INFO - 分析完成，耗时: 0.50秒
+2025-10-23 10:32:30,650 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:32:30,651 - WARNING - 分析结果为空，重试 3/2
+2025-10-23 10:32:30,651 - WARNING - 新闻 5/30 分析结果为空
+2025-10-23 10:32:32,655 - INFO - 处理新闻 6/30
+2025-10-23 10:32:32,655 - INFO - 开始分析新闻: 财联社10月23日电，港股黄金股持续走低，中国白银集团跌超6...
+2025-10-23 10:32:33,013 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-10-23 10:32:33,014 - INFO - 分析完成，耗时: 0.36秒
+2025-10-23 10:32:33,015 - ERROR - DeepSeek API请求失败 (状态码: 402): {"error":{"message":"Insufficient Balance","type":"unknown_error","param":null,"code":"invalid_request_error"}}
+2025-10-23 10:32:33,015 - WARNING - 分析结果为空，重试 1/2
