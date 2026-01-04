@@ -5,6 +5,7 @@ import pandas as pd
 import mplfinance as mpf
 import ta
 import json
+import os
 from datetime import datetime
 
 # 设置支持中文的字体
@@ -15,11 +16,17 @@ matplotlib.use('TkAgg')  # 使用 TkAgg 后端
 
 
 class StockChartAnalyzer:
-    def __init__(self, config_path='../../config/config.json'):
+    def __init__(self, config_path=None):
         """
         初始化 StockChartAnalyzer 类
         :param config_path: 配置文件的路径
         """
+        # 修复配置文件路径
+        if config_path is None:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            project_root = os.path.dirname(script_dir)
+            config_path = os.path.join(project_root, 'config', 'config.json')
+
         self.config = self.load_config(config_path)
         self.mydb = self.connect_to_mysql()
         self.mycursor = self.mydb.cursor()

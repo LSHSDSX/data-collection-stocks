@@ -8,6 +8,7 @@ import time
 import argparse
 import concurrent.futures
 from functools import partial
+import os
 
 # 设置日志
 logging.basicConfig(
@@ -24,8 +25,14 @@ class StockDecisionAnalyzer:
     分析股票的实时技术指标、日线技术指标和基本面指标，判断短期是否可买入
     """
 
-    def __init__(self, config_path="../config/config.json"):
+    def __init__(self, config_path=None):
         """初始化股票决策分析器"""
+        # 如果没有指定配置路径，使用基于脚本位置的绝对路径
+        if config_path is None:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            project_root = os.path.dirname(script_dir)
+            config_path = os.path.join(project_root, 'config', 'config.json')
+
         self.config_path = config_path
         self.config = self.load_config()
 
@@ -101,11 +108,15 @@ class StockDecisionAnalyzer:
         """从配置文件中获取所有股票"""
         stocks = []
         try:
+            # 获取主要股票列表
+            main_stocks = self.config.get('stocks', [])
+            stocks.extend(main_stocks)
+
             # 获取其他股票列表
             other_stocks = self.config.get('other_stocks', [])
             stocks.extend(other_stocks)
 
-            logger.info(f"从配置文件中获取到 {len(stocks)} 只股票")
+            logger.info(f"从配置文件中获取到 {len(stocks)} 只股票（主要股票：{len(main_stocks)}，其他股票：{len(other_stocks)}）")
             return stocks
         except Exception as e:
             logger.error(f"获取股票列表失败: {e}")

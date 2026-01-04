@@ -1,7 +1,7 @@
-import pymysql
+# import pymysql
 
-# 1. 模拟 MySQLdb 模块
-pymysql.install_as_MySQLdb()
+# # 1. 模拟 MySQLdb 模块
+# pymysql.install_as_MySQLdb()
 
 # 2. 绕过 Django 对 MySQL 8.0.11 的版本检查
 try:

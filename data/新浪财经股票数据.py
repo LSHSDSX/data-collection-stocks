@@ -2,6 +2,7 @@ import requests
 import time
 import json
 import re
+import os
 
 class Sina_stock():
     def __init__(self):
@@ -22,7 +23,11 @@ class Sina_stock():
         }
 
         self.timestamp = int(time.time()) * 100
-        self.config_path = '../../config/config.json'
+
+        # 修复配置文件路径 - 使用绝对路径
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(script_dir)
+        self.config_path = os.path.join(project_root, 'config', 'config.json')
         self.load_config(self.config_path)
 
         self.url ="https://hq.sinajs.cn/rn={}&list={},{}_i,bk_new_qtxy"

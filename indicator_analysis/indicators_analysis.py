@@ -22,8 +22,14 @@ class NewsAnalysisReceiver:
     从Redis获取news_stock_analysis.py的分析结果
     """
 
-    def __init__(self, config_path='config/config.json'):
+    def __init__(self, config_path=None):
         """初始化接收器"""
+        # 如果没有指定配置路径，使用基于脚本位置的绝对路径
+        if config_path is None:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            project_root = os.path.dirname(script_dir)
+            config_path = os.path.join(project_root, 'config', 'config.json')
+
         self.config_path = config_path
         self.load_config(config_path)
 

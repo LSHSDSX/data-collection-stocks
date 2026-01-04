@@ -25,6 +25,25 @@ class StockDataService:
             database=mysql_config.get('database', 'stock_analysis')
         )
 
+    def check_table_exists(self, table_name):
+        """检查表是否存在"""
+        cursor = self.mysql_conn.cursor(dictionary=True)
+        try:
+            check_query = """
+            SELECT COUNT(*) as count
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            AND table_name = %s
+            """
+            cursor.execute(check_query, (table_name,))
+            result = cursor.fetchone()
+            return result and result['count'] > 0
+        except Exception as e:
+            print(f"检查表 {table_name} 是否存在时出错: {str(e)}")
+            return False
+        finally:
+            cursor.close()
+
     def format_stock_code(self, code):
         """格式化股票代码"""
         if not code.startswith(('sh', 'sz')):
@@ -43,7 +62,12 @@ class StockDataService:
                 formatted_code = self.format_stock_code(stock_code)
                 table_name = f"stock_{formatted_code}_realtime"
 
-                query = f"SELECT * FROM {table_name} ORDER BY `时间` DESC LIMIT 1"
+                # 检查表是否存在
+                if not self.check_table_exists(table_name):
+                    print(f"表 {table_name} 不存在，跳过")
+                    return None
+
+                query = f"SELECT * FROM `{table_name}` ORDER BY `时间` DESC LIMIT 1"
                 cursor.execute(query)
                 result = cursor.fetchone()
 
@@ -57,8 +81,13 @@ class StockDataService:
                     formatted_code = self.format_stock_code(stock_info['code'])
                     table_name = f"stock_{formatted_code}_realtime"
 
+                    # 检查表是否存在
+                    if not self.check_table_exists(table_name):
+                        # print(f"表 {table_name} 不存在，跳过股票 {stock_info['code']}")
+                        continue
+
                     try:
-                        query = f"SELECT * FROM {table_name} ORDER BY `时间` DESC LIMIT 1"
+                        query = f"SELECT * FROM `{table_name}` ORDER BY `时间` DESC LIMIT 1"
                         cursor.execute(query)
                         result = cursor.fetchone()
 
@@ -112,12 +141,20 @@ class StockDataService:
         cursor = self.mysql_conn.cursor(dictionary=True)
         try:
             table_name = f"stock_{formatted_code}_realtime"
-            query = f"SELECT * FROM {table_name} ORDER BY `时间` DESC LIMIT 1"
+
+            # 检查表是否存在
+            if not self.check_table_exists(table_name):
+                # 表不存在，静默返回None（不打印错误，避免日志污染）
+                return None
+
+            query = f"SELECT * FROM `{table_name}` ORDER BY `时间` DESC LIMIT 1"
             cursor.execute(query)
             result = cursor.fetchone()
 
             if result:
-                return self._format_stock_data(result, formatted_code)
+                # 提取原始股票代码（去掉sh/sz前缀）
+                stock_code = formatted_code[2:] if formatted_code.startswith(('sh', 'sz')) else formatted_code
+                return self._format_stock_data(result, stock_code)
             return None
         except Exception as e:
             print(f"获取股票 {formatted_code} 数据出错: {str(e)}")

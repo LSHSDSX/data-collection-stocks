@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 
 class StockPageFetcher:
-    def __init__(self, config_path: str = '../../config/config.json'):
+    def __init__(self, config_path: str = None):
         self.headers = {
             "accept": "*/*",
             "accept-language": "zh-CN,zh;q=0.9",
@@ -35,6 +35,13 @@ class StockPageFetcher:
         }
         self.base_url = "https://hq.stock.sohu.com/cn/"
         self.stock_code = "cn_000001"
+
+        # 修复配置文件路径
+        if config_path is None:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            project_root = os.path.dirname(script_dir)
+            config_path = os.path.join(project_root, 'config', 'config.json')
+
         self.config_path = config_path
         self.db_pool = None
         self.config = None
@@ -517,8 +524,14 @@ async def process_stock_minute_data(stock_code: str) -> bool:
         await fetcher.close()
 
 
-async def process_all_stocks_from_config(config_path: str = '../../config/config.json') -> bool:
+async def process_all_stocks_from_config(config_path: str = None) -> bool:
     """异步处理配置文件中所有股票分时数据的主函数"""
+    # 修复配置文件路径
+    if config_path is None:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(script_dir)
+        config_path = os.path.join(project_root, 'config', 'config.json')
+
     fetcher = StockPageFetcher(config_path)
     try:
         # 加载配置和连接数据库
@@ -546,8 +559,14 @@ def sync_process_stock_minute_data(stock_code: str) -> bool:
         loop.close()
 
 
-def sync_process_all_stocks_from_config(config_path: str = '../../config/config.json') -> bool:
+def sync_process_all_stocks_from_config(config_path: str = None) -> bool:
     """同步处理配置文件中所有股票分时数据的包装函数"""
+    # 修复配置文件路径
+    if config_path is None:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(script_dir)
+        config_path = os.path.join(project_root, 'config', 'config.json')
+
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     try:

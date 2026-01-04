@@ -46,7 +46,7 @@ services:
     image: mysql:8.0
     container_name: stock_mysql
     environment:
-      MYSQL_ROOT_PASSWORD: zyb123456668866  # 请修改为安全密码
+      MYSQL_ROOT_PASSWORD: 123456  # 请修改为安全密码
       MYSQL_DATABASE: stock_analysis
       TZ: Asia/Shanghai
     volumes:

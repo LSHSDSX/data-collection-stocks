@@ -5,6 +5,7 @@ import mysql.connector
 import json
 import asyncio
 import logging
+import os
 import os.path
 import traceback
 import subprocess
@@ -26,10 +27,20 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-def get_stocks_from_config(config_path: str = '../../config/config.json'):
+def get_default_config_path():
+    """获取默认配置文件路径"""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    return os.path.join(project_root, 'config', 'config.json')
+
+
+def get_stocks_from_config(config_path: str = None):
     """
     从配置文件中获取股票列表，包括主要股票和其他股票
     """
+    if config_path is None:
+        config_path = get_default_config_path()
+
     try:
         with open(config_path, 'r', encoding='utf-8') as f:
             config = json.load(f)
@@ -44,7 +55,10 @@ def get_stocks_from_config(config_path: str = '../../config/config.json'):
 
 
 class StockAnalyzer:
-    def __init__(self, config_path: str = '../config/config.json'):
+    def __init__(self, config_path: str = None):
+        if config_path is None:
+            config_path = get_default_config_path()
+
         self.config_path = config_path
         self.config_last_modified = 0
         self.load_config(config_path)

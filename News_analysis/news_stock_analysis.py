@@ -256,6 +256,66 @@ class NewsStockAnalyzer:
                     logger.error(f"DeepSeek API请求失败 (状态码: {response.status_code}): {response.text}")
                     return {}
 
+            # 处理通义千问 API
+            elif self.config.ai_config.get('provider') == 'qwen':
+                api_key = self.config.ai_config.get('api_key')
+                api_base = self.config.ai_config.get('api_base', 'https://dashscope.aliyuncs.com/compatible-mode/v1')
+                model = self.config.ai_config.get('model', 'qwen-plus')
+
+                # 构建API URL
+                api_url = f"{api_base}/chat/completions"
+
+                # 记录开始分析的时间
+                start_time = time.time()
+                logger.info(f"开始分析新闻 (通义千问): {news_content[:30]}...")
+
+                # 发送请求
+                response = await self.http_client.post(
+                    api_url,
+                    headers={
+                        "Content-Type": "application/json",
+                        "Authorization": f"Bearer {api_key}"
+                    },
+                    json={
+                        "model": model,
+                        "messages": [
+                            {"role": "system", "content": "你是一位专业的A股金融分析师，擅长从新闻中识别可能对股票价格产生影响的信息。你的回答简洁明了，适合在网页上展示。"},
+                            {"role": "user", "content": prompt}
+                        ],
+                        "temperature": self.config.ai_config.get('temperature', 0.2),
+                        "result_format": "message"  # 千问使用 result_format
+                    },
+                    timeout=timeout
+                )
+
+                # 记录分析完成的时间和耗时
+                end_time = time.time()
+                logger.info(f"分析完成，耗时: {end_time - start_time:.2f}秒")
+
+                if response.status_code == 200:
+                    result = response.json()
+                    ai_response = result['choices'][0]['message']['content']
+
+                    # 提取JSON部分
+                    try:
+                        # 尝试直接解析整个响应
+                        analysis_result = json.loads(ai_response)
+                        return analysis_result
+                    except json.JSONDecodeError:
+                        # 如果失败，尝试提取JSON部分
+                        import re
+                        json_pattern = r'```json\s*(.*?)\s*```|{.*}'
+                        match = re.search(json_pattern, ai_response, re.DOTALL)
+                        if match:
+                            json_str = match.group(1) if match.group(1) else match.group(0)
+                            return json.loads(json_str)
+                        else:
+                            logger.error(f"无法从AI响应中提取JSON: {ai_response}")
+                            return {}
+                else:
+                    logger.error(f"通义千问 API请求失败 (状态码: {response.status_code}): {response.text}")
+                    return {}
+
             # 处理其他API提供商的逻辑
             else:
                 # 记录开始分析的时间

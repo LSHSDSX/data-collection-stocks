@@ -305,8 +305,24 @@ def news_list(request):
 
 
 @require_http_methods(["GET"])
-def                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        api_stock_data(request, stock_code=None):
+def api_stock_data(request, stock_code=None):
     """获取股票数据API（从MySQL数据库）"""
+
+    def check_table_exists(cursor, table_name):
+        """检查表是否存在"""
+        try:
+            check_query = """
+            SELECT COUNT(*) as count
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            AND table_name = %s
+            """
+            cursor.execute(check_query, (table_name,))
+            result = cursor.fetchone()
+            return result and result['count'] > 0
+        except Exception:
+            return False
+
     try:
         # 加载配置
         with open(os.path.join(settings.BASE_DIR, 'config', 'config.json'), 'r', encoding='utf-8') as f:
@@ -330,8 +346,18 @@ def                                                                             
             formatted_code = format_stock_code(stock_code)
             table_name = f"stock_{formatted_code}_realtime"
 
+            # 检查表是否存在
+            if not check_table_exists(cursor, table_name):
+                # 表不存在，返回空数据
+                cursor.close()
+                conn.close()
+                return JsonResponse({
+                    'status': 'success',
+                    'data': []
+                })
+
             try:
-                query = f"SELECT * FROM {table_name} ORDER BY `时间` DESC LIMIT 1"
+                query = f"SELECT * FROM `{table_name}` ORDER BY `时间` DESC LIMIT 1"
                 cursor.execute(query)
                 data = cursor.fetchone()
 
@@ -362,7 +388,8 @@ def                                                                             
                         'time': data['时间']
                     })
             except Exception as e:
-                print(f"获取股票 {stock_code} 数据时出错: {str(e)}")
+                # 静默处理错误（表不存在的错误已经在上面检查过了）
+                pass
         else:
             # 获取所有股票的数据，但只包括main_stocks中的股票
             # 只遍历main_stocks中的股票
@@ -371,7 +398,12 @@ def                                                                             
                     formatted_code = format_stock_code(stock_info['code'])
                     table_name = f"stock_{formatted_code}_realtime"
 
-                    query = f"SELECT * FROM {table_name} ORDER BY `时间` DESC LIMIT 1"
+                    # 检查表是否存在
+                    if not check_table_exists(cursor, table_name):
+                        # 跳过不存在的表
+                        continue
+
+                    query = f"SELECT * FROM `{table_name}` ORDER BY `时间` DESC LIMIT 1"
                     cursor.execute(query)
                     data = cursor.fetchone()
 
@@ -396,7 +428,8 @@ def                                                                             
                             'time': data['时间']
                         })
                 except Exception as e:
-                    print(f"获取股票 {stock_info['code']} 数据时出错: {str(e)}")
+                    # 静默跳过错误
+                    pass
 
         cursor.close()
         conn.close()
@@ -1981,3 +2014,99 @@ def trade_history_page(request):
     return render(request, 'trade_history.html', {
         'trade_history': trade_history
     })
+
+
+@require_http_methods(["GET"])
+def api_get_realtime_alerts(request):
+    """获取实时预警API"""
+    try:
+        # 从Redis获取最新预警
+        redis_client = redis.Redis(
+            host=load_config().get('redis_config', {}).get('host', 'localhost'),
+            port=load_config().get('redis_config', {}).get('port', 6379),
+            db=load_config().get('redis_config', {}).get('db', 0),
+            decode_responses=True
+        )
+
+        # 获取最新10条预警
+        alert_data = redis_client.lrange('stock:alerts:realtime', 0, 9)
+
+        alerts = []
+        for alert_json in alert_data:
+            try:
+                alert = json.loads(alert_json)
+                alerts.append(alert)
+            except:
+                continue
+
+        redis_client.close()
+
+        return JsonResponse({
+            'success': True,
+            'count': len(alerts),
+            'alerts': alerts
+        })
+
+    except Exception as e:
+        logger.error(f"获取实时预警失败: {str(e)}")
+        return JsonResponse({
+            'success': False,
+            'error': str(e)
+        }, status=500)
+
+
+@require_http_methods(["GET"])
+def api_get_stock_alerts(request, stock_code):
+    """获取指定股票的预警记录"""
+    try:
+        config = load_config()
+        conn = mysql.connector.connect(
+            host=config['mysql_config']['host'],
+            user=config['mysql_config']['user'],
+            password=config['mysql_config']['password'],
+            database=config['mysql_config']['database']
+        )
+        cursor = conn.cursor(dictionary=True)
+
+        # 获取最近24小时的预警
+        query = """
+        SELECT * FROM multi_factor_alerts
+        WHERE stock_code = %s
+            AND alert_time >= DATE_SUB(NOW(), INTERVAL 24 HOUR)
+        ORDER BY alert_time DESC
+        LIMIT 50
+        """
+
+        cursor.execute(query, (stock_code,))
+        alerts = cursor.fetchall()
+
+        # 转换datetime为字符串
+        for alert in alerts:
+            if 'alert_time' in alert and alert['alert_time']:
+                alert['alert_time'] = alert['alert_time'].strftime('%Y-%m-%d %H:%M:%S')
+            if 'created_at' in alert and alert['created_at']:
+                alert['created_at'] = alert['created_at'].strftime('%Y-%m-%d %H:%M:%S')
+
+            # 解析JSON字段
+            if 'alert_details' in alert and alert['alert_details']:
+                try:
+                    alert['alert_details'] = json.loads(alert['alert_details'])
+                except:
+                    pass
+
+        cursor.close()
+        conn.close()
+
+        return JsonResponse({
+            'success': True,
+            'stock_code': stock_code,
+            'count': len(alerts),
+            'alerts': alerts
+        })
+
+    except Exception as e:
+        logger.error(f"获取股票预警失败: {str(e)}")
+        return JsonResponse({
+            'success': False,
+            'error': str(e)
+        }, status=500)

@@ -97,7 +97,7 @@ class WebInterfaceConfig(AppConfig):
 
                 # 创建两个Redis连接：一个用于订阅，一个用于查询
                 sub_client = redis.Redis(
-                    host=redis_config.get('host', '127.0.0.1'),
+                    host=redis_config.get('host', 'stock_redis'),
                     port=redis_config.get('port', 6379),
                     db=redis_config.get('db', 0),
                     password=redis_config.get('password'),
@@ -105,7 +105,7 @@ class WebInterfaceConfig(AppConfig):
                 )
 
                 redis_client = redis.Redis(
-                    host=redis_config.get('host', '127.0.0.1'),
+                    host=redis_config.get('host', 'stock_redis'),
                     port=redis_config.get('port', 6379),
                     db=redis_config.get('db', 0),
                     password=redis_config.get('password'),

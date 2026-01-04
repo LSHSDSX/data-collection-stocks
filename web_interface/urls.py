@@ -14,4 +14,7 @@ urlpatterns = [
     path('api/stocks/<str:stock_code>/realtime/', views.get_realtime_data, name='get_realtime_data'),
     path('api/search-stock/', views.search_stock, name='search_stock'),
     path('api/add-stock/', views.add_stock, name='add_stock'),
+    # 预警API
+    path('api/alerts/realtime/', views.api_get_realtime_alerts, name='api_realtime_alerts'),
+    path('api/alerts/<str:stock_code>/', views.api_get_stock_alerts, name='api_stock_alerts'),
 ]
