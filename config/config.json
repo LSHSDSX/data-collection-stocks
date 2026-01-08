@@ -1,40 +1,28 @@
 {
     "stocks": [
-        {
-          "code": "600461",
-          "name": "洪城环境",
-          "industry": "环保工程及服务"
-        },
-        {
-          "code": "600085",
-          "name": "同仁堂",
-          "industry": "中药"
-        },
-        {
-          "code": "600993",
-          "name": "马应龙",
-          "industry": "中药"
-        },
-        {
-          "code": "002864",
-          "name": "盘龙药业",
-          "industry": "中药"
-        },
-        {
-          "code": "600362",
-          "name": "江西铜业",
-          "industry": "工业金属"
-        },
-        {
-          "code": "000423",
-          "name": "东阿阿胶",
-          "industry": "中药"
-        },
-        {
-          "code": "000999",
-          "name": "华润三九",
-          "industry": "中药"
-        }
+      { "code": "688981", "name": "中芯国际", "industry": "半导体制造" },
+      { "code": "603986", "name": "兆易创新", "industry": "存储芯片" },
+      { "code": "300223", "name": "北京君正", "industry": "AI芯片" },
+      { "code": "002371", "name": "北方华创", "industry": "半导体设备" },
+      { "code": "300782", "name": "卓胜微", "industry": "射频芯片" },
+      { "code": "688012", "name": "中微公司", "industry": "半导体设备" },
+
+      { "code": "002230", "name": "科大讯飞", "industry": "人工智能" },
+      { "code": "300496", "name": "中科创达", "industry": "操作系统与AI" },
+      { "code": "002415", "name": "海康威视", "industry": "计算机视觉" },
+      { "code": "000938", "name": "紫光股份", "industry": "服务器与云计算" },
+      { "code": "603019", "name": "中科曙光", "industry": "算力与超算" },
+      { "code": "002410", "name": "广联达", "industry": "工业软件" },
+
+      { "code": "300750", "name": "宁德时代", "industry": "新能源电池" },
+      { "code": "002594", "name": "比亚迪", "industry": "新能源汽车" },
+      { "code": "601012", "name": "隆基绿能", "industry": "光伏" },
+      { "code": "300274", "name": "阳光电源", "industry": "光伏逆变器" },
+
+      { "code": "600036", "name": "招商银行", "industry": "银行" },
+      { "code": "601398", "name": "工商银行", "industry": "银行" },
+      { "code": "600050", "name": "中国联通", "industry": "通信" },
+      { "code": "601857", "name": "中国石油", "industry": "石油石化" }
     ],
     "other_stocks" : [
     ],

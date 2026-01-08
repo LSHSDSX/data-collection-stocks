@@ -3,18 +3,18 @@
 {% block title %}股票分析系统 - 首页{% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-    <div class="row">
+<div class="container-fluid h-100">
+    <div class="row h-100">
         <!-- 股票行情面板 -->
-        <div class="col-lg-8">
-            <div class="card shadow-sm mb-4">
-                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+        <div class="col-lg-8 d-flex flex-column">
+            <div class="card shadow-sm mb-4 flex-grow-1">
+                <div class="card-header text-white custom-header d-flex justify-content-between align-items-center">
                     <h5 class="mb-0"><i class="bi bi-graph-up"></i> 实时行情</h5>
                     <span id="last-update-time">更新时间: --:--:--</span>
                 </div>
-                <div class="card-body p-0">
-                    <div class="table-responsive">
-                        <table class="table table-hover table-striped mb-0">
+                <div class="card-body p-0 flex-grow-1 d-flex flex-column">
+                    <div class="table-responsive flex-grow-1">
+                        <table class="table table-hover mb-0">
                             <thead class="table-light">
                                 <tr>
                                     <th>代码</th>
@@ -57,13 +57,13 @@
         </div>
 
         <!-- 新闻面板 -->
-        <div class="col-lg-4">
-            <div class="card shadow-sm mb-4">
-                <div class="card-header bg-primary text-white">
+        <div class="col-lg-4 d-flex flex-column">
+            <div class="card shadow-sm mb-4 flex-grow-1">
+                <div class="card-header text-white custom-header">
                     <h5 class="mb-0"><i class="bi bi-newspaper"></i> 实时新闻</h5>
                 </div>
-                <div class="card-body p-0">
-                    <div id="news-container" class="list-group list-group-flush" style="max-height: 600px; overflow-y: auto;">
+                <div class="card-body p-0 d-flex flex-column">
+                    <div id="news-container" class="list-group list-group-flush flex-grow-1" style="overflow-y: auto;">
                         <div class="text-center py-4">
                             <div class="spinner-border text-primary" role="status">
                                 <span class="visually-hidden">加载中...</span>
@@ -196,6 +196,16 @@
 
             // 如果行存在，更新数据
             if (row) {
+                // 移除之前的涨跌类
+                row.classList.remove('stock-up', 'stock-down');
+
+                // 根据涨跌添加背景色类
+                if (stock.change > 0) {
+                    row.classList.add('stock-up');
+                } else if (stock.change < 0) {
+                    row.classList.add('stock-down');
+                }
+
                 // 更新价格
                 const priceCell = row.querySelector('.price');
                 const oldPrice = parseFloat(priceCell.textContent) || 0;
@@ -220,8 +230,24 @@
                 }
 
                 // 更新其他数据
-                row.querySelector('.change').textContent = stock.change.toFixed(2);
-                row.querySelector('.change-percent').textContent = (stock.change_percent * 100).toFixed(2) + '%';
+                const changeCell = row.querySelector('.change');
+                const changePercentCell = row.querySelector('.change-percent');
+
+                // 移除之前的涨跌类
+                changeCell.classList.remove('change-up', 'change-down');
+                changePercentCell.classList.remove('change-percent-up', 'change-percent-down');
+
+                // 根据涨跌添加文字颜色类
+                if (stock.change > 0) {
+                    changeCell.classList.add('change-up');
+                    changePercentCell.classList.add('change-percent-up');
+                } else if (stock.change < 0) {
+                    changeCell.classList.add('change-down');
+                    changePercentCell.classList.add('change-percent-down');
+                }
+
+                changeCell.textContent = stock.change.toFixed(2);
+                changePercentCell.textContent = (stock.change_percent * 100).toFixed(2) + '%';
                 row.querySelector('.volume').textContent = (stock.volume / 100).toFixed(0);
                 row.querySelector('.amount').textContent = (stock.amount / 10000).toFixed(2);
             } else {
@@ -229,12 +255,20 @@
                 const newRow = document.createElement('tr');
                 newRow.id = `stock-row-${stock.code}`;
                 newRow.setAttribute('data-code', stock.code);
+
+                // 根据涨跌添加背景色类
+                if (stock.change > 0) {
+                    newRow.classList.add('stock-up');
+                } else if (stock.change < 0) {
+                    newRow.classList.add('stock-down');
+                }
+
                 newRow.innerHTML = `
                     <td>${stock.code}</td>
                     <td>${stock.name}</td>
                     <td class="price">${stock.current_price.toFixed(2)}</td>
-                    <td class="change">${stock.change.toFixed(2)}</td>
-                    <td class="change-percent">${(stock.change_percent * 100).toFixed(2)}%</td>
+                    <td class="change ${stock.change > 0 ? 'change-up' : stock.change < 0 ? 'change-down' : ''}">${stock.change.toFixed(2)}</td>
+                    <td class="change-percent ${stock.change > 0 ? 'change-percent-up' : stock.change < 0 ? 'change-percent-down' : ''}">${(stock.change_percent * 100).toFixed(2)}%</td>
                     <td class="volume">${(stock.volume / 100).toFixed(0)}</td>
                     <td class="amount">${(stock.amount / 10000).toFixed(2)}</td>
                     <td>
@@ -363,6 +397,24 @@
 
     .change-down, .change-percent-down {
         color: #4caf50;
+    }
+
+    /* 股票行涨跌背景色 */
+    .stock-up {
+        background-color: rgba(255, 82, 82, 0.1) !important;
+    }
+
+    .stock-down {
+        background-color: rgba(76, 175, 80, 0.1) !important;
+    }
+
+    /* 悬停时保持背景色 */
+    .stock-up:hover {
+        background-color: rgba(255, 82, 82, 0.2) !important;
+    }
+
+    .stock-down:hover {
+        background-color: rgba(76, 175, 80, 0.2) !important;
     }
 </style>
 {% endblock %}

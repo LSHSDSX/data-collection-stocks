@@ -7,6 +7,12 @@ import asyncio
 from abc import ABC, abstractmethod
 import hashlib
 
+import sys
+import pathlib
+
+# 将项目根目录加入 sys.path
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.append(str(PROJECT_ROOT))
 
 # 定义爬虫基类
 class NewsSpider(ABC):
@@ -20,7 +26,7 @@ class NewsSpider(ABC):
 
 
 class HotNewsStorage:
-    def __init__(self, host='172.16.0.4', port=6379, db=0, max_days=30):
+    def __init__(self, host='localhost', port=6379, db=0, max_days=30):
         """
         初始化Redis连接
         :param host: Redis主机地址

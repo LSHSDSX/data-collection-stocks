@@ -36,7 +36,12 @@ class Sina_stock():
             self.config = json.load(f)
 
     def format_stock_code(self, code: str) -> str:
-        """格式化股票代码"""
+        """格式化股票代码，支持A股和美股"""
+        # 美股代码直接返回（通常是大写字母）
+        if code.isalpha() and code.isupper():
+            return code
+        
+        # A股代码格式化
         if not code.startswith(('sh', 'sz')):
             if code.startswith('6'):
                 return f'sh{code}'
