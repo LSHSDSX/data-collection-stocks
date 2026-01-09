@@ -11,6 +11,9 @@
         font-weight: bold;
         transition: all 0.3s ease;
     }
+    .card-header.bg-primary {
+        background-color: #054875 !important;
+    }
 
     .price-up {
         color: #ff5252;
@@ -135,6 +138,26 @@
         border-radius: 0.5rem;
         overflow: hidden;
     }
+    .stock-meta {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .meta-item {
+        display: flex;
+        gap: 6px;
+        white-space: nowrap;
+    }
+
+    .meta-item .label {
+        color: #888;
+    }
+
+    .meta-item .value {
+        font-weight: 500;
+        color: #222;
+    }
+
 </style>
 {% endblock %}
 
@@ -154,33 +177,42 @@
 
     <!-- 基本信息卡片 -->
     <div class="row mb-4">
-        <div class="col-md-6">
+        <div class="col-12">
             <div class="card shadow-sm stock-info-card">
                 <div class="card-header bg-primary text-white">
                     <h5 class="mb-0"><i class="bi bi-info-circle"></i> {{ stock.name }} ({{ stock.code }}) 基本信息</h5>
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                     {% if latest_data %}
+                    <!-- 价格 -->
                     <div class="stock-price {% if change_percent > 0 %}price-up{% elif change_percent < 0 %}price-down{% else %}price-unchanged{% endif %}">
                         {{ latest_data.current_price }}
                         <span class="stock-change">
                             {{ change|floatformat:2 }} ({{ change_percent|floatformat:2 }}%)
                         </span>
                     </div>
-                    <div class="mt-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <p class="mb-1">开盘价: {{ latest_data.open_price }}</p>
-                                <p class="mb-1">最低价: {{ latest_data.low_price }}</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="mb-1">昨收价: {{ latest_data.last_close }}</p>
-                                <p class="mb-1">成交量: {{ latest_data.volume }} 手</p>
-                            </div>
+
+                    <!-- 关键指标一行 -->
+                    <div class="stock-meta d-flex justify-content-center flex-wrap mt-3 gap-4">
+                        <div class="meta-item">
+                            <span class="label">开盘价</span>
+                            <span class="value">{{ latest_data.open_price }}</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">最低价</span>
+                            <span class="value">{{ latest_data.low_price }}</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">昨收价</span>
+                            <span class="value">{{ latest_data.last_close }}</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">成交量</span>
+                            <span class="value">{{ latest_data.volume }} 手</span>
                         </div>
                     </div>
                     {% else %}
-                    <p>无最新数据</p>
+                    <p class="text-muted">无最新数据</p>
                     {% endif %}
                 </div>
             </div>
