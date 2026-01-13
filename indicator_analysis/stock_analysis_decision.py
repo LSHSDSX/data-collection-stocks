@@ -24,7 +24,6 @@ class StockDecisionAnalyzer:
     股票决策分析器
     分析股票的实时技术指标、日线技术指标和基本面指标，判断短期是否可买入
     """
-
     def __init__(self, config_path=None):
         """初始化股票决策分析器"""
         # 如果没有指定配置路径，使用基于脚本位置的绝对路径

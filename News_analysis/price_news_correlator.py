@@ -28,7 +28,6 @@ logger = logging.getLogger(__name__)
 
 class PriceNewsCorrelator:
     """价格-新闻异构关联分析器"""
-
     def __init__(self, config_path=None):
         """初始化"""
         # 获取配置文件路径
@@ -273,7 +272,7 @@ class PriceNewsCorrelator:
             correlation_type = 'unrelated'
             reasoning = ''
 
-            # 因素1: 时间接近度 (权重40%)
+            # 时间接近度
             time_delta_abs = abs(news_item['time_delta_minutes'])
             if time_delta_abs < 30:
                 time_score = 0.4
@@ -285,12 +284,12 @@ class PriceNewsCorrelator:
                 time_score = 0.1
             score += time_score
 
-            # 因素2: 是否明确提及股票 (权重30%)
+            # 是否明确提及股票
             if news_item['mentions_stock']:
                 score += 0.3
                 reasoning = f"新闻明确提及{anomaly['stock_name']}"
 
-            # 因素3: 新闻情感与价格变动方向一致性 (权重30%)
+            # 新闻情感与价格变动方向一致性
             # 从数据库获取新闻情感
             sentiment_score = self._get_news_sentiment(news_item['news_hash'])
             if sentiment_score is not None:
@@ -414,14 +413,14 @@ class PriceNewsCorrelator:
             logger.info(f"分析股票: {stock_name}({stock_code})")
             logger.info(f"{'='*60}")
 
-            # 1. 检测价格异动
+            # 检测价格异动
             anomalies = self.detect_price_anomalies(stock_code, stock_name)
 
             if not anomalies:
                 logger.info(f"{stock_name} 未检测到价格异动")
                 return
 
-            # 2. 对每个异动检索相关新闻
+            # 对每个异动检索相关新闻
             for anomaly in anomalies:
                 logger.info(f"\n处理异动: {anomaly['anomaly_time']} "
                           f"涨跌{anomaly['price_change_pct']:.2f}%")
@@ -437,7 +436,7 @@ class PriceNewsCorrelator:
                     logger.info("未找到相关新闻")
                     continue
 
-                # 3. 计算关联度
+                # 计算关联度
                 correlations = []
                 for news_item in related_news:
                     score, corr_type, reasoning = self.calculate_correlation_score(
@@ -455,7 +454,7 @@ class PriceNewsCorrelator:
                         logger.info(f"  ✓ 关联度: {score:.2f} | 类型: {corr_type} | "
                                   f"新闻: {news_item['news'].get('content', '')[:50]}...")
 
-                # 4. 保存关联数据
+                # 保存关联数据
                 if correlations:
                     # 按关联度排序
                     correlations.sort(key=lambda x: x['correlation_score'], reverse=True)

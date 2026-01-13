@@ -113,7 +113,7 @@ class GPRStockPredictor:
         try:
             cursor = self.mysql_conn.cursor(dictionary=True)
 
-            # 1. 获取历史价格和技术指标
+            # 获取历史价格和技术指标
             formatted_code = self._format_stock_code(stock_code)
             history_table = f"{stock_name}_history"
             technical_table = f"technical_indicators_{stock_name}"
@@ -146,7 +146,7 @@ class GPRStockPredictor:
                     h.`成交量(手)` as volume,
                     h.`涨跌幅(%)` as change_pct,
                     t.MACD, t.MACD_Hist, t.`Signal`,
-                    t.RSI, t.MA5, t.MA10,
+                    t.RSI, t.MA5, t.MA10, t.MA20,
                     t.Upper_Band, t.Lower_Band
                 FROM `{history_table}` h
                 LEFT JOIN `{technical_table}` t ON h.`日期` = t.`日期`
@@ -183,7 +183,7 @@ class GPRStockPredictor:
             df['date'] = pd.to_datetime(df['date'])
             df = df.set_index('date')
 
-            # 2. 获取新闻情感评分(从price_news_correlation表)
+            # 获取新闻情感评分(从price_news_correlation表)
             sentiment_query = """
             SELECT
                 DATE(news_datetime) as date,
@@ -215,8 +215,7 @@ class GPRStockPredictor:
 
             cursor.close()
 
-            # 3. 构建特征矩阵
-            # 只删除核心价格列有NaN的行（不删除技术指标或情感列的NaN）
+            # 构建特征矩阵
             core_columns = ['close_price', 'open_price', 'high_price', 'low_price', 'volume']
             df = df.dropna(subset=core_columns)
 
@@ -233,7 +232,7 @@ class GPRStockPredictor:
             if 'change_pct' in df.columns and df['change_pct'].notna().any():
                 base_features.append('change_pct')
 
-            technical_features = ['MACD', 'MACD_Hist', 'Signal', 'RSI', 'MA5', 'MA10']
+            technical_features = ['MACD', 'MACD_Hist', 'Signal', 'RSI', 'MA5', 'MA10', 'MA20']
             sentiment_features = ['avg_sentiment', 'news_count', 'avg_correlation']
 
             # 构建可用特征列表
@@ -373,8 +372,7 @@ class GPRStockPredictor:
                     'prediction_std': round(float(sigma), 4)
                 })
 
-                # 更新特征用于下一天预测(简化版,实际应该根据预测结果更新)
-                # 这里我们假设其他特征保持不变,只更新价格相关特征
+                # 更新特征用于下一天预测
                 last_features = last_features.copy()
 
                 logger.info(f"预测 {stock_name} {target_date}: {y_pred:.2f} ± {1.96*sigma:.2f}")

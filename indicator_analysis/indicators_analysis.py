@@ -5,7 +5,6 @@ import os
 from datetime import datetime
 import time
 
-# 设置日志 - 只输出到控制台，不生成日志文件
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -21,7 +20,6 @@ class NewsAnalysisReceiver:
     新闻分析接收器
     从Redis获取news_stock_analysis.py的分析结果
     """
-
     def __init__(self, config_path=None):
         """初始化接收器"""
         # 如果没有指定配置路径，使用基于脚本位置的绝对路径

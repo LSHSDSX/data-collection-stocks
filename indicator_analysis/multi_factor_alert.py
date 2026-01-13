@@ -244,7 +244,7 @@ class MultiFactorAlertSystem:
         try:
             cursor = self.mysql_conn.cursor(dictionary=True)
 
-            # 获取实时技术指标 - 使用stock_name（表已经是用名称创建的）
+            # 获取实时技术指标
             # 但需要先检查表是否存在
             realtime_technical_table = f"realtime_technical_{stock_name}"
 
@@ -581,20 +581,19 @@ class MultiFactorAlertSystem:
             logger.info(f"{'='*60}")
 
             all_alerts = []
-
-            # 1. 价格预警
+            # 价格预警
             price_alerts = self.check_price_alerts(stock_code, stock_name)
             all_alerts.extend(price_alerts)
 
-            # 2. 技术指标预警
+            # 技术指标预警
             technical_alerts = self.check_technical_alerts(stock_code, stock_name)
             all_alerts.extend(technical_alerts)
 
-            # 3. 情感预警
+            # 情感预警
             sentiment_alerts = self.check_sentiment_alerts(stock_code, stock_name)
             all_alerts.extend(sentiment_alerts)
 
-            # 4. GPR偏离预警
+            # GPR偏离预警
             gpr_alerts = self.check_gpr_deviation_alerts(stock_code, stock_name)
             all_alerts.extend(gpr_alerts)
 

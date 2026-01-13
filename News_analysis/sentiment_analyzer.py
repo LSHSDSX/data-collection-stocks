@@ -15,9 +15,6 @@ from typing import Dict, List, Optional, Tuple
 import os
 import hashlib
 
-# 设置日志
-# 修改点1: 给FileHandler添加 encoding='utf-8'，防止日志文件乱码
-# 修改点2: StreamHandler 可能会在Windows下因为特殊字符报错，尽量避免在日志内容中使用特殊Unicode符号
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -31,7 +28,6 @@ logger = logging.getLogger(__name__)
 
 class DeepSentimentAnalyzer:
     """深度情感分析器 - 使用LLM进行情感评分"""
-
     def __init__(self, config_path=None):
         """初始化情感分析器"""
         # 获取配置文件路径
@@ -80,7 +76,6 @@ class DeepSentimentAnalyzer:
         """创建情感分析数据表"""
         try:
             cursor = self.mysql_conn.cursor()
-
             # 创建新闻情感表
             create_table_sql = """
             CREATE TABLE IF NOT EXISTS news_sentiment (
@@ -383,13 +378,11 @@ class DeepSentimentAnalyzer:
                         analyzed_count += 1
 
                         # 打印结果
-                        # 修改点3: 将特殊的打钩符号 '✓' 替换为 '[OK]' 或 '[+]'
                         logger.info(f"[OK] 情感评分: {sentiment_result.get('sentiment_score')}, "
                                     f"标签: {sentiment_result.get('sentiment_label')}, "
                                     f"情绪: {sentiment_result.get('emotion_type')}")
                     else:
                         failed_count += 1
-                        # 修改点4: 将特殊的打叉符号 '✗' 替换为 '[FAIL]' 或 '[-]'
                         logger.warning(f"[FAIL] 新闻分析失败")
 
                     # 短暂延迟，避免API限流
