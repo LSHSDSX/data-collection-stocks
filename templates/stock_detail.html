@@ -229,6 +229,7 @@
             <div class="chart-tabs">
                 <button id="k-chart-tab" class="chart-tab active">K线图</button>
                 <button id="minute-chart-tab" class="chart-tab">分时图</button>
+                <button id="gpr-chart-tab" class="chart-tab">GPR预测</button>
                 <button class="chart-tab" onclick="showChart('macd')">MACD</button>
                 <button class="chart-tab" onclick="showChart('rsi')">RSI</button>
                 <button class="chart-tab" onclick="showChart('bollinger')">布林带</button>
@@ -263,6 +264,11 @@
             <!-- 分时图容器 -->
             <div id="minute-chart-container" class="chart-container" style="display: none;">
                 <div id="minute-chart" style="width: 100%; height: 400px;"></div>
+            </div>
+
+            <!-- GPR预测图表容器 -->
+            <div id="gpr-chart-container" class="chart-container" style="display: none;">
+                <div id="gpr-chart" style="width: 100%; height: 500px;"></div>
             </div>
 
             <!-- 其他技术指标图表容器 -->
@@ -343,6 +349,9 @@
         // 初始化K线周期切换事件
         initKlinePeriodTabs();
 
+        // 初始化图表标签切换
+        initChartTabs();
+
         setTimeout(function() {
             document.getElementById('loading').style.display = 'none';
             document.getElementById('k-chart-container').style.display = 'block';
@@ -356,6 +365,7 @@
             // 响应窗口大小变化
             window.addEventListener('resize', function() {
                 if (candlestickChart) candlestickChart.resize();
+                if (window.gprChart) window.gprChart.resize();
                 if (window.macdChart) window.macdChart.resize();
                 if (window.rsiChart) window.rsiChart.resize();
                 if (window.bollingerChart) window.bollingerChart.resize();
@@ -363,6 +373,213 @@
             });
         }, 1000);
     });
+
+    // 初始化图表标签切换
+    function initChartTabs() {
+        // K线图标签
+        document.getElementById('k-chart-tab').addEventListener('click', function() {
+            switchTab(this, 'k-chart-container');
+            document.getElementById('kline-subtabs').style.display = 'flex';
+        });
+
+        // 分时图标签
+        document.getElementById('minute-chart-tab').addEventListener('click', function() {
+            switchTab(this, 'minute-chart-container');
+            document.getElementById('kline-subtabs').style.display = 'none';
+            // 加载分时图数据
+            loadMinuteChart();
+        });
+
+        // GPR预测标签
+        document.getElementById('gpr-chart-tab').addEventListener('click', function() {
+            switchTab(this, 'gpr-chart-container');
+            document.getElementById('kline-subtabs').style.display = 'none';
+            // 加载GPR预测数据
+            loadGPRChart();
+        });
+    }
+
+    // 切换图表标签
+    function switchTab(activeTab, chartContainerId) {
+        // 移除所有标签的active类
+        document.querySelectorAll('.chart-tab').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        // 添加active类到当前标签
+        activeTab.classList.add('active');
+
+        // 隐藏所有图表容器
+        document.querySelectorAll('.chart-container').forEach(container => {
+            container.style.display = 'none';
+        });
+        // 显示当前图表容器
+        document.getElementById(chartContainerId).style.display = 'block';
+    }
+
+    // 加载GPR预测图表
+    function loadGPRChart() {
+        const stockCode = '{{ stock.code }}';
+
+        fetch(`/api/gpr/${stockCode}/`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success && data.predictions && data.predictions.length > 0) {
+                    renderGPRChart(data.predictions);
+                } else {
+                    // 显示无数据提示
+                    document.getElementById('gpr-chart').innerHTML =
+                        '<div style="text-align: center; padding: 50px; color: #999;">暂无GPR预测数据</div>';
+                }
+            })
+            .catch(error => {
+                console.error('加载GPR预测失败:', error);
+                document.getElementById('gpr-chart').innerHTML =
+                    '<div style="text-align: center; padding: 50px; color: #999;">加载GPR预测数据失败</div>';
+            });
+    }
+
+    // 渲染GPR预测图表
+    function renderGPRChart(predictions) {
+        const chartDom = document.getElementById('gpr-chart');
+        if (window.gprChart) {
+            window.gprChart.dispose();
+        }
+        window.gprChart = echarts.init(chartDom);
+
+        // 准备数据
+        const dates = predictions.map(p => p.target_date);
+        const predicted = predictions.map(p => p.predicted_price);
+        const lower = predictions.map(p => p.lower_bound);
+        const upper = predictions.map(p => p.upper_bound);
+
+        const option = {
+            title: {
+                text: 'GPR股价预测（95%置信区间）',
+                left: 'center',
+                textStyle: {
+                    fontSize: 16,
+                    fontWeight: 'bold'
+                }
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross'
+                },
+                formatter: function(params) {
+                    let result = params[0].axisValue + '<br/>';
+                    params.forEach(item => {
+                        result += item.marker + item.seriesName + ': ' + item.value.toFixed(2) + '<br/>';
+                    });
+                    return result;
+                }
+            },
+            legend: {
+                data: ['预测价格', '置信区间下界', '置信区间上界'],
+                top: 30
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'category',
+                data: dates,
+                boundaryGap: false,
+                axisLabel: {
+                    formatter: function(value) {
+                        // 只显示月-日部分，避免太长
+                        if (value.length >= 10) {
+                            return value.substring(5, 10); // 提取 MM-DD
+                        }
+                        return value;
+                    },
+                    rotate: 0, // 不旋转，保持水平
+                    interval: 0 // 显示所有标签
+                }
+            },
+            yAxis: {
+                type: 'value',
+                name: '价格(元)',
+                axisLabel: {
+                    formatter: '{value}'
+                }
+            },
+            series: [
+                {
+                    name: '置信区间下界',
+                    type: 'line',
+                    data: lower,
+                    lineStyle: {
+                        width: 1.5,
+                        color: '#5470c6',
+                        type: 'dashed'
+                    },
+                    itemStyle: {
+                        color: '#5470c6'
+                    },
+                    symbolSize: 0, // 不显示数据点
+                    smooth: true,
+                    z: 1
+                },
+                {
+                    name: '置信区间上界',
+                    type: 'line',
+                    data: upper,
+                    lineStyle: {
+                        width: 1.5,
+                        color: '#5470c6',
+                        type: 'dashed'
+                    },
+                    itemStyle: {
+                        color: '#5470c6'
+                    },
+                    areaStyle: {
+                        color: {
+                            type: 'linear',
+                            x: 0, y: 0, x2: 0, y2: 1,
+                            colorStops: [
+                                { offset: 0, color: 'rgba(84, 112, 198, 0.4)' },
+                                { offset: 1, color: 'rgba(84, 112, 198, 0.2)' }
+                            ]
+                        }
+                    },
+                    symbolSize: 0, // 不显示数据点
+                    smooth: true,
+                    z: 1
+                },
+                {
+                    name: '预测价格',
+                    type: 'line',
+                    data: predicted,
+                    lineStyle: {
+                        width: 3,
+                        color: '#ee6666'
+                    },
+                    itemStyle: {
+                        color: '#ee6666',
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    },
+                    symbolSize: 8,
+                    smooth: true,
+                    z: 2,
+                    label: {
+                        show: true,
+                        position: 'top',
+                        formatter: '{c}',
+                        color: '#ee6666',
+                        fontWeight: 'bold',
+                        fontSize: 11
+                    }
+                }
+            ]
+        };
+
+        window.gprChart.setOption(option);
+    }
 
     // 初始化K线周期切换标签
     function initKlinePeriodTabs() {
@@ -576,43 +793,33 @@
 
         // 显示或隐藏K线周期子标签
         const klineSubtabs = document.getElementById('kline-subtabs');
+
+        // 隐藏所有图表容器
+        document.getElementById('k-chart-container').style.display = 'none';
+        document.getElementById('minute-chart-container').style.display = 'none';
+        document.getElementById('gpr-chart-container').style.display = 'none';
+        document.getElementById('macd-chart').style.display = 'none';
+        document.getElementById('rsi-chart').style.display = 'none';
+        document.getElementById('bollinger-chart').style.display = 'none';
+        document.getElementById('ma-chart').style.display = 'none';
+
         if (chartType === 'k-chart') {
             document.getElementById('k-chart-tab').classList.add('active');
             document.getElementById('k-chart-container').style.display = 'block';
-            document.getElementById('minute-chart-container').style.display = 'none';
-            document.getElementById('macd-chart').style.display = 'none';
-            document.getElementById('rsi-chart').style.display = 'none';
-            document.getElementById('bollinger-chart').style.display = 'none';
-            document.getElementById('ma-chart').style.display = 'none';
-
             // 显示K线周期子标签
             klineSubtabs.style.display = 'flex';
         } else if (chartType === 'minute') {
             document.getElementById('minute-chart-tab').classList.add('active');
-            document.getElementById('k-chart-container').style.display = 'none';
             document.getElementById('minute-chart-container').style.display = 'block';
-            document.getElementById('macd-chart').style.display = 'none';
-            document.getElementById('rsi-chart').style.display = 'none';
-            document.getElementById('bollinger-chart').style.display = 'none';
-            document.getElementById('ma-chart').style.display = 'none';
-
             // 隐藏K线周期子标签
             klineSubtabs.style.display = 'none';
-
             // 初始化分时图
             if (!minuteChart) {
                 initMinuteChart();
             }
         } else {
             document.querySelector(`.chart-tab[onclick="showChart('${chartType}')"]`).classList.add('active');
-            document.getElementById('k-chart-container').style.display = 'none';
-            document.getElementById('minute-chart-container').style.display = 'none';
             document.getElementById(`${chartType}-chart`).style.display = 'block';
-            document.getElementById('macd-chart').style.display = chartType === 'macd' ? 'block' : 'none';
-            document.getElementById('rsi-chart').style.display = chartType === 'rsi' ? 'block' : 'none';
-            document.getElementById('bollinger-chart').style.display = chartType === 'bollinger' ? 'block' : 'none';
-            document.getElementById('ma-chart').style.display = chartType === 'ma' ? 'block' : 'none';
-
             // 隐藏K线周期子标签
             klineSubtabs.style.display = 'none';
         }

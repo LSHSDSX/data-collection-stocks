@@ -274,7 +274,20 @@ class StockAlertSystem {
     async loadAllAlerts() {
         try {
             // 获取所有股票的预警
-            const stocks = window.stockList || []; // 假设有全局股票列表
+            let stocks = window.stockList || [];
+
+            // 如果没有全局股票列表，从API获取
+            if (stocks.length === 0) {
+                console.log('从API获取股票列表...');
+                const stocksResponse = await fetch('/api/stocks/');
+                const stocksData = await stocksResponse.json();
+                if (stocksData.status === 'success' && stocksData.data) {
+                    stocks = stocksData.data;
+                }
+            }
+
+            console.log(`获取到${stocks.length}只股票，开始加载预警...`);
+
             const allAlerts = [];
 
             // 并行获取所有股票的预警
@@ -283,13 +296,18 @@ class StockAlertSystem {
                     .then(res => res.json())
                     .then(data => {
                         if (data.success && data.alerts) {
+                            console.log(`${stock.code} 有 ${data.alerts.length} 条预警`);
                             allAlerts.push(...data.alerts);
+                        } else {
+                            console.log(`${stock.code} 没有预警数据`);
                         }
                     })
                     .catch(err => console.error(`获取${stock.code}预警失败:`, err))
             );
 
             await Promise.all(promises);
+
+            console.log(`总共加载了${allAlerts.length}条预警`);
 
             // 按时间排序
             allAlerts.sort((a, b) => new Date(b.alert_time) - new Date(a.alert_time));
@@ -299,6 +317,10 @@ class StockAlertSystem {
 
         } catch (error) {
             console.error('加载预警历史失败:', error);
+            const container = document.getElementById('alert-history-content');
+            if (container) {
+                container.innerHTML = `<div style="text-align: center; color: #f44;">加载失败: ${error.message}</div>`;
+            }
         }
     }
 

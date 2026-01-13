@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -192,8 +193,70 @@
         股票智能数据采集与集成分析平台 &copy; {% now "Y" %}
     </footer>
 
-    <script src="../static/js/bootstrap.bundle.min.js"></script>
-    <script src="../static/js/echarts.min.js"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/echarts.min.js' %}"></script>
+    <script src="{% static 'js/alert_system.js' %}"></script>
     {% block extra_js %}{% endblock %}
+
+    <!-- 添加调试按钮 -->
+    <div style="position: fixed; bottom: 10px; right: 10px; z-index: 1000; display: none;">
+        <button class="btn btn-sm btn-outline-primary" onclick="debugNewsData()">检查新闻数据</button>
+    </div>
+
+    <script>
+        // 显示调试按钮（开发环境）
+        document.addEventListener('keydown', function(event) {
+            // 按Ctrl+Shift+D显示调试按钮
+            if (event.ctrlKey && event.shiftKey && event.key === 'D') {
+                document.querySelector('div[style*="bottom: 10px; right: 10px"]').style.display = 'block';
+            }
+        });
+
+        function debugNewsData() {
+            // 获取所有新闻元素
+            const newsItems = document.querySelectorAll('.list-group-item');
+            const debugInfo = [];
+
+            newsItems.forEach((item, i) => {
+                const content = item.querySelector('p.mb-1').textContent.trim().substring(0, 30) + '...';
+                const style = item.querySelector('p.mb-1').getAttribute('style') || '无样式';
+
+                debugInfo.push({
+                    index: i + 1,
+                    content: content,
+                    style: style
+                });
+            });
+
+            console.table(debugInfo);
+            alert(`已打印 ${debugInfo.length} 条新闻数据到控制台`);
+        }
+    </script>
+
+    {% comment %} <!-- 添加调试按钮，可临时隐藏在生产环境 -->
+    <div style="position: fixed; bottom: 10px; right: 10px; z-index: 9999; background: white; padding: 5px; border-radius: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.2);">
+        <button class="btn btn-sm btn-outline-primary" onclick="testNewsColors()">测试颜色</button>
+    </div> {% endcomment %}
+
+    <script>
+        function testNewsColors() {
+            // 获取页面上所有新闻
+            const newsList = document.querySelectorAll('.list-group-item p.mb-1');
+
+            // 随机给一些新闻应用颜色
+            newsList.forEach((item, index) => {
+                // 每3条新闻应用一种颜色
+                if (index % 3 === 0) {
+                    item.style.color = 'red';
+                } else if (index % 3 === 1) {
+                    item.style.color = '#ff69b4';
+                } else if (index % 3 === 2) {
+                    item.style.color = 'green';
+                }
+            });
+
+            alert('已为新闻应用测试颜色，刷新页面恢复正常显示');
+        }
+    </script>
 </body>
 </html>

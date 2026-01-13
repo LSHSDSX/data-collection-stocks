@@ -17,4 +17,8 @@ urlpatterns = [
     # 预警API
     path('api/alerts/realtime/', views.api_get_realtime_alerts, name='api_realtime_alerts'),
     path('api/alerts/<str:stock_code>/', views.api_get_stock_alerts, name='api_stock_alerts'),
+    # GPR预测API
+    path('api/gpr/<str:stock_code>/', views.api_get_gpr_predictions, name='api_gpr_predictions'),
+    # 情感分析API
+    path('api/sentiment/<str:stock_code>/', views.api_get_stock_sentiment, name='api_stock_sentiment'),
 ]

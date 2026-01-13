@@ -174,6 +174,7 @@ class NewsStockAnalyzer:
             请直接分析新闻中可能影响的股票，找出：
             1. 两只最可能受到正面影响的股票（代码和名称）及上涨理由（简短）
             2. 两只最可能受到负面影响的股票（代码和名称）及下跌理由（简短）
+            3. 新闻的整体情感倾向（-1到+1之间的数值，-1表示极度负面，0表示中性，+1表示极度正面）
 
             新闻:
             {news_content}
@@ -181,6 +182,7 @@ class NewsStockAnalyzer:
             输出需要简洁易于在网页展示，请使用以下JSON格式返回结果：
             {{
                 "analysis": "对该新闻的简要分析（30字以内）",
+                "sentiment": 0.5,
                 "potential_risers": [
                     {{"code": "股票代码1", "name": "股票名称1", "reason": "上涨理由（15字以内）", "influence": "影响程度(强/中/弱)"}},
                     {{"code": "股票代码2", "name": "股票名称2", "reason": "上涨理由（15字以内）", "influence": "影响程度(强/中/弱)"}}
@@ -190,6 +192,8 @@ class NewsStockAnalyzer:
                     {{"code": "股票代码2", "name": "股票名称2", "reason": "下跌理由（15字以内）", "influence": "影响程度(强/中/弱)"}}
                 ]
             }}
+
+            注意：sentiment必须是-1到+1之间的浮点数。
             """
 
             # 设置请求超时时间更长
@@ -240,6 +244,12 @@ class NewsStockAnalyzer:
                     try:
                         # 尝试直接解析整个响应
                         analysis_result = json.loads(ai_response)
+
+                        # 确保sentiment字段存在
+                        if 'sentiment' not in analysis_result or analysis_result['sentiment'] is None:
+                            logger.warning("LLM返回的结果缺少sentiment字段，使用默认值0")
+                            analysis_result['sentiment'] = 0.0
+
                         return analysis_result
                     except json.JSONDecodeError:
                         # 如果失败，尝试提取JSON部分
@@ -248,7 +258,14 @@ class NewsStockAnalyzer:
                         match = re.search(json_pattern, ai_response, re.DOTALL)
                         if match:
                             json_str = match.group(1) if match.group(1) else match.group(0)
-                            return json.loads(json_str)
+                            analysis_result = json.loads(json_str)
+
+                            # 确保sentiment字段存在
+                            if 'sentiment' not in analysis_result or analysis_result['sentiment'] is None:
+                                logger.warning("LLM返回的结果缺少sentiment字段，使用默认值0")
+                                analysis_result['sentiment'] = 0.0
+
+                            return analysis_result
                         else:
                             logger.error(f"无法从AI响应中提取JSON: {ai_response}")
                             return {}
@@ -300,6 +317,12 @@ class NewsStockAnalyzer:
                     try:
                         # 尝试直接解析整个响应
                         analysis_result = json.loads(ai_response)
+
+                        # 确保sentiment字段存在
+                        if 'sentiment' not in analysis_result or analysis_result['sentiment'] is None:
+                            logger.warning("LLM返回的结果缺少sentiment字段，使用默认值0")
+                            analysis_result['sentiment'] = 0.0
+
                         return analysis_result
                     except json.JSONDecodeError:
                         # 如果失败，尝试提取JSON部分
@@ -308,7 +331,14 @@ class NewsStockAnalyzer:
                         match = re.search(json_pattern, ai_response, re.DOTALL)
                         if match:
                             json_str = match.group(1) if match.group(1) else match.group(0)
-                            return json.loads(json_str)
+                            analysis_result = json.loads(json_str)
+
+                            # 确保sentiment字段存在
+                            if 'sentiment' not in analysis_result or analysis_result['sentiment'] is None:
+                                logger.warning("LLM返回的结果缺少sentiment字段，使用默认值0")
+                                analysis_result['sentiment'] = 0.0
+
+                            return analysis_result
                         else:
                             logger.error(f"无法从AI响应中提取JSON: {ai_response}")
                             return {}

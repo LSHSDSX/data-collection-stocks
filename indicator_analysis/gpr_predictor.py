@@ -146,7 +146,7 @@ class GPRStockPredictor:
                     h.`成交量(手)` as volume,
                     h.`涨跌幅(%)` as change_pct,
                     t.MACD, t.MACD_Hist, t.`Signal`,
-                    t.RSI, t.MA5, t.MA10, t.MA20,
+                    t.RSI, t.MA5, t.MA10,
                     t.Upper_Band, t.Lower_Band
                 FROM `{history_table}` h
                 LEFT JOIN `{technical_table}` t ON h.`日期` = t.`日期`
@@ -216,30 +216,37 @@ class GPRStockPredictor:
             cursor.close()
 
             # 3. 构建特征矩阵
-            # 删除含有NaN的行
-            df = df.dropna()
+            # 只删除核心价格列有NaN的行（不删除技术指标或情感列的NaN）
+            core_columns = ['close_price', 'open_price', 'high_price', 'low_price', 'volume']
+            df = df.dropna(subset=core_columns)
 
             if len(df) < 30:
                 logger.warning(f"股票 {stock_name} 清理后数据不足")
                 return None, None, None
 
+            # 填充可选列的NaN值
+            if 'change_pct' in df.columns:
+                df['change_pct'] = df['change_pct'].fillna(0)
+
             # 选择特征 - 优先使用技术指标，如果没有就只用价格
             base_features = ['open_price', 'high_price', 'low_price', 'volume']
-            if 'change_pct' in df.columns:
+            if 'change_pct' in df.columns and df['change_pct'].notna().any():
                 base_features.append('change_pct')
 
-            technical_features = ['MACD', 'MACD_Hist', 'Signal', 'RSI', 'MA5', 'MA10', 'MA20']
+            technical_features = ['MACD', 'MACD_Hist', 'Signal', 'RSI', 'MA5', 'MA10']
             sentiment_features = ['avg_sentiment', 'news_count', 'avg_correlation']
 
             # 构建可用特征列表
             available_features = base_features.copy()
 
-            # 添加存在的技术指标
+            # 添加存在的技术指标（且有有效数据）
             for feat in technical_features:
-                if feat in df.columns:
+                if feat in df.columns and df[feat].notna().sum() > 0:
+                    # 填充NaN值
+                    df[feat] = df[feat].fillna(df[feat].mean() if df[feat].notna().any() else 0)
                     available_features.append(feat)
 
-            # 添加存在的情感特征
+            # 添加存在的情感特征（已经在前面fillna了，所以不需要再检查）
             for feat in sentiment_features:
                 if feat in df.columns:
                     available_features.append(feat)
@@ -251,6 +258,18 @@ class GPRStockPredictor:
 
             X = df[available_features].values
             y = df['close_price'].values
+
+            # 确保数据类型为float
+            X = X.astype(np.float64)
+            y = y.astype(np.float64)
+
+            # 最后检查并填充任何剩余的NaN值
+            if np.isnan(X).any():
+                logger.warning(f"特征矩阵中检测到NaN值，使用0填充")
+                X = np.nan_to_num(X, nan=0.0)
+            if np.isnan(y).any():
+                logger.warning(f"目标值中检测到NaN值，使用均值填充")
+                y = np.nan_to_num(y, nan=np.nanmean(y))
 
             logger.info(f"准备训练数据完成: {stock_name}, 样本数: {len(X)}, 特征数: {len(available_features)}")
             logger.info(f"使用特征: {available_features}")

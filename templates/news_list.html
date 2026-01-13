@@ -5,16 +5,39 @@
 {% block content %}
 <div class="container">
     <div class="card shadow-sm mb-4">
-        <div class="card-header  text-white d-flex justify-content-between align-items-center">
-            <h5 class="mb-0"><i class="bi bi-newspaper"></i> 实时财经新闻</h5>
-            <div>
-                <select id="news-source-filter" class="form-select form-select-sm">
-                    <option value="all">全部来源</option>
-                    <option value="新浪财经">新浪财经</option>
-                    <option value="同花顺">同花顺</option>
-                    <option value="36氪">36氪</option>
-                    <option value="财联社">财联社</option>
-                </select>
+        <div class="card-header text-white">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h5 class="mb-0"><i class="bi bi-newspaper"></i> 实时财经新闻</h5>
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex gap-2">
+                        <!-- 搜索框 -->
+                        <div class="input-group input-group-sm flex-grow-1">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input type="text"
+                                   class="form-control border-start-0"
+                                   id="news-search-input"
+                                   placeholder="搜索股票代码、名称或新闻内容...">
+                            <button class="btn btn-outline-light"
+                                    type="button"
+                                    id="clear-search-btn"
+                                    style="display: none;">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+                        <!-- 来源筛选 -->
+                        <select id="news-source-filter" class="form-select form-select-sm" style="max-width: 150px;">
+                            <option value="all">全部来源</option>
+                            <option value="新浪财经">新浪财经</option>
+                            <option value="同花顺">同花顺</option>
+                            <option value="36氪">36氪</option>
+                            <option value="财联社">财联社</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="card-body p-0">
@@ -77,6 +100,7 @@
     let newsData = [];
     let filteredNewsData = [];
     let selectedSource = 'all';
+    let searchKeyword = '';
     let refreshTimer = null;
     let isLoading = false;
 
@@ -106,6 +130,40 @@
         document.getElementById('refresh-btn').addEventListener('click', function() {
             if (!isLoading) {
                 loadNewsPage(currentPage);
+            }
+        });
+
+        // 搜索框事件监听
+        const searchInput = document.getElementById('news-search-input');
+        const clearSearchBtn = document.getElementById('clear-search-btn');
+
+        searchInput.addEventListener('input', function(e) {
+            searchKeyword = e.target.value.trim();
+            console.log("搜索关键词:", searchKeyword);
+
+            // 显示/隐藏清空按钮
+            if (searchKeyword) {
+                clearSearchBtn.style.display = 'inline-block';
+            } else {
+                clearSearchBtn.style.display = 'none';
+            }
+
+            // 应用搜索过滤
+            applyFilters();
+        });
+
+        // 清空搜索按钮
+        clearSearchBtn.addEventListener('click', function() {
+            searchInput.value = '';
+            searchKeyword = '';
+            clearSearchBtn.style.display = 'none';
+            applyFilters();
+        });
+
+        // 支持回车键搜索
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                applyFilters();
             }
         });
 
@@ -142,6 +200,28 @@
                 z-index: 1000;
                 display: none;
             }
+
+            /* 搜索框样式 */
+            #news-search-input {
+                padding-left: 0.5rem;
+            }
+            #news-search-input:focus {
+                box-shadow: none;
+                border-color: #ced4da;
+            }
+            #clear-search-btn {
+                border: 1px solid #ced4da;
+                background-color: white;
+                color: #6c757d;
+            }
+            #clear-search-btn:hover {
+                background-color: #f8f9fa;
+                color: #dc3545;
+            }
+            .input-group-text {
+                border: 1px solid #ced4da;
+            }
+
             /* 股票分析结果样式 */
             .stock-analysis {
                 background-color: rgba(248, 249, 250, 0.7);
@@ -239,19 +319,11 @@
                     pageSize = data.pagination.page_size;
                     totalPages = data.pagination.total_pages;
 
-                    // 过滤新闻数据
-                    filteredNewsData = newsData.filter(item => item.source === selectedSource || selectedSource === 'all');
-
-                    // 显示新闻列表
-                    displayNews(filteredNewsData);
+                    // 应用过滤（来源 + 搜索）
+                    applyFilters();
 
                     // 更新分页信息
                     updatePagination();
-
-                    // 更新计数信息
-                    document.getElementById('news-count').textContent =
-                        `共 ${data.pagination.total_count} 条新闻` +
-                        (selectedSource !== 'all' ? ` (${selectedSource})` : '');
 
                     // 成功指示
                     const refreshBtn = document.getElementById('refresh-btn');
@@ -339,14 +411,51 @@
                 newsStyle = 'color: #ff69b4 !important;';
             }
 
+            // 显示情感分析结果（如果有）
+            let sentimentBadge = '';
+
+            // 调试：检查analysis_result
+            if (!news.analysis_result) {
+                console.log('新闻没有analysis_result:', news.content.substring(0, 30));
+            } else {
+                console.log('新闻有analysis_result:', {
+                    content: news.content.substring(0, 30),
+                    sentiment: news.analysis_result.sentiment
+                });
+            }
+
+            if (news.analysis_result && news.analysis_result.sentiment !== undefined) {
+                const sentiment = news.analysis_result.sentiment;
+                let badgeClass = 'bg-secondary';
+                let sentimentText = '中性';
+                let icon = '━';
+
+                if (sentiment >= 0.3) {
+                    badgeClass = 'bg-success';
+                    sentimentText = '正面';
+                    icon = '↑';
+                } else if (sentiment <= -0.3) {
+                    badgeClass = 'bg-danger';
+                    sentimentText = '负面';
+                    icon = '↓';
+                }
+
+                sentimentBadge = `
+                    <span class="badge ${badgeClass} ms-2" style="font-size: 0.75rem;">
+                        ${icon} ${sentimentText} ${(sentiment * 100).toFixed(0)}%
+                    </span>
+                `;
+            }
+
             // 新闻内容HTML
             let newsHtml = `
-                <div class="d-flex w-100 justify-content-between">
+                <div class="d-flex w-100 justify-content-between align-items-center">
                     <small class="text-primary">${news.source || '未知来源'}</small>
                     <small class="text-muted">${formatTimeAgo(news.datetime || news.pub_time)}</small>
                 </div>
                 <p class="mb-1" style="${newsStyle}" data-color="${news.color || '无'}">
                     ${news.content}
+                    ${sentimentBadge}
                 </p>
             `;
 
@@ -391,6 +500,98 @@
             newsItem.innerHTML = newsHtml;
             newsListElement.appendChild(newsItem);
         });
+    }
+
+    // 应用所有过滤器（来源 + 搜索）
+    function applyFilters() {
+        console.log("应用过滤器 - 来源:", selectedSource, "搜索:", searchKeyword);
+
+        filteredNewsData = newsData.filter(news => {
+            // 1. 来源过滤
+            const sourceMatch = selectedSource === 'all' || news.source === selectedSource;
+
+            // 2. 搜索过滤
+            const searchMatch = !searchKeyword || searchInNews(news, searchKeyword);
+
+            return sourceMatch && searchMatch;
+        });
+
+        console.log(`过滤后新闻数量: ${filteredNewsData.length} / ${newsData.length}`);
+
+        // 显示过滤后的新闻
+        displayNews(filteredNewsData);
+
+        // 更新计数显示
+        updateNewsCount();
+    }
+
+    // 搜索新闻内容
+    function searchInNews(news, keyword) {
+        if (!keyword) return true;
+
+        const lowerKeyword = keyword.toLowerCase();
+
+        // 1. 搜索新闻内容
+        if (news.content && news.content.toLowerCase().includes(lowerKeyword)) {
+            return true;
+        }
+
+        // 2. 搜索分析结果
+        if (news.analysis_result) {
+            const analysis = news.analysis_result;
+
+            // 搜索分析文本
+            if (analysis.analysis && analysis.analysis.toLowerCase().includes(lowerKeyword)) {
+                return true;
+            }
+
+            // 3. 搜索潜在上涨股票
+            if (analysis.potential_risers && analysis.potential_risers.length > 0) {
+                for (let stock of analysis.potential_risers) {
+                    // 搜索股票代码
+                    if (stock.code && stock.code.toLowerCase().includes(lowerKeyword)) {
+                        return true;
+                    }
+                    // 搜索股票名称
+                    if (stock.name && stock.name.toLowerCase().includes(lowerKeyword)) {
+                        return true;
+                    }
+                    // 搜索理由
+                    if (stock.reason && stock.reason.toLowerCase().includes(lowerKeyword)) {
+                        return true;
+                    }
+                }
+            }
+
+            // 4. 搜索潜在下跌股票
+            if (analysis.potential_fallers && analysis.potential_fallers.length > 0) {
+                for (let stock of analysis.potential_fallers) {
+                    // 搜索股票代码
+                    if (stock.code && stock.code.toLowerCase().includes(lowerKeyword)) {
+                        return true;
+                    }
+                    // 搜索股票名称
+                    if (stock.name && stock.name.toLowerCase().includes(lowerKeyword)) {
+                        return true;
+                    }
+                    // 搜索理由
+                    if (stock.reason && stock.reason.toLowerCase().includes(lowerKeyword)) {
+                        return true;
+                    }
+                }
+            }
+        }
+
+        return false;
+    }
+
+    // 更新新闻计数显示
+    function updateNewsCount() {
+        const countText = searchKeyword
+            ? `找到 ${filteredNewsData.length} 条新闻（共 ${newsData.length} 条）`
+            : `共 ${filteredNewsData.length} 条新闻${selectedSource !== 'all' ? ` (${selectedSource})` : ''}`;
+
+        document.getElementById('news-count').textContent = countText;
     }
 
     // 更新分页控件
