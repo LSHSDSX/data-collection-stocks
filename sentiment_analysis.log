@@ -1,0 +1,697 @@
+2026-01-09 09:38:37,074 - INFO - ============================================================
+2026-01-09 09:38:37,074 - INFO - 启动深度情感分析系统
+2026-01-09 09:38:37,074 - INFO - ============================================================
+2026-01-09 09:38:37,074 - INFO - 配置文件加载成功
+2026-01-09 09:38:37,236 - INFO - 情感分析数据表创建成功
+2026-01-09 09:38:38,254 - INFO - 获取到 100 条新闻，开始情感分析...
+2026-01-09 09:38:38,257 - INFO - 新闻 ff4ea569 已分析过，跳过
+2026-01-09 09:38:38,261 - INFO - 新闻 d104f1e0 已分析过，跳过
+2026-01-09 09:38:38,263 - INFO - 新闻 ae85e3e5 已分析过，跳过
+2026-01-09 09:38:38,264 - INFO - 新闻 c62412b4 已分析过，跳过
+2026-01-09 09:38:38,266 - INFO - 新闻 f1cddbc5 已分析过，跳过
+2026-01-09 09:38:38,266 - INFO - 新闻 b424e240 已分析过，跳过
+2026-01-09 09:38:38,266 - INFO - 新闻 e74071a5 已分析过，跳过
+2026-01-09 09:38:38,272 - INFO - 新闻 39e41853 已分析过，跳过
+2026-01-09 09:38:38,274 - INFO - 新闻 039ddee3 已分析过，跳过
+2026-01-09 09:38:38,275 - INFO - 新闻 e13cf40b 已分析过，跳过
+2026-01-09 09:38:38,275 - INFO - 新闻 7d07bb6d 已分析过，跳过
+2026-01-09 09:38:38,275 - INFO - 新闻 103f4c2b 已分析过，跳过
+2026-01-09 09:38:38,275 - INFO - 新闻 6e8ed2d4 已分析过，跳过
+2026-01-09 09:38:38,283 - INFO - 新闻 d458db42 已分析过，跳过
+2026-01-09 09:38:38,285 - INFO - 新闻 64d71ecb 已分析过，跳过
+2026-01-09 09:38:38,286 - INFO - 新闻 f8b7ae4c 已分析过，跳过
+2026-01-09 09:38:38,287 - INFO - 新闻 757054de 已分析过，跳过
+2026-01-09 09:38:38,287 - INFO - 新闻 7228f72e 已分析过，跳过
+2026-01-09 09:38:38,287 - INFO - 新闻 fe8c5c1f 已分析过，跳过
+2026-01-09 09:38:38,287 - INFO - 新闻 86195b2d 已分析过，跳过
+2026-01-09 09:38:38,287 - INFO - 新闻 2bcdfde4 已分析过，跳过
+2026-01-09 09:38:38,298 - INFO - 新闻 2d97a35f 已分析过，跳过
+2026-01-09 09:38:38,298 - INFO - 新闻 294f9cde 已分析过，跳过
+2026-01-09 09:38:38,298 - INFO - 新闻 fec442e7 已分析过，跳过
+2026-01-09 09:38:38,306 - INFO - 新闻 bcbccec9 已分析过，跳过
+2026-01-09 09:38:38,307 - INFO - 新闻 0cfe56b7 已分析过，跳过
+2026-01-09 09:38:38,309 - INFO - 新闻 918c2488 已分析过，跳过
+2026-01-09 09:38:38,309 - INFO - 新闻 67447253 已分析过，跳过
+2026-01-09 09:38:38,309 - INFO - 新闻 d80d4bef 已分析过，跳过
+2026-01-09 09:38:38,315 - INFO - 新闻 e08a24d4 已分析过，跳过
+2026-01-09 09:38:38,317 - INFO - 分析新闻: 伊拉克总统：我们呼吁叙利亚各方保持克制，重返对话桌，以和平方式解决问题，避免采取暴力行动。...
+2026-01-09 09:38:38,597 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:38,602 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-8b887d3b-782c-9d8b-b04f-5436c2ea02d3","request_id":"8b887d3b-782c-9d8b-b04f-5436c2ea02d3"}
+2026-01-09 09:38:38,602 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:39,119 - INFO - 分析新闻: 【手机数码国补超72%买中高端机】记者从商务部了解到，自2024年消费品以旧换新政策实施以来，相关商...
+2026-01-09 09:38:39,203 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:39,206 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-b85a53a3-24b2-9710-8b1b-ead22a566a01","request_id":"b85a53a3-24b2-9710-8b1b-ead22a566a01"}
+2026-01-09 09:38:39,206 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:39,719 - INFO - 分析新闻: 郑商所公告，经研究决定，现将动力煤期货2701合约有关事项公告如下：一、交易保证金标准和涨跌停板幅度...
+2026-01-09 09:38:39,816 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:39,816 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-42977d11-1f94-988b-8c97-342379cbf5fa","request_id":"42977d11-1f94-988b-8c97-342379cbf5fa"}
+2026-01-09 09:38:39,816 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:40,319 - INFO - 分析新闻: 2026年1月8日下午，跨境清算公司召开2026年工作会议。会议指出，2026年是“十五五”开局之年...
+2026-01-09 09:38:40,422 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:40,422 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-55edcc9c-7e90-918f-95b8-160ab65192e1","request_id":"55edcc9c-7e90-918f-95b8-160ab65192e1"}
+2026-01-09 09:38:40,427 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:40,944 - INFO - 分析新闻: 财联社1月8日电，法拉利表示将于2月10日公布2025年财务结果。...
+2026-01-09 09:38:41,051 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:41,052 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-2c56fc26-a45c-9762-ad94-b32437a91751","request_id":"2c56fc26-a45c-9762-ad94-b32437a91751"}
+2026-01-09 09:38:41,052 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:41,565 - INFO - 分析新闻: 1月8日，深圳信息职业技术大学成立大会举行，市长覃伟中出席活动并致辞。覃伟中代表市委市政府向深信大的...
+2026-01-09 09:38:41,690 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:41,693 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-d00e8c67-ccd9-902d-9b9e-0ad77752c96a","request_id":"d00e8c67-ccd9-902d-9b9e-0ad77752c96a"}
+2026-01-09 09:38:41,694 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:42,212 - INFO - 分析新闻: 在富国银行将Figma评级从“持股观望”上调至“增持”后，该股盘前上涨1.7%。...
+2026-01-09 09:38:42,302 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:42,302 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-5b29961f-9abb-9551-aae2-26468caaaa23","request_id":"5b29961f-9abb-9551-aae2-26468caaaa23"}
+2026-01-09 09:38:42,302 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:42,811 - INFO - 分析新闻: 沙特阿拉伯驻也门大使穆罕默德·贾比尔1月8日在社交媒体上发文说，他在沙特首都利雅得会见了也门南方过渡...
+2026-01-09 09:38:42,923 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:42,923 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-a2daff89-391e-989f-b4d4-c7fb5b9521d9","request_id":"a2daff89-391e-989f-b4d4-c7fb5b9521d9"}
+2026-01-09 09:38:42,931 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:43,436 - INFO - 分析新闻: 36氪获悉，兔宝宝公告，公司全资子公司兔宝宝投资以4亿元向大自然家居（中国）有限公司（简称“大自然中...
+2026-01-09 09:38:43,544 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:43,546 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-83299401-d77d-9f34-98ab-d532a7c0866e","request_id":"83299401-d77d-9f34-98ab-d532a7c0866e"}
+2026-01-09 09:38:43,546 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:44,054 - INFO - 分析新闻: 财联社1月8日电，富国银行将微软目标价从700美元下调至665美元；将CoreWeave目标价从15...
+2026-01-09 09:38:44,143 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:44,145 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-fed6cfd1-2722-96e1-a8f7-b30adb162685","request_id":"fed6cfd1-2722-96e1-a8f7-b30adb162685"}
+2026-01-09 09:38:44,145 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:44,655 - INFO - 分析新闻: 2025年，交易商协会支持2300余家企业发行债务融资工具10.1万亿元，连续两年突破十万亿元，净融...
+2026-01-09 09:38:44,741 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:44,744 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-0d8f0301-54df-94be-b82c-c7d6e8b7842f","request_id":"0d8f0301-54df-94be-b82c-c7d6e8b7842f"}
+2026-01-09 09:38:44,745 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:45,268 - INFO - 分析新闻: 财联社1月8日电，俄罗斯外交部8日说，严重关切美国7日对“水手”号油轮进行的非法武力行动。...
+2026-01-09 09:38:45,517 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:45,519 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-7aa800be-7b8f-9427-a0d9-b18b6cfc0383","request_id":"7aa800be-7b8f-9427-a0d9-b18b6cfc0383"}
+2026-01-09 09:38:45,519 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:46,031 - INFO - 分析新闻: 【跨境清算公司：统筹发展与安全 加大拓展CIPS网络力度】财联社1月8日电，跨境清算公司召开2026...
+2026-01-09 09:38:46,120 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:46,123 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-6576422d-34bd-9442-aff2-dd49c2c5d4e2","request_id":"6576422d-34bd-9442-aff2-dd49c2c5d4e2"}
+2026-01-09 09:38:46,123 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:46,638 - INFO - 分析新闻: 36氪获悉，派瑞股份公告，公司与某供应商及其关联方签署采购相关协议，约定公司在协议期限内向某供应商及...
+2026-01-09 09:38:46,732 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:46,734 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-f343ad2e-37dc-9e20-8000-b00e72a8500f","request_id":"f343ad2e-37dc-9e20-8000-b00e72a8500f"}
+2026-01-09 09:38:46,734 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:47,249 - INFO - 分析新闻: 海亮股份公告，公司原拟以现金方式受让金龙精密铜管集团股份有限公司（简称“金龙集团”）部分股份，同时，...
+2026-01-09 09:38:47,344 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:47,345 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-862abe62-86ee-9774-aecc-5575417ac443","request_id":"862abe62-86ee-9774-aecc-5575417ac443"}
+2026-01-09 09:38:47,345 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:47,854 - INFO - 分析新闻: 毅昌科技公告，滁州市国资委已出具批复，同意滁州城投集团出资组建的滁州蔚然科技发展合伙企业（有限合伙）...
+2026-01-09 09:38:47,952 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:47,954 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-7c89751c-e290-92f1-808b-126248123ffd","request_id":"7c89751c-e290-92f1-808b-126248123ffd"}
+2026-01-09 09:38:47,954 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:48,463 - INFO - 分析新闻: *ST绿康公告，公司于2025年4月24日召开董事会会议，审议通过了向康怡投资、义睿投资、长鑫贰号、...
+2026-01-09 09:38:48,549 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:48,553 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-57483520-21ee-9173-bb1d-bd8552639fab","request_id":"57483520-21ee-9173-bb1d-bd8552639fab"}
+2026-01-09 09:38:48,553 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:49,070 - INFO - 分析新闻: 华夏幸福公告，公司控股股东华夏幸福基业控股股份公司及实际控制人王文学被平安资产管理有限责任公司及中国...
+2026-01-09 09:38:49,153 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:49,153 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-a45187f0-d18e-9d39-ae24-d6fd17781575","request_id":"a45187f0-d18e-9d39-ae24-d6fd17781575"}
+2026-01-09 09:38:49,153 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:49,659 - INFO - 分析新闻: 汇丰控股同意支付约3亿欧元（3.5亿美元）以了结法国的刑事和税务案件，该案涉及汇丰在所谓“Cum-C...
+2026-01-09 09:38:49,745 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:49,745 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-932304cd-7bf8-9368-9a88-13525c1bab67","request_id":"932304cd-7bf8-9368-9a88-13525c1bab67"}
+2026-01-09 09:38:49,745 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:50,266 - INFO - 分析新闻: 【海亮股份：搁置投资入股金龙集团事项】财联社1月8日电，海亮股份(002203.SZ)公告称，公司原...
+2026-01-09 09:38:50,349 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:50,352 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-0695a042-15df-99fd-8b34-337bb40553d2","request_id":"0695a042-15df-99fd-8b34-337bb40553d2"}
+2026-01-09 09:38:50,353 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:50,859 - INFO - 分析新闻: 财联社1月8日电，摩根士丹利将阿里巴巴目标价从200美元下调至180美元。...
+2026-01-09 09:38:50,946 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:50,946 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-1997fd30-05bf-9a54-9280-3dc44201ca45","request_id":"1997fd30-05bf-9a54-9280-3dc44201ca45"}
+2026-01-09 09:38:50,946 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:51,456 - INFO - 分析新闻: 【华夏幸福：平安资管及平安人寿请求裁决控股股东华夏控股支付业绩补偿款及逾期付款违约金约64亿元】财联...
+2026-01-09 09:38:51,541 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:51,544 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-51db9a9b-58ac-9e8b-82e2-cec1068bcb77","request_id":"51db9a9b-58ac-9e8b-82e2-cec1068bcb77"}
+2026-01-09 09:38:51,544 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:52,066 - INFO - 分析新闻: 【工业富联：2025年半年度合计派发现金红利65.5亿元(含税) 股权登记日为2026年1月15日】...
+2026-01-09 09:38:52,148 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:52,151 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-12913862-cda0-9313-aaf0-7218ae9bdd25","request_id":"12913862-cda0-9313-aaf0-7218ae9bdd25"}
+2026-01-09 09:38:52,151 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:52,658 - INFO - 分析新闻: 工业富联公告，公司2025年半年度权益分派方案为每10股派送现金红利3.3元（含税），股权登记日为2...
+2026-01-09 09:38:52,746 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:52,750 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-0504612c-f567-94f8-b94d-0a81f080a40a","request_id":"0504612c-f567-94f8-b94d-0a81f080a40a"}
+2026-01-09 09:38:52,750 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:53,257 - INFO - 分析新闻: 【华夏幸福：预计2025年净利润亏损且期末净资产可能为负值】财联社1月8日电，华夏幸福(600340...
+2026-01-09 09:38:53,334 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:53,338 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-a6ea36eb-7a25-97a8-a1e4-8be6faec3472","request_id":"a6ea36eb-7a25-97a8-a1e4-8be6faec3472"}
+2026-01-09 09:38:53,338 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:53,856 - INFO - 分析新闻: 豪美新材公告，公司近日收到深圳证券交易所出具的《关于受理广东豪美新材股份有限公司向特定对象发行股票申...
+2026-01-09 09:38:53,942 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:53,946 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-a1bc8de8-1b00-9d59-9a6c-d66d4703a6ef","request_id":"a1bc8de8-1b00-9d59-9a6c-d66d4703a6ef"}
+2026-01-09 09:38:53,947 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:54,464 - INFO - 分析新闻: 36氪获悉，根据汇丰控股与恒生银行1月8日的联合公告，汇丰将恒生银行私有化的建议获恒生银行法院会议、...
+2026-01-09 09:38:54,556 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:54,559 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-68119fc3-271e-93f3-8df6-a8c36dc9e407","request_id":"68119fc3-271e-93f3-8df6-a8c36dc9e407"}
+2026-01-09 09:38:54,560 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:55,074 - INFO - 分析新闻: 盘后数据显示，1月8日龙虎榜中，共45只个股出现了机构的身影，有24只股票呈现机构净买入，21只股票...
+2026-01-09 09:38:55,154 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:55,154 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-f7c1464a-f50b-9111-8310-b2b2f4ea3922","request_id":"f7c1464a-f50b-9111-8310-b2b2f4ea3922"}
+2026-01-09 09:38:55,154 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:55,662 - INFO - 分析新闻: 澳华内镜公告，控股股东、实际控制人顾小舟已于2025年11月24日至2026年1月7日通过集中竞价减...
+2026-01-09 09:38:55,741 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:55,744 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-0fc1f0dc-8f5d-9a10-9997-5635b42b466c","request_id":"0fc1f0dc-8f5d-9a10-9997-5635b42b466c"}
+2026-01-09 09:38:55,745 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:56,260 - INFO - 分析新闻: 华夏幸福公告，预计2025年度归属于上市公司股东的净利润为负值，公司2025年年度经营业绩将出现亏损...
+2026-01-09 09:38:56,358 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:56,360 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-457dd3b7-9b81-9f02-9c0b-9a9a14c86393","request_id":"457dd3b7-9b81-9f02-9c0b-9a9a14c86393"}
+2026-01-09 09:38:56,360 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:56,866 - INFO - 分析新闻: 俄罗斯外交部1月8日称，西方国家在乌克兰部署的军事单位、军事设施等都将被视为俄罗斯武装部队的合法作战...
+2026-01-09 09:38:56,956 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:56,961 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-8c6e35f1-59f1-94e6-8248-c1f2708d8ba2","request_id":"8c6e35f1-59f1-94e6-8248-c1f2708d8ba2"}
+2026-01-09 09:38:56,961 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:57,481 - INFO - 分析新闻: 广州发文聚焦攻关可重复使用火箭技术！机构称可回收火箭带来火箭发射成本的大幅降低和运力的大幅提升，有望...
+2026-01-09 09:38:57,562 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:57,562 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-e5fb1f96-86c5-9977-b875-327c7b825e0b","request_id":"e5fb1f96-86c5-9977-b875-327c7b825e0b"}
+2026-01-09 09:38:57,562 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:58,073 - INFO - 分析新闻: 【康泰生物：吸附无细胞百白破（组分）联合疫苗临床试验申请获受理】财联社1月8日电，康泰生物(3006...
+2026-01-09 09:38:58,176 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:58,180 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-602d963e-520d-999c-841d-5ffbb8c43dd2","request_id":"602d963e-520d-999c-841d-5ffbb8c43dd2"}
+2026-01-09 09:38:58,180 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:58,686 - INFO - 分析新闻: 康泰生物公告，全资子公司北京民海生物科技有限公司收到国家药品监督管理局签发的受理通知书，同意受理其研...
+2026-01-09 09:38:58,763 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:58,767 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-a5b71de8-70c1-9804-bf63-f9ca2620d91b","request_id":"a5b71de8-70c1-9804-bf63-f9ca2620d91b"}
+2026-01-09 09:38:58,767 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:59,277 - INFO - 分析新闻: 【全信股份：拟发行可转债募资不超过3.12亿元 用于商用航空传输与互联通信集成化产品生产项目等】财联...
+2026-01-09 09:38:59,356 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:59,358 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-b60599dd-558f-9897-be44-2e270968e9ae","request_id":"b60599dd-558f-9897-be44-2e270968e9ae"}
+2026-01-09 09:38:59,358 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:38:59,867 - INFO - 分析新闻: 雀巢公司8日最新表示，受可能存在有毒污染影响的产品已在至少50个国家启动召回。拉美、亚洲、非洲和中东...
+2026-01-09 09:38:59,933 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:38:59,943 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-2204bf52-11a1-973a-bfcb-3c0fb094237c","request_id":"2204bf52-11a1-973a-bfcb-3c0fb094237c"}
+2026-01-09 09:38:59,943 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:00,448 - INFO - 分析新闻: *ST聆达公告，公司重整计划已执行完毕，因被法院裁定受理重整而触及的退市风险警示情形已消除，公司已于...
+2026-01-09 09:39:01,038 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:01,040 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-c6502547-74f0-9d03-956a-47054fb4c161","request_id":"c6502547-74f0-9d03-956a-47054fb4c161"}
+2026-01-09 09:39:01,040 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:01,558 - INFO - 分析新闻: 全信股份公告，公司拟向不特定对象发行可转换公司债券募集资金不超过3.12亿元，扣除发行费用后的募集资...
+2026-01-09 09:39:01,658 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:01,660 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-53e2d937-9a84-9119-9bd3-918a315ab1af","request_id":"53e2d937-9a84-9119-9bd3-918a315ab1af"}
+2026-01-09 09:39:01,661 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:02,176 - INFO - 分析新闻: 【摩尔线程：正式发布开源大模型分布式训练仿真工具SimuMax的1.1版本】财联社1月8日电，摩尔线...
+2026-01-09 09:39:02,271 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:02,271 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-effd2f42-72e9-9d4e-9356-9d13613cba25","request_id":"effd2f42-72e9-9d4e-9356-9d13613cba25"}
+2026-01-09 09:39:02,271 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:02,779 - INFO - 分析新闻: 京东在港交所公告，2025年度回购共计约1.8亿股A类普通股，总额约为30亿美元。截至公告日，202...
+2026-01-09 09:39:02,862 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:02,862 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-65edec63-67b1-9ec0-8597-687aedd26557","request_id":"65edec63-67b1-9ec0-8597-687aedd26557"}
+2026-01-09 09:39:02,862 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:03,384 - INFO - 分析新闻: 36氪获悉，中国核建公告，公司股票于2026年1月6日、7日、8日连续三个交易日内收盘价格涨幅偏离值...
+2026-01-09 09:39:03,459 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:03,463 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-776f3817-3103-9e53-a785-71f5a789c8c0","request_id":"776f3817-3103-9e53-a785-71f5a789c8c0"}
+2026-01-09 09:39:03,464 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:03,975 - INFO - 分析新闻: 【墨西哥对华碳钢镀锌丝网作出反倾销日落复审终裁】财联社1月8日电，据商务部贸易救济局，墨西哥经济部1...
+2026-01-09 09:39:04,065 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:04,068 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-6b1203c4-f191-9110-a8b1-3b33ddfa65ae","request_id":"6b1203c4-f191-9110-a8b1-3b33ddfa65ae"}
+2026-01-09 09:39:04,069 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:04,582 - INFO - 分析新闻: 【京东：2025年回购约1.8亿股A类普通股 总额约30亿美元】财联社1月8日电，京东在港交所公告称...
+2026-01-09 09:39:04,666 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:04,668 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-fd7788e6-d79e-9e50-856e-adef825a5ac5","request_id":"fd7788e6-d79e-9e50-856e-adef825a5ac5"}
+2026-01-09 09:39:04,668 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:05,174 - INFO - 分析新闻: 【荃银高科：中种集团要约收购期限届满 股票复牌】财联社1月8日电，荃银高科(300087.SZ)公告...
+2026-01-09 09:39:05,258 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:05,261 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-2d6ce771-a3fe-98b4-a53c-029cd2621786","request_id":"2d6ce771-a3fe-98b4-a53c-029cd2621786"}
+2026-01-09 09:39:05,261 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:05,772 - INFO - 分析新闻: 荃银高科公告，中国种子集团有限公司在2025年12月4日至2026年1月5日要约收购期限内，最终有3...
+2026-01-09 09:39:05,845 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:05,845 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-101b27dd-dc4c-9f73-a52b-6a93efc8a153","request_id":"101b27dd-dc4c-9f73-a52b-6a93efc8a153"}
+2026-01-09 09:39:05,845 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:06,363 - INFO - 分析新闻: 36氪获悉 ，普利特发布股价异动公告，LCP产品是公司经过多年研发的核心材料之一，可以广泛应用于多种...
+2026-01-09 09:39:06,451 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:06,451 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-28c6c74b-0b8a-9fb6-b3e8-08f51feaa062","request_id":"28c6c74b-0b8a-9fb6-b3e8-08f51feaa062"}
+2026-01-09 09:39:06,451 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:06,965 - INFO - 分析新闻: 【杭萧钢构就中标杭州箭元航天科技相关工程项目予以说明 对公司全年业绩不产生重大影响】财联社1月8日电...
+2026-01-09 09:39:07,050 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:07,050 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-199753c9-90c3-9382-a801-4cba40ff6105","request_id":"199753c9-90c3-9382-a801-4cba40ff6105"}
+2026-01-09 09:39:07,050 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:07,560 - INFO - 分析新闻: 2026年1月7日，财政部副部长廖岷在京会见伦敦证券交易所集团首席执行官施维默，就宏观经济形势和政策...
+2026-01-09 09:39:07,637 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:07,639 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-46dff311-1c03-9b43-8b7a-d3e50552e6d6","request_id":"46dff311-1c03-9b43-8b7a-d3e50552e6d6"}
+2026-01-09 09:39:07,640 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:08,155 - INFO - 分析新闻: 美克家居公告，自2026年1月1日起对全资子公司美克国际家私（天津）制造有限公司和美克国际家私加工（...
+2026-01-09 09:39:08,231 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:08,234 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-23b5fadf-ac20-991e-8de1-33d555f131f7","request_id":"23b5fadf-ac20-991e-8de1-33d555f131f7"}
+2026-01-09 09:39:08,234 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:08,736 - INFO - 分析新闻: 雀巢婴幼儿配方奶粉的全球召回范围进一步扩大。总部位于瑞士的雀巢公司当地时间8日表示，受可能存在有毒污...
+2026-01-09 09:39:08,842 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:08,844 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-81d56d28-9e1f-94d8-a871-c6be30bc10fd","request_id":"81d56d28-9e1f-94d8-a871-c6be30bc10fd"}
+2026-01-09 09:39:08,844 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:09,347 - INFO - 分析新闻: 36氪获悉，长城汽车携魏牌高山9、坦克500 Hi4-T智享版等4款车型亮相CES 2026，还展示...
+2026-01-09 09:39:09,452 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:09,454 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-a9e16d56-a690-99f5-9c7d-c7c98b2f564a","request_id":"a9e16d56-a690-99f5-9c7d-c7c98b2f564a"}
+2026-01-09 09:39:09,454 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:09,965 - INFO - 分析新闻: 美克家居公告，公司目前处于亏损状态，2025年前三季度营业收入22.23亿元，同比下滑10.10%，...
+2026-01-09 09:39:10,060 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:10,060 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-f39712cc-fc63-9a77-affe-a98e1cd167a6","request_id":"f39712cc-fc63-9a77-affe-a98e1cd167a6"}
+2026-01-09 09:39:10,064 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:10,582 - INFO - 分析新闻: 【4连板美克家居：公司经营出现较大亏损 1月1日起已对天津美克和天津加工实施停工停产】财联社1月8日...
+2026-01-09 09:39:10,667 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:10,670 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-c4de8534-28ec-91f7-bff2-49342157a190","request_id":"c4de8534-28ec-91f7-bff2-49342157a190"}
+2026-01-09 09:39:10,670 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:11,177 - INFO - 分析新闻: 【4连板美克家居：预计2025年归属于上市公司股东的净利润为负值】财联社1月8日电，美克家居(600...
+2026-01-09 09:39:11,270 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:11,270 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-04a29f2d-e8f0-9b18-9280-e615eb280954","request_id":"04a29f2d-e8f0-9b18-9280-e615eb280954"}
+2026-01-09 09:39:11,270 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:11,782 - INFO - 分析新闻: 【俄方：西方国家在乌部署的军事单位等都将被视为作战目标】财联社1月8日电，俄罗斯外交部8日说，西方国...
+2026-01-09 09:39:11,867 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:11,867 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-133a577e-7cbc-9c2b-ab30-1eb662cfcfb2","request_id":"133a577e-7cbc-9c2b-ab30-1eb662cfcfb2"}
+2026-01-09 09:39:11,867 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:12,384 - INFO - 分析新闻: 36氪获悉，惠博普公告，公司收到控股股东长沙水业集团有限公司通知，水业集团正在筹划股权转让事项，可能...
+2026-01-09 09:39:12,478 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:12,480 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-57301c8f-a606-9a7c-86af-d61c52165afb","request_id":"57301c8f-a606-9a7c-86af-d61c52165afb"}
+2026-01-09 09:39:12,480 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:12,988 - INFO - 分析新闻: 财联社1月8日电，汇丰银行表示，预期恒生银行股份的上市地位将于1月27日被撤销。...
+2026-01-09 09:39:13,064 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:13,064 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-23466937-60ad-9216-b49a-809f4ee4b5d2","request_id":"23466937-60ad-9216-b49a-809f4ee4b5d2"}
+2026-01-09 09:39:13,064 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:13,585 - INFO - 分析新闻: 【以军监测到一次从加沙城地区向以色列方向发射火箭弹的活动】财联社1月8日电，以色列国防军当地时间1月...
+2026-01-09 09:39:13,675 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:13,675 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-83288c4e-6f32-9bd4-a5c4-dc3273ada391","request_id":"83288c4e-6f32-9bd4-a5c4-dc3273ada391"}
+2026-01-09 09:39:13,675 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:14,187 - INFO - 分析新闻: 【中共中央政治局常务委员会召开会议 中共中央总书记习近平主持会议】财联社1月8日电，据央视新闻，中共...
+2026-01-09 09:39:14,279 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:14,279 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-063e2d52-356a-91b1-af87-9d07694f79c7","request_id":"063e2d52-356a-91b1-af87-9d07694f79c7"}
+2026-01-09 09:39:14,279 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:14,792 - INFO - 分析新闻: 中共中央政治局常务委员会1月8日全天召开会议，听取全国人大常委会、国务院、全国政协、最高人民法院、最...
+2026-01-09 09:39:14,871 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:14,872 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-66bb7fd6-8a3b-9e33-8aa2-055ffa855a00","request_id":"66bb7fd6-8a3b-9e33-8aa2-055ffa855a00"}
+2026-01-09 09:39:14,872 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:15,388 - INFO - 分析新闻: 【麦当劳再度沽售香港铺位 作价约1.19亿港元】财联社1月8日电，据报道，麦当劳卖出香港铜锣湾的一个...
+2026-01-09 09:39:15,471 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:15,471 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-f862fdea-39f4-92e1-a334-54514e42bb20","request_id":"f862fdea-39f4-92e1-a334-54514e42bb20"}
+2026-01-09 09:39:15,471 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:15,984 - INFO - 分析新闻: ①商业航天+卫星通信+芯片+军工，系6G卫星互联网的核心芯片供应商，产品主要应用于卫星及卫星通信载荷...
+2026-01-09 09:39:16,088 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:16,090 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-55e55d5b-e17d-9f82-a1b3-7d536ec48938","request_id":"55e55d5b-e17d-9f82-a1b3-7d536ec48938"}
+2026-01-09 09:39:16,090 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:16,606 - INFO - 分析新闻: 【爱美客：独家经销的注射用A型肉毒毒素产品获得药品注册证书】财联社1月8日电，爱美客(300896....
+2026-01-09 09:39:16,687 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:16,688 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-7bf57519-9504-947b-b3ca-8ca43929772f","request_id":"7bf57519-9504-947b-b3ca-8ca43929772f"}
+2026-01-09 09:39:16,688 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:17,195 - INFO - 分析新闻: 爱美客公告，公司在中国（包括澳门和香港）独家经销的韩国Huons BioPharma Co., Lt...
+2026-01-09 09:39:17,274 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:17,276 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-9c874f4e-ff79-908d-9f3b-f9e7ba0c9128","request_id":"9c874f4e-ff79-908d-9f3b-f9e7ba0c9128"}
+2026-01-09 09:39:17,276 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:17,779 - INFO - 分析新闻: 【仙琚制药：取得倍他米松磷酸钠注射液境内生产药品注册证书】财联社1月8日电，仙琚制药(002332....
+2026-01-09 09:39:17,867 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:17,867 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-96f76cec-5344-9a5b-af88-671c7976684b","request_id":"96f76cec-5344-9a5b-af88-671c7976684b"}
+2026-01-09 09:39:17,867 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:18,376 - INFO - 分析新闻: 贵州省人民政府办公厅近日印发《贵州省推进治理数智化转型三年行动方案（2026—2028年）》。《行动...
+2026-01-09 09:39:18,464 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:18,466 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-b29e318a-780c-9980-a3c2-9dfeedfb65e1","request_id":"b29e318a-780c-9980-a3c2-9dfeedfb65e1"}
+2026-01-09 09:39:18,466 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:18,975 - INFO - 分析新闻: 36氪获悉，鲁信创投公告，公司股票价格最近10个交易日累计上涨86.94%，存在股价短期涨幅较大后续...
+2026-01-09 09:39:19,066 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:19,068 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-d7c8b8cf-5905-917d-ae74-a2904c355885","request_id":"d7c8b8cf-5905-917d-ae74-a2904c355885"}
+2026-01-09 09:39:19,068 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:19,584 - INFO - 分析新闻: 仙琚制药公告，近日收到国家药品监督管理局核准签发的关于倍他米松磷酸钠注射液的《药品注册证书》（证书编...
+2026-01-09 09:39:19,668 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:19,669 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-7a58acaa-c88f-9272-a373-7f6617fdbc22","request_id":"7a58acaa-c88f-9272-a373-7f6617fdbc22"}
+2026-01-09 09:39:19,669 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:20,176 - INFO - 分析新闻: 【贵州：2026年基本建成一体化政务云、互联互通政务网、公共数据资源底座】财联社1月8日电，贵州省人...
+2026-01-09 09:39:20,256 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:20,259 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-37f8a761-7120-9b1a-bdc9-da5ae02b1afc","request_id":"37f8a761-7120-9b1a-bdc9-da5ae02b1afc"}
+2026-01-09 09:39:20,259 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:20,767 - INFO - 分析新闻: 36氪获悉，雷军发文称：“2020年我们就明确了技术立业的战略，并提出5年投入1000亿在研发上。我...
+2026-01-09 09:39:20,842 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-09 09:39:20,845 - ERROR - API请求失败 (状态码: 400): {"error":{"message":"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment","type":"Arrearage","param":null,"code":"Arrearage"},"id":"chatcmpl-7cfa8150-fd62-92c8-add8-5eeba453213a","request_id":"7cfa8150-fd62-92c8-add8-5eeba453213a"}
+2026-01-09 09:39:20,845 - WARNING - [FAIL] 新闻分析失败
+2026-01-09 09:39:21,352 - INFO - 
+情感分析完成！成功: 0, 失败: 70
+2026-01-09 09:39:21,354 - INFO - 情感分析系统结束
+2026-01-09 09:42:03,039 - INFO - ============================================================
+2026-01-09 09:42:03,040 - INFO - 启动深度情感分析系统
+2026-01-09 09:42:03,040 - INFO - ============================================================
+2026-01-09 09:42:03,040 - INFO - 配置文件加载成功
+2026-01-09 09:42:03,300 - INFO - 情感分析数据表创建成功
+2026-01-09 09:42:04,310 - INFO - 获取到 100 条新闻，开始情感分析...
+2026-01-09 09:42:04,311 - INFO - 新闻 ff4ea569 已分析过，跳过
+2026-01-09 09:42:04,311 - INFO - 新闻 d104f1e0 已分析过，跳过
+2026-01-09 09:42:04,317 - INFO - 新闻 ae85e3e5 已分析过，跳过
+2026-01-09 09:42:04,319 - INFO - 新闻 c62412b4 已分析过，跳过
+2026-01-09 09:42:04,323 - INFO - 新闻 f1cddbc5 已分析过，跳过
+2026-01-09 09:42:04,325 - INFO - 新闻 b424e240 已分析过，跳过
+2026-01-09 09:42:04,328 - INFO - 新闻 e74071a5 已分析过，跳过
+2026-01-09 09:42:04,331 - INFO - 新闻 39e41853 已分析过，跳过
+2026-01-09 09:42:04,333 - INFO - 新闻 039ddee3 已分析过，跳过
+2026-01-09 09:42:04,336 - INFO - 新闻 e13cf40b 已分析过，跳过
+2026-01-09 09:42:04,338 - INFO - 新闻 7d07bb6d 已分析过，跳过
+2026-01-09 09:42:04,340 - INFO - 新闻 103f4c2b 已分析过，跳过
+2026-01-09 09:42:04,342 - INFO - 新闻 6e8ed2d4 已分析过，跳过
+2026-01-09 09:42:04,344 - INFO - 新闻 d458db42 已分析过，跳过
+2026-01-09 09:42:04,345 - INFO - 新闻 64d71ecb 已分析过，跳过
+2026-01-09 09:42:04,345 - INFO - 新闻 f8b7ae4c 已分析过，跳过
+2026-01-09 09:42:04,352 - INFO - 新闻 757054de 已分析过，跳过
+2026-01-09 09:42:04,355 - INFO - 新闻 7228f72e 已分析过，跳过
+2026-01-09 09:42:04,357 - INFO - 新闻 fe8c5c1f 已分析过，跳过
+2026-01-09 09:42:04,360 - INFO - 新闻 86195b2d 已分析过，跳过
+2026-01-09 09:42:04,362 - INFO - 新闻 2bcdfde4 已分析过，跳过
+2026-01-09 09:42:04,365 - INFO - 新闻 2d97a35f 已分析过，跳过
+2026-01-09 09:42:04,368 - INFO - 新闻 294f9cde 已分析过，跳过
+2026-01-09 09:42:04,371 - INFO - 新闻 fec442e7 已分析过，跳过
+2026-01-09 09:42:04,374 - INFO - 新闻 bcbccec9 已分析过，跳过
+2026-01-09 09:42:04,377 - INFO - 新闻 0cfe56b7 已分析过，跳过
+2026-01-09 09:42:04,379 - INFO - 新闻 918c2488 已分析过，跳过
+2026-01-09 09:42:04,381 - INFO - 新闻 67447253 已分析过，跳过
+2026-01-09 09:42:04,384 - INFO - 新闻 d80d4bef 已分析过，跳过
+2026-01-09 09:42:04,386 - INFO - 新闻 e08a24d4 已分析过，跳过
+2026-01-09 09:42:04,388 - INFO - 分析新闻: 伊拉克总统：我们呼吁叙利亚各方保持克制，重返对话桌，以和平方式解决问题，避免采取暴力行动。...
+2026-01-09 09:42:07,433 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:07,484 - INFO - 情感分析结果已保存到数据库 (score: 0.4)
+2026-01-09 09:42:07,485 - INFO - [OK] 情感评分: 0.4, 标签: positive, 情绪: cautious
+2026-01-09 09:42:08,003 - INFO - 分析新闻: 【手机数码国补超72%买中高端机】记者从商务部了解到，自2024年消费品以旧换新政策实施以来，相关商...
+2026-01-09 09:42:11,032 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:11,061 - INFO - 情感分析结果已保存到数据库 (score: 0.82)
+2026-01-09 09:42:11,062 - INFO - [OK] 情感评分: 0.82, 标签: positive, 情绪: enthusiastic
+2026-01-09 09:42:11,570 - INFO - 分析新闻: 郑商所公告，经研究决定，现将动力煤期货2701合约有关事项公告如下：一、交易保证金标准和涨跌停板幅度...
+2026-01-09 09:42:14,818 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:14,834 - INFO - 情感分析结果已保存到数据库 (score: -0.75)
+2026-01-09 09:42:14,834 - INFO - [OK] 情感评分: -0.75, 标签: negative, 情绪: cautious
+2026-01-09 09:42:15,354 - INFO - 分析新闻: 2026年1月8日下午，跨境清算公司召开2026年工作会议。会议指出，2026年是“十五五”开局之年...
+2026-01-09 09:42:18,465 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:18,492 - INFO - 情感分析结果已保存到数据库 (score: 0.65)
+2026-01-09 09:42:18,493 - INFO - [OK] 情感评分: 0.65, 标签: positive, 情绪: optimistic
+2026-01-09 09:42:19,006 - INFO - 分析新闻: 财联社1月8日电，法拉利表示将于2月10日公布2025年财务结果。...
+2026-01-09 09:42:21,860 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:21,877 - INFO - 情感分析结果已保存到数据库 (score: 0.1)
+2026-01-09 09:42:21,877 - INFO - [OK] 情感评分: 0.1, 标签: neutral, 情绪: uncertain
+2026-01-09 09:42:22,393 - INFO - 分析新闻: 1月8日，深圳信息职业技术大学成立大会举行，市长覃伟中出席活动并致辞。覃伟中代表市委市政府向深信大的...
+2026-01-09 09:42:25,858 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:25,878 - INFO - 情感分析结果已保存到数据库 (score: 0.8)
+2026-01-09 09:42:25,878 - INFO - [OK] 情感评分: 0.8, 标签: positive, 情绪: enthusiastic
+2026-01-09 09:42:26,384 - INFO - 分析新闻: 在富国银行将Figma评级从“持股观望”上调至“增持”后，该股盘前上涨1.7%。...
+2026-01-09 09:42:29,100 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:29,134 - INFO - 情感分析结果已保存到数据库 (score: 0.7)
+2026-01-09 09:42:29,135 - INFO - [OK] 情感评分: 0.7, 标签: positive, 情绪: optimistic
+2026-01-09 09:42:29,643 - INFO - 分析新闻: 沙特阿拉伯驻也门大使穆罕默德·贾比尔1月8日在社交媒体上发文说，他在沙特首都利雅得会见了也门南方过渡...
+2026-01-09 09:42:33,145 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:33,165 - INFO - 情感分析结果已保存到数据库 (score: -0.35)
+2026-01-09 09:42:33,166 - INFO - [OK] 情感评分: -0.35, 标签: negative, 情绪: cautious
+2026-01-09 09:42:33,681 - INFO - 分析新闻: 36氪获悉，兔宝宝公告，公司全资子公司兔宝宝投资以4亿元向大自然家居（中国）有限公司（简称“大自然中...
+2026-01-09 09:42:37,662 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:37,689 - INFO - 情感分析结果已保存到数据库 (score: 0.55)
+2026-01-09 09:42:37,691 - INFO - [OK] 情感评分: 0.55, 标签: positive, 情绪: optimistic
+2026-01-09 09:42:38,203 - INFO - 分析新闻: 财联社1月8日电，富国银行将微软目标价从700美元下调至665美元；将CoreWeave目标价从15...
+2026-01-09 09:42:41,473 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:41,502 - INFO - 情感分析结果已保存到数据库 (score: -0.45)
+2026-01-09 09:42:41,502 - INFO - [OK] 情感评分: -0.45, 标签: negative, 情绪: pessimistic
+2026-01-09 09:42:42,015 - INFO - 分析新闻: 2025年，交易商协会支持2300余家企业发行债务融资工具10.1万亿元，连续两年突破十万亿元，净融...
+2026-01-09 09:42:45,520 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:45,565 - INFO - 情感分析结果已保存到数据库 (score: 0.82)
+2026-01-09 09:42:45,567 - INFO - [OK] 情感评分: 0.82, 标签: positive, 情绪: optimistic
+2026-01-09 09:42:46,088 - INFO - 分析新闻: 财联社1月8日电，俄罗斯外交部8日说，严重关切美国7日对“水手”号油轮进行的非法武力行动。...
+2026-01-09 09:42:48,844 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:48,871 - INFO - 情感分析结果已保存到数据库 (score: -0.75)
+2026-01-09 09:42:48,872 - INFO - [OK] 情感评分: -0.75, 标签: negative, 情绪: pessimistic
+2026-01-09 09:42:49,390 - INFO - 分析新闻: 【跨境清算公司：统筹发展与安全 加大拓展CIPS网络力度】财联社1月8日电，跨境清算公司召开2026...
+2026-01-09 09:42:53,324 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:53,366 - INFO - 情感分析结果已保存到数据库 (score: 0.68)
+2026-01-09 09:42:53,368 - INFO - [OK] 情感评分: 0.68, 标签: positive, 情绪: optimistic
+2026-01-09 09:42:53,878 - INFO - 分析新闻: 36氪获悉，派瑞股份公告，公司与某供应商及其关联方签署采购相关协议，约定公司在协议期限内向某供应商及...
+2026-01-09 09:42:56,479 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:42:56,515 - INFO - 情感分析结果已保存到数据库 (score: 0.68)
+2026-01-09 09:42:56,515 - INFO - [OK] 情感评分: 0.68, 标签: positive, 情绪: optimistic
+2026-01-09 09:42:57,026 - INFO - 分析新闻: 海亮股份公告，公司原拟以现金方式受让金龙精密铜管集团股份有限公司（简称“金龙集团”）部分股份，同时，...
+2026-01-09 09:43:00,585 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:00,607 - INFO - 情感分析结果已保存到数据库 (score: -0.4)
+2026-01-09 09:43:00,607 - INFO - [OK] 情感评分: -0.4, 标签: negative, 情绪: cautious
+2026-01-09 09:43:01,117 - INFO - 分析新闻: 毅昌科技公告，滁州市国资委已出具批复，同意滁州城投集团出资组建的滁州蔚然科技发展合伙企业（有限合伙）...
+2026-01-09 09:43:03,917 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:03,936 - INFO - 情感分析结果已保存到数据库 (score: 0.7)
+2026-01-09 09:43:03,937 - INFO - [OK] 情感评分: 0.7, 标签: positive, 情绪: optimistic
+2026-01-09 09:43:04,454 - INFO - 分析新闻: *ST绿康公告，公司于2025年4月24日召开董事会会议，审议通过了向康怡投资、义睿投资、长鑫贰号、...
+2026-01-09 09:43:07,497 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:07,527 - INFO - 情感分析结果已保存到数据库 (score: -0.4)
+2026-01-09 09:43:07,527 - INFO - [OK] 情感评分: -0.4, 标签: negative, 情绪: cautious
+2026-01-09 09:43:08,035 - INFO - 分析新闻: 华夏幸福公告，公司控股股东华夏幸福基业控股股份公司及实际控制人王文学被平安资产管理有限责任公司及中国...
+2026-01-09 09:43:10,947 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:10,966 - INFO - 情感分析结果已保存到数据库 (score: -0.75)
+2026-01-09 09:43:10,967 - INFO - [OK] 情感评分: -0.75, 标签: negative, 情绪: pessimistic
+2026-01-09 09:43:11,481 - INFO - 分析新闻: 汇丰控股同意支付约3亿欧元（3.5亿美元）以了结法国的刑事和税务案件，该案涉及汇丰在所谓“Cum-C...
+2026-01-09 09:43:14,322 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:14,344 - INFO - 情感分析结果已保存到数据库 (score: -0.55)
+2026-01-09 09:43:14,345 - INFO - [OK] 情感评分: -0.55, 标签: negative, 情绪: pessimistic
+2026-01-09 09:43:14,863 - INFO - 分析新闻: 【海亮股份：搁置投资入股金龙集团事项】财联社1月8日电，海亮股份(002203.SZ)公告称，公司原...
+2026-01-09 09:43:18,814 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:18,839 - INFO - 情感分析结果已保存到数据库 (score: -0.4)
+2026-01-09 09:43:18,840 - INFO - [OK] 情感评分: -0.4, 标签: negative, 情绪: cautious
+2026-01-09 09:43:19,361 - INFO - 分析新闻: 财联社1月8日电，摩根士丹利将阿里巴巴目标价从200美元下调至180美元。...
+2026-01-09 09:43:22,452 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:22,475 - INFO - 情感分析结果已保存到数据库 (score: -0.5)
+2026-01-09 09:43:22,476 - INFO - [OK] 情感评分: -0.5, 标签: negative, 情绪: pessimistic
+2026-01-09 09:43:22,985 - INFO - 分析新闻: 【华夏幸福：平安资管及平安人寿请求裁决控股股东华夏控股支付业绩补偿款及逾期付款违约金约64亿元】财联...
+2026-01-09 09:43:26,463 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:26,488 - INFO - 情感分析结果已保存到数据库 (score: -0.85)
+2026-01-09 09:43:26,488 - INFO - [OK] 情感评分: -0.85, 标签: negative, 情绪: pessimistic
+2026-01-09 09:43:27,003 - INFO - 分析新闻: 【工业富联：2025年半年度合计派发现金红利65.5亿元(含税) 股权登记日为2026年1月15日】...
+2026-01-09 09:43:30,159 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:30,184 - INFO - 情感分析结果已保存到数据库 (score: 0.7)
+2026-01-09 09:43:30,185 - INFO - [OK] 情感评分: 0.7, 标签: positive, 情绪: optimistic
+2026-01-09 09:43:30,688 - INFO - 分析新闻: 工业富联公告，公司2025年半年度权益分派方案为每10股派送现金红利3.3元（含税），股权登记日为2...
+2026-01-09 09:43:34,015 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:34,044 - INFO - 情感分析结果已保存到数据库 (score: 0.7)
+2026-01-09 09:43:34,044 - INFO - [OK] 情感评分: 0.7, 标签: positive, 情绪: optimistic
+2026-01-09 09:43:34,553 - INFO - 分析新闻: 【华夏幸福：预计2025年净利润亏损且期末净资产可能为负值】财联社1月8日电，华夏幸福(600340...
+2026-01-09 09:43:39,086 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:39,104 - INFO - 情感分析结果已保存到数据库 (score: -0.92)
+2026-01-09 09:43:39,104 - INFO - [OK] 情感评分: -0.92, 标签: negative, 情绪: pessimistic
+2026-01-09 09:43:39,624 - INFO - 分析新闻: 豪美新材公告，公司近日收到深圳证券交易所出具的《关于受理广东豪美新材股份有限公司向特定对象发行股票申...
+2026-01-09 09:43:43,096 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:43,116 - INFO - 情感分析结果已保存到数据库 (score: 0.55)
+2026-01-09 09:43:43,116 - INFO - [OK] 情感评分: 0.55, 标签: positive, 情绪: optimistic
+2026-01-09 09:43:43,638 - INFO - 分析新闻: 36氪获悉，根据汇丰控股与恒生银行1月8日的联合公告，汇丰将恒生银行私有化的建议获恒生银行法院会议、...
+2026-01-09 09:43:46,885 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:46,925 - INFO - 情感分析结果已保存到数据库 (score: 0.5)
+2026-01-09 09:43:46,927 - INFO - [OK] 情感评分: 0.5, 标签: positive, 情绪: optimistic
+2026-01-09 09:43:47,435 - INFO - 分析新闻: 盘后数据显示，1月8日龙虎榜中，共45只个股出现了机构的身影，有24只股票呈现机构净买入，21只股票...
+2026-01-09 09:43:50,849 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:50,872 - INFO - 情感分析结果已保存到数据库 (score: 0.35)
+2026-01-09 09:43:50,872 - INFO - [OK] 情感评分: 0.35, 标签: positive, 情绪: cautious
+2026-01-09 09:43:51,390 - INFO - 分析新闻: 澳华内镜公告，控股股东、实际控制人顾小舟已于2025年11月24日至2026年1月7日通过集中竞价减...
+2026-01-09 09:43:54,598 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:54,616 - INFO - 情感分析结果已保存到数据库 (score: -0.55)
+2026-01-09 09:43:54,616 - INFO - [OK] 情感评分: -0.55, 标签: negative, 情绪: pessimistic
+2026-01-09 09:43:55,125 - INFO - 分析新闻: 华夏幸福公告，预计2025年度归属于上市公司股东的净利润为负值，公司2025年年度经营业绩将出现亏损...
+2026-01-09 09:43:57,919 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:43:57,945 - INFO - 情感分析结果已保存到数据库 (score: -0.92)
+2026-01-09 09:43:57,945 - INFO - [OK] 情感评分: -0.92, 标签: negative, 情绪: pessimistic
+2026-01-09 09:43:58,459 - INFO - 分析新闻: 俄罗斯外交部1月8日称，西方国家在乌克兰部署的军事单位、军事设施等都将被视为俄罗斯武装部队的合法作战...
+2026-01-09 09:44:00,993 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:01,023 - INFO - 情感分析结果已保存到数据库 (score: -0.85)
+2026-01-09 09:44:01,024 - INFO - [OK] 情感评分: -0.85, 标签: negative, 情绪: pessimistic
+2026-01-09 09:44:01,538 - INFO - 分析新闻: 广州发文聚焦攻关可重复使用火箭技术！机构称可回收火箭带来火箭发射成本的大幅降低和运力的大幅提升，有望...
+2026-01-09 09:44:05,892 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:05,914 - INFO - 情感分析结果已保存到数据库 (score: 0.82)
+2026-01-09 09:44:05,915 - INFO - [OK] 情感评分: 0.82, 标签: positive, 情绪: enthusiastic
+2026-01-09 09:44:06,429 - INFO - 分析新闻: 【康泰生物：吸附无细胞百白破（组分）联合疫苗临床试验申请获受理】财联社1月8日电，康泰生物(3006...
+2026-01-09 09:44:09,794 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:09,824 - INFO - 情感分析结果已保存到数据库 (score: 0.65)
+2026-01-09 09:44:09,824 - INFO - [OK] 情感评分: 0.65, 标签: positive, 情绪: optimistic
+2026-01-09 09:44:10,341 - INFO - 分析新闻: 康泰生物公告，全资子公司北京民海生物科技有限公司收到国家药品监督管理局签发的受理通知书，同意受理其研...
+2026-01-09 09:44:13,401 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:13,429 - INFO - 情感分析结果已保存到数据库 (score: 0.82)
+2026-01-09 09:44:13,430 - INFO - [OK] 情感评分: 0.82, 标签: positive, 情绪: enthusiastic
+2026-01-09 09:44:13,951 - INFO - 分析新闻: 【全信股份：拟发行可转债募资不超过3.12亿元 用于商用航空传输与互联通信集成化产品生产项目等】财联...
+2026-01-09 09:44:16,708 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:16,739 - INFO - 情感分析结果已保存到数据库 (score: 0.65)
+2026-01-09 09:44:16,740 - INFO - [OK] 情感评分: 0.65, 标签: positive, 情绪: optimistic
+2026-01-09 09:44:17,259 - INFO - 分析新闻: 雀巢公司8日最新表示，受可能存在有毒污染影响的产品已在至少50个国家启动召回。拉美、亚洲、非洲和中东...
+2026-01-09 09:44:21,070 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:21,109 - INFO - 情感分析结果已保存到数据库 (score: -0.85)
+2026-01-09 09:44:21,110 - INFO - [OK] 情感评分: -0.85, 标签: negative, 情绪: pessimistic
+2026-01-09 09:44:21,623 - INFO - 分析新闻: *ST聆达公告，公司重整计划已执行完毕，因被法院裁定受理重整而触及的退市风险警示情形已消除，公司已于...
+2026-01-09 09:44:25,294 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:25,316 - INFO - 情感分析结果已保存到数据库 (score: -0.5)
+2026-01-09 09:44:25,316 - INFO - [OK] 情感评分: -0.5, 标签: negative, 情绪: pessimistic
+2026-01-09 09:44:25,822 - INFO - 分析新闻: 全信股份公告，公司拟向不特定对象发行可转换公司债券募集资金不超过3.12亿元，扣除发行费用后的募集资...
+2026-01-09 09:44:29,720 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:29,744 - INFO - 情感分析结果已保存到数据库 (score: 0.65)
+2026-01-09 09:44:29,744 - INFO - [OK] 情感评分: 0.65, 标签: positive, 情绪: optimistic
+2026-01-09 09:44:30,263 - INFO - 分析新闻: 【摩尔线程：正式发布开源大模型分布式训练仿真工具SimuMax的1.1版本】财联社1月8日电，摩尔线...
+2026-01-09 09:44:33,712 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:33,729 - INFO - 情感分析结果已保存到数据库 (score: 0.82)
+2026-01-09 09:44:33,730 - INFO - [OK] 情感评分: 0.82, 标签: positive, 情绪: enthusiastic
+2026-01-09 09:44:34,235 - INFO - 分析新闻: 京东在港交所公告，2025年度回购共计约1.8亿股A类普通股，总额约为30亿美元。截至公告日，202...
+2026-01-09 09:44:37,219 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:37,228 - INFO - 情感分析结果已保存到数据库 (score: 0.82)
+2026-01-09 09:44:37,228 - INFO - [OK] 情感评分: 0.82, 标签: positive, 情绪: optimistic
+2026-01-09 09:44:37,757 - INFO - 分析新闻: 36氪获悉，中国核建公告，公司股票于2026年1月6日、7日、8日连续三个交易日内收盘价格涨幅偏离值...
+2026-01-09 09:44:41,071 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:41,087 - INFO - 情感分析结果已保存到数据库 (score: -0.1)
+2026-01-09 09:44:41,087 - INFO - [OK] 情感评分: -0.1, 标签: neutral, 情绪: cautious
+2026-01-09 09:44:41,601 - INFO - 分析新闻: 【墨西哥对华碳钢镀锌丝网作出反倾销日落复审终裁】财联社1月8日电，据商务部贸易救济局，墨西哥经济部1...
+2026-01-09 09:44:46,457 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:46,480 - INFO - 情感分析结果已保存到数据库 (score: -0.75)
+2026-01-09 09:44:46,480 - INFO - [OK] 情感评分: -0.75, 标签: negative, 情绪: pessimistic
+2026-01-09 09:44:46,996 - INFO - 分析新闻: 【京东：2025年回购约1.8亿股A类普通股 总额约30亿美元】财联社1月8日电，京东在港交所公告称...
+2026-01-09 09:44:50,501 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:50,519 - INFO - 情感分析结果已保存到数据库 (score: 0.72)
+2026-01-09 09:44:50,519 - INFO - [OK] 情感评分: 0.72, 标签: positive, 情绪: optimistic
+2026-01-09 09:44:51,033 - INFO - 分析新闻: 【荃银高科：中种集团要约收购期限届满 股票复牌】财联社1月8日电，荃银高科(300087.SZ)公告...
+2026-01-09 09:44:54,254 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:54,272 - INFO - 情感分析结果已保存到数据库 (score: 0.7)
+2026-01-09 09:44:54,272 - INFO - [OK] 情感评分: 0.7, 标签: positive, 情绪: optimistic
+2026-01-09 09:44:54,789 - INFO - 分析新闻: 荃银高科公告，中国种子集团有限公司在2025年12月4日至2026年1月5日要约收购期限内，最终有3...
+2026-01-09 09:44:59,022 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:44:59,040 - INFO - 情感分析结果已保存到数据库 (score: 0.72)
+2026-01-09 09:44:59,040 - INFO - [OK] 情感评分: 0.72, 标签: positive, 情绪: optimistic
+2026-01-09 09:44:59,548 - INFO - 分析新闻: 36氪获悉 ，普利特发布股价异动公告，LCP产品是公司经过多年研发的核心材料之一，可以广泛应用于多种...
+2026-01-09 09:45:02,878 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:02,898 - INFO - 情感分析结果已保存到数据库 (score: -0.4)
+2026-01-09 09:45:02,898 - INFO - [OK] 情感评分: -0.4, 标签: negative, 情绪: cautious
+2026-01-09 09:45:03,413 - INFO - 分析新闻: 【杭萧钢构就中标杭州箭元航天科技相关工程项目予以说明 对公司全年业绩不产生重大影响】财联社1月8日电...
+2026-01-09 09:45:06,500 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:06,520 - INFO - 情感分析结果已保存到数据库 (score: 0.1)
+2026-01-09 09:45:06,521 - INFO - [OK] 情感评分: 0.1, 标签: neutral, 情绪: cautious
+2026-01-09 09:45:07,044 - INFO - 分析新闻: 2026年1月7日，财政部副部长廖岷在京会见伦敦证券交易所集团首席执行官施维默，就宏观经济形势和政策...
+2026-01-09 09:45:10,093 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:10,115 - INFO - 情感分析结果已保存到数据库 (score: 0.7)
+2026-01-09 09:45:10,116 - INFO - [OK] 情感评分: 0.7, 标签: positive, 情绪: optimistic
+2026-01-09 09:45:10,636 - INFO - 分析新闻: 美克家居公告，自2026年1月1日起对全资子公司美克国际家私（天津）制造有限公司和美克国际家私加工（...
+2026-01-09 09:45:14,479 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:14,499 - INFO - 情感分析结果已保存到数据库 (score: -0.75)
+2026-01-09 09:45:14,500 - INFO - [OK] 情感评分: -0.75, 标签: negative, 情绪: pessimistic
+2026-01-09 09:45:15,015 - INFO - 分析新闻: 雀巢婴幼儿配方奶粉的全球召回范围进一步扩大。总部位于瑞士的雀巢公司当地时间8日表示，受可能存在有毒污...
+2026-01-09 09:45:17,666 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:17,689 - INFO - 情感分析结果已保存到数据库 (score: -0.85)
+2026-01-09 09:45:17,689 - INFO - [OK] 情感评分: -0.85, 标签: negative, 情绪: pessimistic
+2026-01-09 09:45:18,199 - INFO - 分析新闻: 36氪获悉，长城汽车携魏牌高山9、坦克500 Hi4-T智享版等4款车型亮相CES 2026，还展示...
+2026-01-09 09:45:21,477 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:21,494 - INFO - 情感分析结果已保存到数据库 (score: 0.82)
+2026-01-09 09:45:21,494 - INFO - [OK] 情感评分: 0.82, 标签: positive, 情绪: enthusiastic
+2026-01-09 09:45:22,010 - INFO - 分析新闻: 美克家居公告，公司目前处于亏损状态，2025年前三季度营业收入22.23亿元，同比下滑10.10%，...
+2026-01-09 09:45:24,736 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:24,760 - INFO - 情感分析结果已保存到数据库 (score: -0.75)
+2026-01-09 09:45:24,760 - INFO - [OK] 情感评分: -0.75, 标签: negative, 情绪: pessimistic
+2026-01-09 09:45:25,280 - INFO - 分析新闻: 【4连板美克家居：公司经营出现较大亏损 1月1日起已对天津美克和天津加工实施停工停产】财联社1月8日...
+2026-01-09 09:45:29,347 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:29,386 - INFO - 情感分析结果已保存到数据库 (score: -0.75)
+2026-01-09 09:45:29,386 - INFO - [OK] 情感评分: -0.75, 标签: negative, 情绪: pessimistic
+2026-01-09 09:45:29,898 - INFO - 分析新闻: 【4连板美克家居：预计2025年归属于上市公司股东的净利润为负值】财联社1月8日电，美克家居(600...
+2026-01-09 09:45:33,582 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:33,622 - INFO - 情感分析结果已保存到数据库 (score: -0.75)
+2026-01-09 09:45:33,623 - INFO - [OK] 情感评分: -0.75, 标签: negative, 情绪: pessimistic
+2026-01-09 09:45:34,144 - INFO - 分析新闻: 【俄方：西方国家在乌部署的军事单位等都将被视为作战目标】财联社1月8日电，俄罗斯外交部8日说，西方国...
+2026-01-09 09:45:37,515 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:37,525 - INFO - 情感分析结果已保存到数据库 (score: -0.85)
+2026-01-09 09:45:37,526 - INFO - [OK] 情感评分: -0.85, 标签: negative, 情绪: pessimistic
+2026-01-09 09:45:38,036 - INFO - 分析新闻: 36氪获悉，惠博普公告，公司收到控股股东长沙水业集团有限公司通知，水业集团正在筹划股权转让事项，可能...
+2026-01-09 09:45:41,354 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:41,382 - INFO - 情感分析结果已保存到数据库 (score: 0.55)
+2026-01-09 09:45:41,386 - INFO - [OK] 情感评分: 0.55, 标签: positive, 情绪: cautious
+2026-01-09 09:45:41,906 - INFO - 分析新闻: 财联社1月8日电，汇丰银行表示，预期恒生银行股份的上市地位将于1月27日被撤销。...
+2026-01-09 09:45:44,695 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:44,713 - INFO - 情感分析结果已保存到数据库 (score: -0.75)
+2026-01-09 09:45:44,713 - INFO - [OK] 情感评分: -0.75, 标签: negative, 情绪: pessimistic
+2026-01-09 09:45:45,222 - INFO - 分析新闻: 【以军监测到一次从加沙城地区向以色列方向发射火箭弹的活动】财联社1月8日电，以色列国防军当地时间1月...
+2026-01-09 09:45:48,253 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:48,271 - INFO - 情感分析结果已保存到数据库 (score: -0.5)
+2026-01-09 09:45:48,271 - INFO - [OK] 情感评分: -0.5, 标签: negative, 情绪: pessimistic
+2026-01-09 09:45:48,786 - INFO - 分析新闻: 【中共中央政治局常务委员会召开会议 中共中央总书记习近平主持会议】财联社1月8日电，据央视新闻，中共...
+2026-01-09 09:45:52,291 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:52,308 - INFO - 情感分析结果已保存到数据库 (score: 0.65)
+2026-01-09 09:45:52,310 - INFO - [OK] 情感评分: 0.65, 标签: positive, 情绪: optimistic
+2026-01-09 09:45:52,823 - INFO - 分析新闻: 中共中央政治局常务委员会1月8日全天召开会议，听取全国人大常委会、国务院、全国政协、最高人民法院、最...
+2026-01-09 09:45:55,543 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:55,561 - INFO - 情感分析结果已保存到数据库 (score: 0.3)
+2026-01-09 09:45:55,562 - INFO - [OK] 情感评分: 0.3, 标签: positive, 情绪: cautious
+2026-01-09 09:45:56,070 - INFO - 分析新闻: 【麦当劳再度沽售香港铺位 作价约1.19亿港元】财联社1月8日电，据报道，麦当劳卖出香港铜锣湾的一个...
+2026-01-09 09:45:59,263 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:45:59,281 - INFO - 情感分析结果已保存到数据库 (score: -0.4)
+2026-01-09 09:45:59,282 - INFO - [OK] 情感评分: -0.4, 标签: negative, 情绪: cautious
+2026-01-09 09:45:59,798 - INFO - 分析新闻: ①商业航天+卫星通信+芯片+军工，系6G卫星互联网的核心芯片供应商，产品主要应用于卫星及卫星通信载荷...
+2026-01-09 09:46:03,219 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:46:03,233 - INFO - 情感分析结果已保存到数据库 (score: 0.82)
+2026-01-09 09:46:03,236 - INFO - [OK] 情感评分: 0.82, 标签: positive, 情绪: enthusiastic
+2026-01-09 09:46:03,753 - INFO - 分析新闻: 【爱美客：独家经销的注射用A型肉毒毒素产品获得药品注册证书】财联社1月8日电，爱美客(300896....
+2026-01-09 09:46:08,724 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:46:08,737 - INFO - 情感分析结果已保存到数据库 (score: 0.82)
+2026-01-09 09:46:08,737 - INFO - [OK] 情感评分: 0.82, 标签: positive, 情绪: enthusiastic
+2026-01-09 09:46:09,245 - INFO - 分析新闻: 爱美客公告，公司在中国（包括澳门和香港）独家经销的韩国Huons BioPharma Co., Lt...
+2026-01-09 09:46:12,123 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:46:12,145 - INFO - 情感分析结果已保存到数据库 (score: 0.82)
+2026-01-09 09:46:12,146 - INFO - [OK] 情感评分: 0.82, 标签: positive, 情绪: enthusiastic
+2026-01-09 09:46:12,669 - INFO - 分析新闻: 【仙琚制药：取得倍他米松磷酸钠注射液境内生产药品注册证书】财联社1月8日电，仙琚制药(002332....
+2026-01-09 09:46:15,689 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:46:15,709 - INFO - 情感分析结果已保存到数据库 (score: 0.65)
+2026-01-09 09:46:15,709 - INFO - [OK] 情感评分: 0.65, 标签: positive, 情绪: optimistic
+2026-01-09 09:46:16,232 - INFO - 分析新闻: 贵州省人民政府办公厅近日印发《贵州省推进治理数智化转型三年行动方案（2026—2028年）》。《行动...
+2026-01-09 09:46:19,022 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:46:19,045 - INFO - 情感分析结果已保存到数据库 (score: 0.68)
+2026-01-09 09:46:19,046 - INFO - [OK] 情感评分: 0.68, 标签: positive, 情绪: optimistic
+2026-01-09 09:46:19,557 - INFO - 分析新闻: 36氪获悉，鲁信创投公告，公司股票价格最近10个交易日累计上涨86.94%，存在股价短期涨幅较大后续...
+2026-01-09 09:46:22,853 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:46:22,870 - INFO - 情感分析结果已保存到数据库 (score: -0.5)
+2026-01-09 09:46:22,871 - INFO - [OK] 情感评分: -0.5, 标签: negative, 情绪: cautious
+2026-01-09 09:46:23,378 - INFO - 分析新闻: 仙琚制药公告，近日收到国家药品监督管理局核准签发的关于倍他米松磷酸钠注射液的《药品注册证书》（证书编...
+2026-01-09 09:46:26,476 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:46:26,496 - INFO - 情感分析结果已保存到数据库 (score: 0.7)
+2026-01-09 09:46:26,497 - INFO - [OK] 情感评分: 0.7, 标签: positive, 情绪: optimistic
+2026-01-09 09:46:27,020 - INFO - 分析新闻: 【贵州：2026年基本建成一体化政务云、互联互通政务网、公共数据资源底座】财联社1月8日电，贵州省人...
+2026-01-09 09:46:29,290 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:46:29,307 - INFO - 情感分析结果已保存到数据库 (score: 0.65)
+2026-01-09 09:46:29,307 - INFO - [OK] 情感评分: 0.65, 标签: positive, 情绪: optimistic
+2026-01-09 09:46:29,816 - INFO - 分析新闻: 36氪获悉，雷军发文称：“2020年我们就明确了技术立业的战略，并提出5年投入1000亿在研发上。我...
+2026-01-09 09:46:33,895 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-09 09:46:33,916 - INFO - 情感分析结果已保存到数据库 (score: 0.82)
+2026-01-09 09:46:33,916 - INFO - [OK] 情感评分: 0.82, 标签: positive, 情绪: enthusiastic
+2026-01-09 09:46:34,428 - INFO - 
+情感分析完成！成功: 70, 失败: 0
+2026-01-09 09:46:34,435 - INFO - 情感分析系统结束
+2026-01-09 09:57:32,846 - INFO - ============================================================
+2026-01-09 09:57:32,846 - INFO - 启动深度情感分析系统
+2026-01-09 09:57:32,846 - INFO - ============================================================
+2026-01-09 09:57:32,847 - INFO - 配置文件加载成功
+2026-01-09 09:57:33,102 - INFO - 情感分析数据表创建成功
+2026-01-09 09:57:34,091 - INFO - 获取到 50 条新闻，开始情感分析...
+2026-01-09 09:57:34,093 - INFO - 新闻 ff4ea569 已分析过，跳过
+2026-01-09 09:57:34,097 - INFO - 新闻 d104f1e0 已分析过，跳过
+2026-01-09 09:57:34,102 - INFO - 新闻 ae85e3e5 已分析过，跳过
+2026-01-09 09:57:34,106 - INFO - 新闻 c62412b4 已分析过，跳过
+2026-01-09 09:57:34,111 - INFO - 新闻 f1cddbc5 已分析过，跳过
+2026-01-09 09:57:34,115 - INFO - 新闻 b424e240 已分析过，跳过
+2026-01-09 09:57:34,118 - INFO - 新闻 e74071a5 已分析过，跳过
+2026-01-09 09:57:34,124 - INFO - 新闻 39e41853 已分析过，跳过
+2026-01-09 09:57:34,129 - INFO - 新闻 039ddee3 已分析过，跳过
+2026-01-09 09:57:34,135 - INFO - 新闻 e13cf40b 已分析过，跳过
+2026-01-09 09:57:34,138 - INFO - 新闻 7d07bb6d 已分析过，跳过
+2026-01-09 09:57:34,148 - INFO - 新闻 103f4c2b 已分析过，跳过
+2026-01-09 09:57:34,153 - INFO - 新闻 6e8ed2d4 已分析过，跳过
+2026-01-09 09:57:34,158 - INFO - 新闻 d458db42 已分析过，跳过
+2026-01-09 09:57:34,163 - INFO - 新闻 64d71ecb 已分析过，跳过
+2026-01-09 09:57:34,168 - INFO - 新闻 f8b7ae4c 已分析过，跳过
+2026-01-09 09:57:34,175 - INFO - 新闻 757054de 已分析过，跳过
+2026-01-09 09:57:34,181 - INFO - 新闻 7228f72e 已分析过，跳过
+2026-01-09 09:57:34,185 - INFO - 新闻 fe8c5c1f 已分析过，跳过
+2026-01-09 09:57:34,191 - INFO - 新闻 86195b2d 已分析过，跳过
+2026-01-09 09:57:34,196 - INFO - 新闻 2bcdfde4 已分析过，跳过
+2026-01-09 09:57:34,203 - INFO - 新闻 2d97a35f 已分析过，跳过
+2026-01-09 09:57:34,210 - INFO - 新闻 294f9cde 已分析过，跳过
+2026-01-09 09:57:34,217 - INFO - 新闻 fec442e7 已分析过，跳过
+2026-01-09 09:57:34,223 - INFO - 新闻 bcbccec9 已分析过，跳过
+2026-01-09 09:57:34,228 - INFO - 新闻 0cfe56b7 已分析过，跳过
+2026-01-09 09:57:34,234 - INFO - 新闻 918c2488 已分析过，跳过
+2026-01-09 09:57:34,241 - INFO - 新闻 67447253 已分析过，跳过
+2026-01-09 09:57:34,244 - INFO - 新闻 d80d4bef 已分析过，跳过
+2026-01-09 09:57:34,247 - INFO - 新闻 e08a24d4 已分析过，跳过
+2026-01-09 09:57:34,253 - INFO - 新闻 acc9ce76 已分析过，跳过
+2026-01-09 09:57:34,259 - INFO - 新闻 625a3136 已分析过，跳过
+2026-01-09 09:57:34,264 - INFO - 新闻 05859946 已分析过，跳过
+2026-01-09 09:57:34,268 - INFO - 新闻 b6c2f526 已分析过，跳过
+2026-01-09 09:57:34,271 - INFO - 新闻 9cd03db4 已分析过，跳过
+2026-01-09 09:57:34,275 - INFO - 新闻 95e83ede 已分析过，跳过
+2026-01-09 09:57:34,278 - INFO - 新闻 98242bf4 已分析过，跳过
+2026-01-09 09:57:34,278 - INFO - 新闻 635cf6dd 已分析过，跳过
+2026-01-09 09:57:34,278 - INFO - 新闻 af220a58 已分析过，跳过
+2026-01-09 09:57:34,289 - INFO - 新闻 d4235955 已分析过，跳过
+2026-01-09 09:57:34,293 - INFO - 新闻 ee2a44bf 已分析过，跳过
+2026-01-09 09:57:34,295 - INFO - 新闻 b46d8eef 已分析过，跳过
+2026-01-09 09:57:34,300 - INFO - 新闻 5e5f17ee 已分析过，跳过
+2026-01-09 09:57:34,305 - INFO - 新闻 bfbbf28d 已分析过，跳过
+2026-01-09 09:57:34,310 - INFO - 新闻 33a35079 已分析过，跳过
+2026-01-09 09:57:34,310 - INFO - 新闻 c9eb3142 已分析过，跳过
+2026-01-09 09:57:34,318 - INFO - 新闻 d01a6046 已分析过，跳过
+2026-01-09 09:57:34,319 - INFO - 新闻 87202ad1 已分析过，跳过
+2026-01-09 09:57:34,322 - INFO - 新闻 f0d0f426 已分析过，跳过
+2026-01-09 09:57:34,327 - INFO - 新闻 95875651 已分析过，跳过
+2026-01-09 09:57:34,327 - INFO - 
+情感分析完成！成功: 0, 失败: 0
+2026-01-09 09:57:34,339 - INFO - 情感分析系统结束

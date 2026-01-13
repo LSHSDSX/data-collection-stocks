@@ -2068,13 +2068,13 @@ def api_get_stock_alerts(request, stock_code):
         )
         cursor = conn.cursor(dictionary=True)
 
-        # 获取最近24小时的预警
+        # 获取最近7天的预警（修改为更长时间范围）
         query = """
         SELECT * FROM multi_factor_alerts
         WHERE stock_code = %s
-            AND alert_time >= DATE_SUB(NOW(), INTERVAL 24 HOUR)
+            AND alert_time >= DATE_SUB(NOW(), INTERVAL 7 DAY)
         ORDER BY alert_time DESC
-        LIMIT 50
+        LIMIT 100
         """
 
         cursor.execute(query, (stock_code,))
@@ -2110,3 +2110,204 @@ def api_get_stock_alerts(request, stock_code):
             'success': False,
             'error': str(e)
         }, status=500)
+
+
+@require_http_methods(["GET"])
+def api_get_gpr_predictions(request, stock_code):
+    """获取指定股票的GPR预测数据"""
+    try:
+        config = load_config()
+        conn = mysql.connector.connect(
+            host=config['mysql_config']['host'],
+            user=config['mysql_config']['user'],
+            password=config['mysql_config']['password'],
+            database=config['mysql_config']['database']
+        )
+        cursor = conn.cursor(dictionary=True)
+
+        # 检查表是否存在
+        check_query = """
+        SELECT COUNT(*) as count
+        FROM information_schema.tables
+        WHERE table_schema = DATABASE()
+        AND table_name = 'stock_price_predictions'
+        """
+        cursor.execute(check_query)
+        result = cursor.fetchone()
+
+        if not result or result['count'] == 0:
+            cursor.close()
+            conn.close()
+            return JsonResponse({
+                'success': True,
+                'stock_code': stock_code,
+                'predictions': []
+            })
+
+        # 获取最近的预测数据
+        query = """
+        SELECT
+            target_date,
+            predicted_price,
+            price_lower_bound as lower_bound,
+            price_upper_bound as upper_bound,
+            prediction_std,
+            created_at as prediction_time
+        FROM stock_price_predictions
+        WHERE stock_code = %s
+            AND created_at >= DATE_SUB(NOW(), INTERVAL 7 DAY)
+        ORDER BY created_at DESC, target_date ASC
+        LIMIT 50
+        """
+
+        cursor.execute(query, (stock_code,))
+        predictions = cursor.fetchall()
+
+        # 转换数据类型
+        for pred in predictions:
+            if 'target_date' in pred and pred['target_date']:
+                pred['target_date'] = pred['target_date'].strftime('%Y-%m-%d')
+            if 'prediction_time' in pred and pred['prediction_time']:
+                pred['prediction_time'] = pred['prediction_time'].strftime('%Y-%m-%d %H:%M:%S')
+            if 'predicted_price' in pred and pred['predicted_price']:
+                pred['predicted_price'] = float(pred['predicted_price'])
+            if 'lower_bound' in pred and pred['lower_bound']:
+                pred['lower_bound'] = float(pred['lower_bound'])
+            if 'upper_bound' in pred and pred['upper_bound']:
+                pred['upper_bound'] = float(pred['upper_bound'])
+            if 'confidence_score' in pred and pred['confidence_score']:
+                pred['confidence_score'] = float(pred['confidence_score'])
+
+        cursor.close()
+        conn.close()
+
+        return JsonResponse({
+            'success': True,
+            'stock_code': stock_code,
+            'count': len(predictions),
+            'predictions': predictions
+        })
+
+    except Exception as e:
+        logger.error(f"获取GPR预测失败: {str(e)}")
+        return JsonResponse({
+            'success': False,
+            'error': str(e)
+        }, status=500)
+
+
+@require_http_methods(["GET"])
+def api_get_stock_sentiment(request, stock_code):
+    """获取指定股票的新闻情感数据"""
+    try:
+        config = load_config()
+        conn = mysql.connector.connect(
+            host=config['mysql_config']['host'],
+            user=config['mysql_config']['user'],
+            password=config['mysql_config']['password'],
+            database=config['mysql_config']['database']
+        )
+        cursor = conn.cursor(dictionary=True)
+
+        # 获取股票名称
+        stocks = config.get('stocks', [])
+        stock_info = next((s for s in stocks if s['code'] == stock_code), None)
+        if not stock_info:
+            cursor.close()
+            conn.close()
+            return JsonResponse({
+                'success': False,
+                'error': '股票代码不存在'
+            }, status=404)
+
+        stock_name = stock_info['name']
+
+        # 检查news_sentiment表是否存在
+        check_query = """
+        SELECT COUNT(*) as count
+        FROM information_schema.tables
+        WHERE table_schema = DATABASE()
+        AND table_name = 'news_sentiment'
+        """
+        cursor.execute(check_query)
+        result = cursor.fetchone()
+
+        if not result or result['count'] == 0:
+            cursor.close()
+            conn.close()
+            return JsonResponse({
+                'success': True,
+                'stock_code': stock_code,
+                'sentiment_data': [],
+                'avg_sentiment': 0,
+                'sentiment_trend': 'neutral'
+            })
+
+        # 获取最近7天的情感数据
+        query = """
+        SELECT
+            news_title,
+            news_content,
+            sentiment_score,
+            sentiment_label,
+            confidence,
+            emotion_type,
+            market_impact,
+            analyzed_at
+        FROM news_sentiment
+        WHERE (news_title LIKE %s OR news_content LIKE %s)
+            AND analyzed_at >= DATE_SUB(NOW(), INTERVAL 7 DAY)
+        ORDER BY analyzed_at DESC
+        LIMIT 100
+        """
+
+        search_pattern = f'%{stock_name}%'
+        cursor.execute(query, (search_pattern, search_pattern))
+        sentiment_data = cursor.fetchall()
+
+        # 转换数据类型
+        for item in sentiment_data:
+            if 'analyzed_at' in item and item['analyzed_at']:
+                item['analyzed_at'] = item['analyzed_at'].strftime('%Y-%m-%d %H:%M:%S')
+            if 'sentiment_score' in item and item['sentiment_score']:
+                item['sentiment_score'] = float(item['sentiment_score'])
+            if 'confidence' in item and item['confidence']:
+                item['confidence'] = float(item['confidence'])
+
+        # 计算平均情感和趋势
+        avg_sentiment = 0
+        sentiment_trend = 'neutral'
+        if sentiment_data:
+            scores = [item['sentiment_score'] for item in sentiment_data if item['sentiment_score'] is not None]
+            if scores:
+                avg_sentiment = sum(scores) / len(scores)
+                if avg_sentiment > 0.3:
+                    sentiment_trend = 'positive'
+                elif avg_sentiment < -0.3:
+                    sentiment_trend = 'negative'
+
+        cursor.close()
+        conn.close()
+
+        return JsonResponse({
+            'success': True,
+            'stock_code': stock_code,
+            'stock_name': stock_name,
+            'count': len(sentiment_data),
+            'sentiment_data': sentiment_data,
+            'avg_sentiment': round(avg_sentiment, 3),
+            'sentiment_trend': sentiment_trend
+        })
+
+    except Exception as e:
+        logger.error(f"获取股票情感数据失败 ({stock_code}): {str(e)}")
+        # 返回空数据而不是500错误，避免影响页面加载
+        return JsonResponse({
+            'success': True,
+            'stock_code': stock_code,
+            'sentiment_data': [],
+            'avg_sentiment': 0,
+            'sentiment_trend': 'neutral',
+            'count': 0,
+            'error_message': '情感数据加载失败'
+        })

@@ -147,12 +147,28 @@ class MultiFactorAlertSystem:
             formatted_code = self._format_stock_code(stock_code)
             realtime_table = f"stock_{formatted_code}_realtime"
 
-            # 获取最新价格数据
+            # 检查表是否存在
+            check_query = """
+            SELECT COUNT(*) as count
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            AND table_name = %s
+            """
+            cursor.execute(check_query, (realtime_table,))
+            result = cursor.fetchone()
+
+            if not result or result['count'] == 0:
+                cursor.close()
+                return alerts
+
+            # 获取最新价格数据（使用实际存在的字段）
             query = f"""
-            SELECT 当前价格 as current_price, 涨跌幅_百分比 as change_pct,
-                   成交量_手 as volume, 时间 as time
-            FROM {realtime_table}
-            ORDER BY 时间 DESC
+            SELECT `当前价格` as current_price,
+                   `昨收` as last_close,
+                   `成交量_手` as volume,
+                   `时间` as time
+            FROM `{realtime_table}`
+            ORDER BY `时间` DESC
             LIMIT 10
             """
 
@@ -164,7 +180,15 @@ class MultiFactorAlertSystem:
                 return alerts
 
             latest = data[0]
-            change_pct = abs(float(latest.get('change_pct', 0)))
+            current_price = float(latest.get('current_price', 0))
+            last_close = float(latest.get('last_close', 0))
+
+            # 计算涨跌幅
+            if last_close > 0:
+                change_pct = abs((current_price - last_close) / last_close * 100)
+                is_up = current_price > last_close
+            else:
+                return alerts
 
             # 检查涨跌幅预警
             if change_pct >= self.alert_thresholds['price_change_critical']:
@@ -173,9 +197,9 @@ class MultiFactorAlertSystem:
                     'level': 'CRITICAL',
                     'message': f"价格剧烈波动: {change_pct:.2f}%",
                     'details': {
-                        'current_price': float(latest['current_price']),
+                        'current_price': current_price,
                         'change_pct': change_pct,
-                        'direction': '上涨' if latest.get('change_pct', 0) > 0 else '下跌'
+                        'direction': '上涨' if is_up else '下跌'
                     }
                 })
             elif change_pct >= self.alert_thresholds['price_change_warning']:
@@ -184,9 +208,9 @@ class MultiFactorAlertSystem:
                     'level': 'WARNING',
                     'message': f"价格显著波动: {change_pct:.2f}%",
                     'details': {
-                        'current_price': float(latest['current_price']),
+                        'current_price': current_price,
                         'change_pct': change_pct,
-                        'direction': '上涨' if latest.get('change_pct', 0) > 0 else '下跌'
+                        'direction': '上涨' if is_up else '下跌'
                     }
                 })
 

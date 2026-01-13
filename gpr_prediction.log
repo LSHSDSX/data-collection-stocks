@@ -1,0 +1,458 @@
+2026-01-08 20:47:40,114 - INFO - ============================================================
+2026-01-08 20:47:40,115 - INFO - 启动GPR股价预测系统
+2026-01-08 20:47:40,115 - INFO - ============================================================
+2026-01-08 20:47:40,115 - INFO - 配置文件加载成功
+2026-01-08 20:47:40,154 - INFO - GPR预测结果表创建成功
+2026-01-08 20:47:40,155 - INFO - 开始预测 7 只股票
+2026-01-08 20:47:40,155 - INFO - 
+============================================================
+2026-01-08 20:47:40,155 - INFO - 预测股票: 洪城环境(600461)
+2026-01-08 20:47:40,156 - INFO - ============================================================
+2026-01-08 20:47:40,163 - WARNING - 技术指标表 technical_indicators_洪城环境 不存在，仅使用价格数据
+2026-01-08 20:47:40,188 - WARNING - 股票 洪城环境 清理后数据不足
+2026-01-08 20:47:40,188 - WARNING - 股票 洪城环境 数据不足,无法预测
+2026-01-08 20:47:40,188 - WARNING - 股票 洪城环境(600461) 预测失败
+2026-01-08 20:47:40,188 - INFO - 
+============================================================
+2026-01-08 20:47:40,188 - INFO - 预测股票: 同仁堂(600085)
+2026-01-08 20:47:40,188 - INFO - ============================================================
+2026-01-08 20:47:40,192 - WARNING - 技术指标表 technical_indicators_同仁堂 不存在，仅使用价格数据
+2026-01-08 20:47:40,207 - WARNING - 股票 同仁堂 清理后数据不足
+2026-01-08 20:47:40,207 - WARNING - 股票 同仁堂 数据不足,无法预测
+2026-01-08 20:47:40,207 - WARNING - 股票 同仁堂(600085) 预测失败
+2026-01-08 20:47:40,207 - INFO - 
+============================================================
+2026-01-08 20:47:40,208 - INFO - 预测股票: 马应龙(600993)
+2026-01-08 20:47:40,208 - INFO - ============================================================
+2026-01-08 20:47:40,209 - WARNING - 技术指标表 technical_indicators_马应龙 不存在，仅使用价格数据
+2026-01-08 20:47:40,224 - WARNING - 股票 马应龙 清理后数据不足
+2026-01-08 20:47:40,224 - WARNING - 股票 马应龙 数据不足,无法预测
+2026-01-08 20:47:40,225 - WARNING - 股票 马应龙(600993) 预测失败
+2026-01-08 20:47:40,225 - INFO - 
+============================================================
+2026-01-08 20:47:40,226 - INFO - 预测股票: 盘龙药业(002864)
+2026-01-08 20:47:40,226 - INFO - ============================================================
+2026-01-08 20:47:40,228 - WARNING - 技术指标表 technical_indicators_盘龙药业 不存在，仅使用价格数据
+2026-01-08 20:47:40,237 - WARNING - 股票 盘龙药业 清理后数据不足
+2026-01-08 20:47:40,237 - WARNING - 股票 盘龙药业 数据不足,无法预测
+2026-01-08 20:47:40,237 - WARNING - 股票 盘龙药业(002864) 预测失败
+2026-01-08 20:47:40,238 - INFO - 
+============================================================
+2026-01-08 20:47:40,238 - INFO - 预测股票: 江西铜业(600362)
+2026-01-08 20:47:40,238 - INFO - ============================================================
+2026-01-08 20:47:40,241 - WARNING - 技术指标表 technical_indicators_江西铜业 不存在，仅使用价格数据
+2026-01-08 20:47:40,249 - WARNING - 股票 江西铜业 清理后数据不足
+2026-01-08 20:47:40,249 - WARNING - 股票 江西铜业 数据不足,无法预测
+2026-01-08 20:47:40,250 - WARNING - 股票 江西铜业(600362) 预测失败
+2026-01-08 20:47:40,250 - INFO - 
+============================================================
+2026-01-08 20:47:40,250 - INFO - 预测股票: 东阿阿胶(000423)
+2026-01-08 20:47:40,250 - INFO - ============================================================
+2026-01-08 20:47:40,254 - WARNING - 技术指标表 technical_indicators_东阿阿胶 不存在，仅使用价格数据
+2026-01-08 20:47:40,264 - WARNING - 股票 东阿阿胶 清理后数据不足
+2026-01-08 20:47:40,264 - WARNING - 股票 东阿阿胶 数据不足,无法预测
+2026-01-08 20:47:40,264 - WARNING - 股票 东阿阿胶(000423) 预测失败
+2026-01-08 20:47:40,265 - INFO - 
+============================================================
+2026-01-08 20:47:40,265 - INFO - 预测股票: 华润三九(000999)
+2026-01-08 20:47:40,265 - INFO - ============================================================
+2026-01-08 20:47:40,268 - WARNING - 技术指标表 technical_indicators_华润三九 不存在，仅使用价格数据
+2026-01-08 20:47:40,277 - WARNING - 股票 华润三九 清理后数据不足
+2026-01-08 20:47:40,278 - WARNING - 股票 华润三九 数据不足,无法预测
+2026-01-08 20:47:40,278 - WARNING - 股票 华润三九(000999) 预测失败
+2026-01-08 20:47:40,278 - INFO - 
+所有股票预测完成!
+2026-01-08 20:47:40,278 - INFO - GPR预测系统结束
+2026-01-08 20:55:04,804 - INFO - ============================================================
+2026-01-08 20:55:04,806 - INFO - 启动GPR股价预测系统
+2026-01-08 20:55:04,806 - INFO - ============================================================
+2026-01-08 20:55:04,806 - INFO - 配置文件加载成功
+2026-01-08 20:55:04,848 - INFO - GPR预测结果表创建成功
+2026-01-08 20:55:04,850 - INFO - 开始预测 7 只股票
+2026-01-08 20:55:04,852 - INFO - 
+============================================================
+2026-01-08 20:55:04,852 - INFO - 预测股票: 洪城环境(600461)
+2026-01-08 20:55:04,852 - INFO - ============================================================
+2026-01-08 20:55:04,860 - WARNING - 技术指标表 technical_indicators_洪城环境 不存在，仅使用价格数据
+2026-01-08 20:55:04,881 - INFO - 准备训练数据完成: 洪城环境, 样本数: 49, 特征数: 8
+2026-01-08 20:55:04,882 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 20:55:04,882 - INFO - 开始训练GPR模型...
+2026-01-08 20:55:04,885 - ERROR - 训练GPR模型失败: Input X contains NaN.
+GaussianProcessRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-01-08 20:55:05,004 - WARNING - 股票 洪城环境(600461) 预测失败
+2026-01-08 20:55:05,004 - INFO - 
+============================================================
+2026-01-08 20:55:05,004 - INFO - 预测股票: 同仁堂(600085)
+2026-01-08 20:55:05,004 - INFO - ============================================================
+2026-01-08 20:55:05,012 - WARNING - 技术指标表 technical_indicators_同仁堂 不存在，仅使用价格数据
+2026-01-08 20:55:05,027 - INFO - 准备训练数据完成: 同仁堂, 样本数: 49, 特征数: 8
+2026-01-08 20:55:05,027 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 20:55:05,027 - INFO - 开始训练GPR模型...
+2026-01-08 20:55:05,027 - ERROR - 训练GPR模型失败: Input X contains NaN.
+GaussianProcessRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-01-08 20:55:05,036 - WARNING - 股票 同仁堂(600085) 预测失败
+2026-01-08 20:55:05,036 - INFO - 
+============================================================
+2026-01-08 20:55:05,037 - INFO - 预测股票: 马应龙(600993)
+2026-01-08 20:55:05,037 - INFO - ============================================================
+2026-01-08 20:55:05,037 - WARNING - 技术指标表 technical_indicators_马应龙 不存在，仅使用价格数据
+2026-01-08 20:55:05,054 - INFO - 准备训练数据完成: 马应龙, 样本数: 49, 特征数: 8
+2026-01-08 20:55:05,054 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 20:55:05,056 - INFO - 开始训练GPR模型...
+2026-01-08 20:55:05,057 - ERROR - 训练GPR模型失败: Input X contains NaN.
+GaussianProcessRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-01-08 20:55:05,059 - WARNING - 股票 马应龙(600993) 预测失败
+2026-01-08 20:55:05,059 - INFO - 
+============================================================
+2026-01-08 20:55:05,059 - INFO - 预测股票: 盘龙药业(002864)
+2026-01-08 20:55:05,059 - INFO - ============================================================
+2026-01-08 20:55:05,067 - WARNING - 技术指标表 technical_indicators_盘龙药业 不存在，仅使用价格数据
+2026-01-08 20:55:05,089 - INFO - 准备训练数据完成: 盘龙药业, 样本数: 49, 特征数: 8
+2026-01-08 20:55:05,089 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 20:55:05,089 - INFO - 开始训练GPR模型...
+2026-01-08 20:55:05,092 - ERROR - 训练GPR模型失败: Input X contains NaN.
+GaussianProcessRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-01-08 20:55:05,093 - WARNING - 股票 盘龙药业(002864) 预测失败
+2026-01-08 20:55:05,093 - INFO - 
+============================================================
+2026-01-08 20:55:05,093 - INFO - 预测股票: 江西铜业(600362)
+2026-01-08 20:55:05,093 - INFO - ============================================================
+2026-01-08 20:55:05,103 - WARNING - 技术指标表 technical_indicators_江西铜业 不存在，仅使用价格数据
+2026-01-08 20:55:05,119 - INFO - 准备训练数据完成: 江西铜业, 样本数: 49, 特征数: 8
+2026-01-08 20:55:05,119 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 20:55:05,121 - INFO - 开始训练GPR模型...
+2026-01-08 20:55:05,122 - ERROR - 训练GPR模型失败: Input X contains NaN.
+GaussianProcessRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-01-08 20:55:05,126 - WARNING - 股票 江西铜业(600362) 预测失败
+2026-01-08 20:55:05,126 - INFO - 
+============================================================
+2026-01-08 20:55:05,126 - INFO - 预测股票: 东阿阿胶(000423)
+2026-01-08 20:55:05,126 - INFO - ============================================================
+2026-01-08 20:55:05,132 - WARNING - 技术指标表 technical_indicators_东阿阿胶 不存在，仅使用价格数据
+2026-01-08 20:55:05,143 - INFO - 准备训练数据完成: 东阿阿胶, 样本数: 49, 特征数: 8
+2026-01-08 20:55:05,143 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 20:55:05,148 - INFO - 开始训练GPR模型...
+2026-01-08 20:55:05,148 - ERROR - 训练GPR模型失败: Input X contains NaN.
+GaussianProcessRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-01-08 20:55:05,151 - WARNING - 股票 东阿阿胶(000423) 预测失败
+2026-01-08 20:55:05,152 - INFO - 
+============================================================
+2026-01-08 20:55:05,152 - INFO - 预测股票: 华润三九(000999)
+2026-01-08 20:55:05,152 - INFO - ============================================================
+2026-01-08 20:55:05,154 - WARNING - 技术指标表 technical_indicators_华润三九 不存在，仅使用价格数据
+2026-01-08 20:55:05,168 - INFO - 准备训练数据完成: 华润三九, 样本数: 49, 特征数: 8
+2026-01-08 20:55:05,168 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 20:55:05,171 - INFO - 开始训练GPR模型...
+2026-01-08 20:55:05,171 - ERROR - 训练GPR模型失败: Input X contains NaN.
+GaussianProcessRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-01-08 20:55:05,174 - WARNING - 股票 华润三九(000999) 预测失败
+2026-01-08 20:55:05,174 - INFO - 
+所有股票预测完成!
+2026-01-08 20:55:05,174 - INFO - GPR预测系统结束
+2026-01-08 20:57:50,878 - INFO - ============================================================
+2026-01-08 20:57:50,878 - INFO - 启动GPR股价预测系统
+2026-01-08 20:57:50,878 - INFO - ============================================================
+2026-01-08 20:57:50,880 - INFO - 配置文件加载成功
+2026-01-08 20:57:50,943 - INFO - GPR预测结果表创建成功
+2026-01-08 20:57:50,943 - INFO - 开始预测 7 只股票
+2026-01-08 20:57:50,943 - INFO - 
+============================================================
+2026-01-08 20:57:50,943 - INFO - 预测股票: 洪城环境(600461)
+2026-01-08 20:57:50,947 - INFO - ============================================================
+2026-01-08 20:57:50,956 - WARNING - 技术指标表 technical_indicators_洪城环境 不存在，仅使用价格数据
+2026-01-08 20:57:50,985 - ERROR - 准备训练数据失败: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2026-01-08 20:57:50,992 - WARNING - 股票 洪城环境 数据不足,无法预测
+2026-01-08 20:57:50,992 - WARNING - 股票 洪城环境(600461) 预测失败
+2026-01-08 20:57:50,993 - INFO - 
+============================================================
+2026-01-08 20:57:50,994 - INFO - 预测股票: 同仁堂(600085)
+2026-01-08 20:57:50,995 - INFO - ============================================================
+2026-01-08 20:57:51,001 - WARNING - 技术指标表 technical_indicators_同仁堂 不存在，仅使用价格数据
+2026-01-08 20:57:51,013 - ERROR - 准备训练数据失败: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2026-01-08 20:57:51,013 - WARNING - 股票 同仁堂 数据不足,无法预测
+2026-01-08 20:57:51,018 - WARNING - 股票 同仁堂(600085) 预测失败
+2026-01-08 20:57:51,018 - INFO - 
+============================================================
+2026-01-08 20:57:51,018 - INFO - 预测股票: 马应龙(600993)
+2026-01-08 20:57:51,018 - INFO - ============================================================
+2026-01-08 20:57:51,028 - WARNING - 技术指标表 technical_indicators_马应龙 不存在，仅使用价格数据
+2026-01-08 20:57:51,047 - ERROR - 准备训练数据失败: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2026-01-08 20:57:51,047 - WARNING - 股票 马应龙 数据不足,无法预测
+2026-01-08 20:57:51,052 - WARNING - 股票 马应龙(600993) 预测失败
+2026-01-08 20:57:51,052 - INFO - 
+============================================================
+2026-01-08 20:57:51,052 - INFO - 预测股票: 盘龙药业(002864)
+2026-01-08 20:57:51,052 - INFO - ============================================================
+2026-01-08 20:57:51,058 - WARNING - 技术指标表 technical_indicators_盘龙药业 不存在，仅使用价格数据
+2026-01-08 20:57:51,077 - ERROR - 准备训练数据失败: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2026-01-08 20:57:51,079 - WARNING - 股票 盘龙药业 数据不足,无法预测
+2026-01-08 20:57:51,079 - WARNING - 股票 盘龙药业(002864) 预测失败
+2026-01-08 20:57:51,080 - INFO - 
+============================================================
+2026-01-08 20:57:51,080 - INFO - 预测股票: 江西铜业(600362)
+2026-01-08 20:57:51,080 - INFO - ============================================================
+2026-01-08 20:57:51,085 - WARNING - 技术指标表 technical_indicators_江西铜业 不存在，仅使用价格数据
+2026-01-08 20:57:51,112 - ERROR - 准备训练数据失败: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2026-01-08 20:57:51,114 - WARNING - 股票 江西铜业 数据不足,无法预测
+2026-01-08 20:57:51,114 - WARNING - 股票 江西铜业(600362) 预测失败
+2026-01-08 20:57:51,114 - INFO - 
+============================================================
+2026-01-08 20:57:51,114 - INFO - 预测股票: 东阿阿胶(000423)
+2026-01-08 20:57:51,115 - INFO - ============================================================
+2026-01-08 20:57:51,124 - WARNING - 技术指标表 technical_indicators_东阿阿胶 不存在，仅使用价格数据
+2026-01-08 20:57:51,141 - ERROR - 准备训练数据失败: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2026-01-08 20:57:51,141 - WARNING - 股票 东阿阿胶 数据不足,无法预测
+2026-01-08 20:57:51,141 - WARNING - 股票 东阿阿胶(000423) 预测失败
+2026-01-08 20:57:51,146 - INFO - 
+============================================================
+2026-01-08 20:57:51,146 - INFO - 预测股票: 华润三九(000999)
+2026-01-08 20:57:51,147 - INFO - ============================================================
+2026-01-08 20:57:51,161 - WARNING - 技术指标表 technical_indicators_华润三九 不存在，仅使用价格数据
+2026-01-08 20:57:51,197 - ERROR - 准备训练数据失败: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2026-01-08 20:57:51,198 - WARNING - 股票 华润三九 数据不足,无法预测
+2026-01-08 20:57:51,200 - WARNING - 股票 华润三九(000999) 预测失败
+2026-01-08 20:57:51,201 - INFO - 
+所有股票预测完成!
+2026-01-08 20:57:51,203 - INFO - GPR预测系统结束
+2026-01-08 21:03:47,330 - INFO - ============================================================
+2026-01-08 21:03:47,330 - INFO - 启动GPR股价预测系统
+2026-01-08 21:03:47,330 - INFO - ============================================================
+2026-01-08 21:03:47,331 - INFO - 配置文件加载成功
+2026-01-08 21:03:47,367 - INFO - GPR预测结果表创建成功
+2026-01-08 21:03:47,367 - INFO - 开始预测 7 只股票
+2026-01-08 21:03:47,367 - INFO - 
+============================================================
+2026-01-08 21:03:47,367 - INFO - 预测股票: 洪城环境(600461)
+2026-01-08 21:03:47,367 - INFO - ============================================================
+2026-01-08 21:03:47,367 - WARNING - 技术指标表 technical_indicators_洪城环境 不存在，仅使用价格数据
+2026-01-08 21:03:47,382 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-08 21:03:47,382 - INFO - 准备训练数据完成: 洪城环境, 样本数: 49, 特征数: 8
+2026-01-08 21:03:47,382 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 21:03:47,382 - INFO - 开始训练GPR模型...
+2026-01-08 21:03:47,733 - INFO - GPR模型训练完成, 优化后的核函数: 1.68**2 * RBF(length_scale=6.57) + WhiteKernel(noise_level=0.00363)
+2026-01-08 21:03:47,733 - INFO - 预测 洪城环境 2026-01-09: 9.31 ± 0.03
+2026-01-08 21:03:47,733 - INFO - 预测 洪城环境 2026-01-10: 9.31 ± 0.03
+2026-01-08 21:03:47,733 - INFO - 预测 洪城环境 2026-01-11: 9.31 ± 0.03
+2026-01-08 21:03:47,733 - INFO - 预测 洪城环境 2026-01-12: 9.31 ± 0.03
+2026-01-08 21:03:47,744 - INFO - 预测 洪城环境 2026-01-13: 9.31 ± 0.03
+2026-01-08 21:03:47,801 - INFO - 保存了 5 条预测结果
+2026-01-08 21:03:47,801 - INFO - 
+============================================================
+2026-01-08 21:03:47,801 - INFO - 预测股票: 同仁堂(600085)
+2026-01-08 21:03:47,801 - INFO - ============================================================
+2026-01-08 21:03:47,812 - WARNING - 技术指标表 technical_indicators_同仁堂 不存在，仅使用价格数据
+2026-01-08 21:03:47,825 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-08 21:03:47,825 - INFO - 准备训练数据完成: 同仁堂, 样本数: 49, 特征数: 8
+2026-01-08 21:03:47,826 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 21:03:47,828 - INFO - 开始训练GPR模型...
+2026-01-08 21:03:48,194 - INFO - GPR模型训练完成, 优化后的核函数: 4.78**2 * RBF(length_scale=17.1) + WhiteKernel(noise_level=0.00688)
+2026-01-08 21:03:48,194 - INFO - 预测 同仁堂 2026-01-09: 32.06 ± 0.16
+2026-01-08 21:03:48,194 - INFO - 预测 同仁堂 2026-01-10: 32.06 ± 0.16
+2026-01-08 21:03:48,194 - INFO - 预测 同仁堂 2026-01-11: 32.06 ± 0.16
+2026-01-08 21:03:48,194 - INFO - 预测 同仁堂 2026-01-12: 32.06 ± 0.16
+2026-01-08 21:03:48,194 - INFO - 预测 同仁堂 2026-01-13: 32.06 ± 0.16
+2026-01-08 21:03:48,231 - INFO - 保存了 5 条预测结果
+2026-01-08 21:03:48,232 - INFO - 
+============================================================
+2026-01-08 21:03:48,233 - INFO - 预测股票: 马应龙(600993)
+2026-01-08 21:03:48,233 - INFO - ============================================================
+2026-01-08 21:03:48,233 - WARNING - 技术指标表 technical_indicators_马应龙 不存在，仅使用价格数据
+2026-01-08 21:03:48,251 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-08 21:03:48,253 - INFO - 准备训练数据完成: 马应龙, 样本数: 49, 特征数: 8
+2026-01-08 21:03:48,253 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 21:03:48,254 - INFO - 开始训练GPR模型...
+2026-01-08 21:03:48,747 - INFO - GPR模型训练完成, 优化后的核函数: 7.13**2 * RBF(length_scale=22.6) + WhiteKernel(noise_level=0.00537)
+2026-01-08 21:03:48,748 - INFO - 预测 马应龙 2026-01-09: 28.05 ± 0.11
+2026-01-08 21:03:48,749 - INFO - 预测 马应龙 2026-01-10: 28.05 ± 0.11
+2026-01-08 21:03:48,749 - INFO - 预测 马应龙 2026-01-11: 28.05 ± 0.11
+2026-01-08 21:03:48,750 - INFO - 预测 马应龙 2026-01-12: 28.05 ± 0.11
+2026-01-08 21:03:48,750 - INFO - 预测 马应龙 2026-01-13: 28.05 ± 0.11
+2026-01-08 21:03:48,770 - INFO - 保存了 5 条预测结果
+2026-01-08 21:03:48,771 - INFO - 
+============================================================
+2026-01-08 21:03:48,771 - INFO - 预测股票: 盘龙药业(002864)
+2026-01-08 21:03:48,771 - INFO - ============================================================
+2026-01-08 21:03:48,777 - WARNING - 技术指标表 technical_indicators_盘龙药业 不存在，仅使用价格数据
+2026-01-08 21:03:48,787 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-08 21:03:48,787 - INFO - 准备训练数据完成: 盘龙药业, 样本数: 49, 特征数: 8
+2026-01-08 21:03:48,787 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 21:03:48,788 - INFO - 开始训练GPR模型...
+2026-01-08 21:03:49,073 - INFO - GPR模型训练完成, 优化后的核函数: 1.95**2 * RBF(length_scale=4.07) + WhiteKernel(noise_level=0.00447)
+2026-01-08 21:03:49,073 - INFO - 预测 盘龙药业 2026-01-09: 34.53 ± 0.35
+2026-01-08 21:03:49,074 - INFO - 预测 盘龙药业 2026-01-10: 34.53 ± 0.35
+2026-01-08 21:03:49,075 - INFO - 预测 盘龙药业 2026-01-11: 34.53 ± 0.35
+2026-01-08 21:03:49,075 - INFO - 预测 盘龙药业 2026-01-12: 34.53 ± 0.35
+2026-01-08 21:03:49,075 - INFO - 预测 盘龙药业 2026-01-13: 34.53 ± 0.35
+2026-01-08 21:03:49,090 - INFO - 保存了 5 条预测结果
+2026-01-08 21:03:49,090 - INFO - 
+============================================================
+2026-01-08 21:03:49,090 - INFO - 预测股票: 江西铜业(600362)
+2026-01-08 21:03:49,090 - INFO - ============================================================
+2026-01-08 21:03:49,099 - WARNING - 技术指标表 technical_indicators_江西铜业 不存在，仅使用价格数据
+2026-01-08 21:03:49,108 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-08 21:03:49,108 - INFO - 准备训练数据完成: 江西铜业, 样本数: 49, 特征数: 8
+2026-01-08 21:03:49,108 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 21:03:49,110 - INFO - 开始训练GPR模型...
+2026-01-08 21:03:49,751 - INFO - GPR模型训练完成, 优化后的核函数: 5.63**2 * RBF(length_scale=14) + WhiteKernel(noise_level=0.00385)
+2026-01-08 21:03:49,751 - INFO - 预测 江西铜业 2026-01-09: 55.48 ± 0.81
+2026-01-08 21:03:49,751 - INFO - 预测 江西铜业 2026-01-10: 55.48 ± 0.81
+2026-01-08 21:03:49,751 - INFO - 预测 江西铜业 2026-01-11: 55.48 ± 0.81
+2026-01-08 21:03:49,751 - INFO - 预测 江西铜业 2026-01-12: 55.48 ± 0.81
+2026-01-08 21:03:49,751 - INFO - 预测 江西铜业 2026-01-13: 55.48 ± 0.81
+2026-01-08 21:03:49,785 - INFO - 保存了 5 条预测结果
+2026-01-08 21:03:49,786 - INFO - 
+============================================================
+2026-01-08 21:03:49,786 - INFO - 预测股票: 东阿阿胶(000423)
+2026-01-08 21:03:49,786 - INFO - ============================================================
+2026-01-08 21:03:49,789 - WARNING - 技术指标表 technical_indicators_东阿阿胶 不存在，仅使用价格数据
+2026-01-08 21:03:49,799 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-08 21:03:49,799 - INFO - 准备训练数据完成: 东阿阿胶, 样本数: 49, 特征数: 8
+2026-01-08 21:03:49,799 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 21:03:49,803 - INFO - 开始训练GPR模型...
+2026-01-08 21:03:50,323 - INFO - GPR模型训练完成, 优化后的核函数: 19.2**2 * RBF(length_scale=72.4) + WhiteKernel(noise_level=0.00594)
+2026-01-08 21:03:50,324 - INFO - 预测 东阿阿胶 2026-01-09: 50.23 ± 0.14
+2026-01-08 21:03:50,325 - INFO - 预测 东阿阿胶 2026-01-10: 50.23 ± 0.14
+2026-01-08 21:03:50,325 - INFO - 预测 东阿阿胶 2026-01-11: 50.23 ± 0.14
+2026-01-08 21:03:50,327 - INFO - 预测 东阿阿胶 2026-01-12: 50.23 ± 0.14
+2026-01-08 21:03:50,327 - INFO - 预测 东阿阿胶 2026-01-13: 50.23 ± 0.14
+2026-01-08 21:03:50,342 - INFO - 保存了 5 条预测结果
+2026-01-08 21:03:50,342 - INFO - 
+============================================================
+2026-01-08 21:03:50,342 - INFO - 预测股票: 华润三九(000999)
+2026-01-08 21:03:50,342 - INFO - ============================================================
+2026-01-08 21:03:50,352 - WARNING - 技术指标表 technical_indicators_华润三九 不存在，仅使用价格数据
+2026-01-08 21:03:50,361 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-08 21:03:50,361 - INFO - 准备训练数据完成: 华润三九, 样本数: 49, 特征数: 8
+2026-01-08 21:03:50,362 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-08 21:03:50,362 - INFO - 开始训练GPR模型...
+2026-01-08 21:03:50,892 - INFO - GPR模型训练完成, 优化后的核函数: 10.2**2 * RBF(length_scale=37.2) + WhiteKernel(noise_level=0.00647)
+2026-01-08 21:03:50,892 - INFO - 预测 华润三九 2026-01-09: 28.99 ± 0.10
+2026-01-08 21:03:50,892 - INFO - 预测 华润三九 2026-01-10: 28.99 ± 0.10
+2026-01-08 21:03:50,892 - INFO - 预测 华润三九 2026-01-11: 28.99 ± 0.10
+2026-01-08 21:03:50,908 - INFO - 预测 华润三九 2026-01-12: 28.99 ± 0.10
+2026-01-08 21:03:50,908 - INFO - 预测 华润三九 2026-01-13: 28.99 ± 0.10
+2026-01-08 21:03:50,962 - INFO - 保存了 5 条预测结果
+2026-01-08 21:03:50,964 - INFO - 
+所有股票预测完成!
+2026-01-08 21:03:50,965 - INFO - GPR预测系统结束
+2026-01-09 09:47:24,715 - INFO - ============================================================
+2026-01-09 09:47:24,715 - INFO - 启动GPR股价预测系统
+2026-01-09 09:47:24,715 - INFO - ============================================================
+2026-01-09 09:47:24,717 - INFO - 配置文件加载成功
+2026-01-09 09:47:24,769 - INFO - GPR预测结果表创建成功
+2026-01-09 09:47:24,769 - INFO - 开始预测 7 只股票
+2026-01-09 09:47:24,769 - INFO - 
+============================================================
+2026-01-09 09:47:24,769 - INFO - 预测股票: 洪城环境(600461)
+2026-01-09 09:47:24,769 - INFO - ============================================================
+2026-01-09 09:47:24,805 - WARNING - 技术指标表 technical_indicators_洪城环境 不存在，仅使用价格数据
+2026-01-09 09:47:24,839 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-09 09:47:24,840 - INFO - 准备训练数据完成: 洪城环境, 样本数: 48, 特征数: 8
+2026-01-09 09:47:24,840 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-09 09:47:24,843 - INFO - 开始训练GPR模型...
+2026-01-09 09:47:25,327 - INFO - GPR模型训练完成, 优化后的核函数: 1.72**2 * RBF(length_scale=6.62) + WhiteKernel(noise_level=0.00381)
+2026-01-09 09:47:25,330 - INFO - 预测 洪城环境 2026-01-10: 9.31 ± 0.03
+2026-01-09 09:47:25,330 - INFO - 预测 洪城环境 2026-01-11: 9.31 ± 0.03
+2026-01-09 09:47:25,331 - INFO - 预测 洪城环境 2026-01-12: 9.31 ± 0.03
+2026-01-09 09:47:25,331 - INFO - 预测 洪城环境 2026-01-13: 9.31 ± 0.03
+2026-01-09 09:47:25,332 - INFO - 预测 洪城环境 2026-01-14: 9.31 ± 0.03
+2026-01-09 09:47:25,355 - INFO - 保存了 5 条预测结果
+2026-01-09 09:47:25,356 - INFO - 
+============================================================
+2026-01-09 09:47:25,357 - INFO - 预测股票: 同仁堂(600085)
+2026-01-09 09:47:25,357 - INFO - ============================================================
+2026-01-09 09:47:25,362 - WARNING - 技术指标表 technical_indicators_同仁堂 不存在，仅使用价格数据
+2026-01-09 09:47:25,380 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-09 09:47:25,380 - INFO - 准备训练数据完成: 同仁堂, 样本数: 48, 特征数: 8
+2026-01-09 09:47:25,380 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-09 09:47:25,384 - INFO - 开始训练GPR模型...
+2026-01-09 09:47:25,845 - INFO - GPR模型训练完成, 优化后的核函数: 4.42**2 * RBF(length_scale=15.9) + WhiteKernel(noise_level=0.00686)
+2026-01-09 09:47:25,846 - INFO - 预测 同仁堂 2026-01-10: 32.06 ± 0.16
+2026-01-09 09:47:25,846 - INFO - 预测 同仁堂 2026-01-11: 32.06 ± 0.16
+2026-01-09 09:47:25,846 - INFO - 预测 同仁堂 2026-01-12: 32.06 ± 0.16
+2026-01-09 09:47:25,846 - INFO - 预测 同仁堂 2026-01-13: 32.06 ± 0.16
+2026-01-09 09:47:25,846 - INFO - 预测 同仁堂 2026-01-14: 32.06 ± 0.16
+2026-01-09 09:47:25,871 - INFO - 保存了 5 条预测结果
+2026-01-09 09:47:25,873 - INFO - 
+============================================================
+2026-01-09 09:47:25,873 - INFO - 预测股票: 马应龙(600993)
+2026-01-09 09:47:25,873 - INFO - ============================================================
+2026-01-09 09:47:25,876 - WARNING - 技术指标表 technical_indicators_马应龙 不存在，仅使用价格数据
+2026-01-09 09:47:25,891 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-09 09:47:25,891 - INFO - 准备训练数据完成: 马应龙, 样本数: 48, 特征数: 8
+2026-01-09 09:47:25,892 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-09 09:47:25,894 - INFO - 开始训练GPR模型...
+2026-01-09 09:47:26,519 - INFO - GPR模型训练完成, 优化后的核函数: 6.88**2 * RBF(length_scale=21.4) + WhiteKernel(noise_level=0.0052)
+2026-01-09 09:47:26,520 - INFO - 预测 马应龙 2026-01-10: 28.05 ± 0.11
+2026-01-09 09:47:26,522 - INFO - 预测 马应龙 2026-01-11: 28.05 ± 0.11
+2026-01-09 09:47:26,523 - INFO - 预测 马应龙 2026-01-12: 28.05 ± 0.11
+2026-01-09 09:47:26,523 - INFO - 预测 马应龙 2026-01-13: 28.05 ± 0.11
+2026-01-09 09:47:26,524 - INFO - 预测 马应龙 2026-01-14: 28.05 ± 0.11
+2026-01-09 09:47:26,537 - INFO - 保存了 5 条预测结果
+2026-01-09 09:47:26,547 - INFO - 
+============================================================
+2026-01-09 09:47:26,547 - INFO - 预测股票: 盘龙药业(002864)
+2026-01-09 09:47:26,548 - INFO - ============================================================
+2026-01-09 09:47:26,552 - WARNING - 技术指标表 technical_indicators_盘龙药业 不存在，仅使用价格数据
+2026-01-09 09:47:26,565 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-09 09:47:26,565 - INFO - 准备训练数据完成: 盘龙药业, 样本数: 48, 特征数: 8
+2026-01-09 09:47:26,567 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-09 09:47:26,569 - INFO - 开始训练GPR模型...
+2026-01-09 09:47:26,851 - INFO - GPR模型训练完成, 优化后的核函数: 1.87**2 * RBF(length_scale=3.9) + WhiteKernel(noise_level=0.00451)
+2026-01-09 09:47:26,852 - INFO - 预测 盘龙药业 2026-01-10: 34.51 ± 0.35
+2026-01-09 09:47:26,853 - INFO - 预测 盘龙药业 2026-01-11: 34.51 ± 0.35
+2026-01-09 09:47:26,854 - INFO - 预测 盘龙药业 2026-01-12: 34.51 ± 0.35
+2026-01-09 09:47:26,855 - INFO - 预测 盘龙药业 2026-01-13: 34.51 ± 0.35
+2026-01-09 09:47:26,855 - INFO - 预测 盘龙药业 2026-01-14: 34.51 ± 0.35
+2026-01-09 09:47:26,886 - INFO - 保存了 5 条预测结果
+2026-01-09 09:47:26,887 - INFO - 
+============================================================
+2026-01-09 09:47:26,887 - INFO - 预测股票: 江西铜业(600362)
+2026-01-09 09:47:26,888 - INFO - ============================================================
+2026-01-09 09:47:26,892 - WARNING - 技术指标表 technical_indicators_江西铜业 不存在，仅使用价格数据
+2026-01-09 09:47:26,938 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-09 09:47:26,939 - INFO - 准备训练数据完成: 江西铜业, 样本数: 48, 特征数: 8
+2026-01-09 09:47:26,940 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-09 09:47:26,944 - INFO - 开始训练GPR模型...
+2026-01-09 09:47:27,557 - INFO - GPR模型训练完成, 优化后的核函数: 4.71**2 * RBF(length_scale=11.3) + WhiteKernel(noise_level=0.00348)
+2026-01-09 09:47:27,557 - INFO - 预测 江西铜业 2026-01-10: 55.35 ± 0.80
+2026-01-09 09:47:27,557 - INFO - 预测 江西铜业 2026-01-11: 55.35 ± 0.80
+2026-01-09 09:47:27,557 - INFO - 预测 江西铜业 2026-01-12: 55.35 ± 0.80
+2026-01-09 09:47:27,557 - INFO - 预测 江西铜业 2026-01-13: 55.35 ± 0.80
+2026-01-09 09:47:27,557 - INFO - 预测 江西铜业 2026-01-14: 55.35 ± 0.80
+2026-01-09 09:47:27,589 - INFO - 保存了 5 条预测结果
+2026-01-09 09:47:27,590 - INFO - 
+============================================================
+2026-01-09 09:47:27,590 - INFO - 预测股票: 东阿阿胶(000423)
+2026-01-09 09:47:27,590 - INFO - ============================================================
+2026-01-09 09:47:27,593 - WARNING - 技术指标表 technical_indicators_东阿阿胶 不存在，仅使用价格数据
+2026-01-09 09:47:27,602 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-09 09:47:27,602 - INFO - 准备训练数据完成: 东阿阿胶, 样本数: 48, 特征数: 8
+2026-01-09 09:47:27,602 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-09 09:47:27,603 - INFO - 开始训练GPR模型...
+2026-01-09 09:47:28,097 - INFO - GPR模型训练完成, 优化后的核函数: 18.6**2 * RBF(length_scale=69) + WhiteKernel(noise_level=0.0063)
+2026-01-09 09:47:28,097 - INFO - 预测 东阿阿胶 2026-01-10: 50.23 ± 0.15
+2026-01-09 09:47:28,097 - INFO - 预测 东阿阿胶 2026-01-11: 50.23 ± 0.15
+2026-01-09 09:47:28,097 - INFO - 预测 东阿阿胶 2026-01-12: 50.23 ± 0.15
+2026-01-09 09:47:28,097 - INFO - 预测 东阿阿胶 2026-01-13: 50.23 ± 0.15
+2026-01-09 09:47:28,097 - INFO - 预测 东阿阿胶 2026-01-14: 50.23 ± 0.15
+2026-01-09 09:47:28,120 - INFO - 保存了 5 条预测结果
+2026-01-09 09:47:28,121 - INFO - 
+============================================================
+2026-01-09 09:47:28,121 - INFO - 预测股票: 华润三九(000999)
+2026-01-09 09:47:28,121 - INFO - ============================================================
+2026-01-09 09:47:28,124 - WARNING - 技术指标表 technical_indicators_华润三九 不存在，仅使用价格数据
+2026-01-09 09:47:28,134 - WARNING - 特征矩阵中检测到NaN值，使用0填充
+2026-01-09 09:47:28,135 - INFO - 准备训练数据完成: 华润三九, 样本数: 48, 特征数: 8
+2026-01-09 09:47:28,135 - INFO - 使用特征: ['open_price', 'high_price', 'low_price', 'volume', 'change_pct', 'avg_sentiment', 'news_count', 'avg_correlation']
+2026-01-09 09:47:28,137 - INFO - 开始训练GPR模型...
+2026-01-09 09:47:28,601 - INFO - GPR模型训练完成, 优化后的核函数: 10.3**2 * RBF(length_scale=37.9) + WhiteKernel(noise_level=0.00645)
+2026-01-09 09:47:28,602 - INFO - 预测 华润三九 2026-01-10: 28.99 ± 0.10
+2026-01-09 09:47:28,603 - INFO - 预测 华润三九 2026-01-11: 28.99 ± 0.10
+2026-01-09 09:47:28,604 - INFO - 预测 华润三九 2026-01-12: 28.99 ± 0.10
+2026-01-09 09:47:28,604 - INFO - 预测 华润三九 2026-01-13: 28.99 ± 0.10
+2026-01-09 09:47:28,605 - INFO - 预测 华润三九 2026-01-14: 28.99 ± 0.10
+2026-01-09 09:47:28,634 - INFO - 保存了 5 条预测结果
+2026-01-09 09:47:28,635 - INFO - 
+所有股票预测完成!
+2026-01-09 09:47:28,638 - INFO - GPR预测系统结束

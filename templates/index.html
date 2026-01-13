@@ -23,7 +23,6 @@
                                     <th>涨跌</th>
                                     <th>涨跌幅</th>
                                     <th>成交量(手)</th>
-                                    <th>成交额(万元)</th>
                                     <th>操作</th>
                                 </tr>
                             </thead>
@@ -36,7 +35,6 @@
                                     <td class="change">--</td>
                                     <td class="change-percent">--</td>
                                     <td class="volume">--</td>
-                                    <td class="amount">--</td>
                                     <td>
                                         <a href="/stocks/{{ stock.code }}/" class="btn btn-sm btn-outline-primary">
                                             <i class="bi bi-zoom-in"></i> 详情
@@ -87,9 +85,15 @@
 <script>
     // 加载新闻数据
     function loadNewsData() {
+        console.log('[调试] 开始加载新闻数据...', new Date().toLocaleTimeString());
+
         fetch('/api/news/')
-            .then(response => response.json())
+            .then(response => {
+                console.log('[调试] 新闻API响应状态:', response.status);
+                return response.json();
+            })
             .then(data => {
+                console.log('[调试] 收到新闻数据:', data.data?.length, '条');
                 if (data.status === 'success') {
                     updateNewsList(data.data);
                 } else {
@@ -97,7 +101,7 @@
                 }
             })
             .catch(error => {
-                console.error('获取新闻失败:', error);
+                console.error('[调试] 获取新闻失败:', error);
             });
     }
 
@@ -107,35 +111,46 @@
         newsContainer.innerHTML = '';
 
         if (newsData && newsData.length > 0) {
-            // 打印前几条数据用于调试
-            console.log("收到的新闻数据:", newsData.slice(0, 3));
-
             newsData.forEach(news => {
                 const newsItem = document.createElement('div');
                 newsItem.className = 'list-group-item list-group-item-action';
-
-                // 检查新闻对象中是否有color字段
-                console.log("处理新闻:", news);
-                console.log("新闻是否包含color字段:", 'color' in news);
-                console.log("color值:", news.color);
 
                 // 根据color值确定样式
                 let newsStyle = '';
                 if (news.color === '-21101') {
                     newsStyle = 'color: red !important;';
-                    console.log("应用红色样式");
                 } else if (news.color === '21111' || news.color === '21109') {
-                    newsStyle = 'color: #ff69b4 !important;'; // 粉色
-                    console.log("应用粉色样式");
+                    newsStyle = 'color: #ff69b4 !important;';
+                }
+
+                // 显示情感分析结果（如果有）
+                let sentimentBadge = '';
+                if (news.analysis_result && news.analysis_result.sentiment) {
+                    const sentiment = news.analysis_result.sentiment;
+                    let badgeClass = 'bg-secondary';
+                    let sentimentText = '中性';
+
+                    if (sentiment >= 0.3) {
+                        badgeClass = 'bg-success';
+                        sentimentText = '正面';
+                    } else if (sentiment <= -0.3) {
+                        badgeClass = 'bg-danger';
+                        sentimentText = '负面';
+                    }
+
+                    sentimentBadge = `<span class="badge ${badgeClass} ms-2" style="font-size: 0.75rem;">
+                        ${sentimentText} ${(sentiment * 100).toFixed(0)}%
+                    </span>`;
                 }
 
                 newsItem.innerHTML = `
-                    <div class="d-flex w-100 justify-content-between">
+                    <div class="d-flex w-100 justify-content-between align-items-center">
                         <small class="text-primary">${news.source || '未知来源'}</small>
                         <small class="text-muted">${formatTimeAgo(news.datetime || news.pub_time)}</small>
                     </div>
-                    <p class="mb-1" style="${newsStyle}" data-color="${news.color || '无'}">
+                    <p class="mb-1" style="${newsStyle}">
                         ${news.content}
+                        ${sentimentBadge}
                     </p>
                 `;
 
@@ -169,20 +184,27 @@
 
     // 加载股票数据
     function loadStockData() {
+        console.log('[调试] 开始加载股票数据...', new Date().toLocaleTimeString());
+
         fetch('/api/stocks/')
-            .then(response => response.json())
+            .then(response => {
+                console.log('[调试] 股票API响应状态:', response.status);
+                return response.json();
+            })
             .then(data => {
+                console.log('[调试] 收到股票数据:', data.data?.length, '条');
                 if (data.status === 'success') {
                     updateStockList(data.data);
                     // 更新最后更新时间
                     const now = new Date();
                     document.getElementById('last-update-time').textContent = '更新时间: ' + now.toLocaleTimeString();
+                    console.log('[调试] 股票数据更新完成');
                 } else {
                     console.error('获取股票数据失败:', data.message);
                 }
             })
             .catch(error => {
-                console.error('获取股票数据失败:', error);
+                console.error('[调试] 获取股票数据失败:', error);
             });
     }
 
@@ -205,17 +227,11 @@
                 if (oldPrice && oldPrice !== stock.current_price) {
                     // 根据价格变化添加不同的闪烁效果
                     if (stock.current_price > oldPrice) {
-                        // 价格增加，闪烁浅红色
                         priceCell.classList.add('flash-increase');
-                        setTimeout(() => {
-                            priceCell.classList.remove('flash-increase');
-                        }, 1000); // 动画持续时间
+                        setTimeout(() => priceCell.classList.remove('flash-increase'), 1000);
                     } else {
-                        // 价格降低，闪烁浅绿色
                         priceCell.classList.add('flash-decrease');
-                        setTimeout(() => {
-                            priceCell.classList.remove('flash-decrease');
-                        }, 1000); // 动画持续时间
+                        setTimeout(() => priceCell.classList.remove('flash-decrease'), 1000);
                     }
                 }
 
@@ -223,40 +239,73 @@
                 row.querySelector('.change').textContent = stock.change.toFixed(2);
                 row.querySelector('.change-percent').textContent = (stock.change_percent * 100).toFixed(2) + '%';
                 row.querySelector('.volume').textContent = (stock.volume / 100).toFixed(0);
-                row.querySelector('.amount').textContent = (stock.amount / 10000).toFixed(2);
-            } else {
-                // 如果行不存在，创建新行
-                const newRow = document.createElement('tr');
-                newRow.id = `stock-row-${stock.code}`;
-                newRow.setAttribute('data-code', stock.code);
-                newRow.innerHTML = `
-                    <td>${stock.code}</td>
-                    <td>${stock.name}</td>
-                    <td class="price">${stock.current_price.toFixed(2)}</td>
-                    <td class="change">${stock.change.toFixed(2)}</td>
-                    <td class="change-percent">${(stock.change_percent * 100).toFixed(2)}%</td>
-                    <td class="volume">${(stock.volume / 100).toFixed(0)}</td>
-                    <td class="amount">${(stock.amount / 10000).toFixed(2)}</td>
-                    <td>
-                        <a href="/stocks/${stock.code}/" class="btn btn-sm btn-outline-primary">
-                            <i class="bi bi-zoom-in"></i> 详情
-                        </a>
-                    </td>
-                `;
-                stockListBody.appendChild(newRow);
+
+                // 情感分析功能已移除 - 情感分析是针对新闻的，不是股票
+                // loadStockSentiment(stock.code, row);
             }
         });
     }
 
+    // 加载股票情感数据 - 已注释，情感分析应在新闻页显示
+    /*
+    function loadStockSentiment(stockCode, row) {
+        fetch(`/api/sentiment/${stockCode}/`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const sentimentCell = row.querySelector('.sentiment');
+                    const badge = sentimentCell.querySelector('.sentiment-badge');
+
+                    if (data.avg_sentiment !== undefined) {
+                        const sentiment = data.avg_sentiment;
+                        let badgeClass = 'badge bg-secondary';
+                        let icon = '━';
+                        let text = '中性';
+
+                        if (sentiment > 0.3) {
+                            badgeClass = 'badge bg-success';
+                            icon = '↑';
+                            text = '正面';
+                        } else if (sentiment < -0.3) {
+                            badgeClass = 'badge bg-danger';
+                            icon = '↓';
+                            text = '负面';
+                        }
+
+                        badge.className = badgeClass;
+                        badge.textContent = `${icon} ${text}`;
+                        badge.title = `情感评分: ${sentiment.toFixed(2)} (${data.count}条新闻)`;
+                    }
+                }
+            })
+            .catch(error => console.log('情感数据加载失败:', error));
+    }
+    */
+
     // 页面加载完成后立即加载数据
     document.addEventListener('DOMContentLoaded', function() {
+        console.log('[调试] ========== 页面加载完成 ==========');
+        console.log('[调试] 当前时间:', new Date().toLocaleTimeString());
+
         // 首次加载
+        console.log('[调试] 执行首次数据加载...');
         loadNewsData();
         loadStockData();
 
         // 设置定时刷新
-        setInterval(loadNewsData, 30000); // 每30秒更新一次新闻
-        setInterval(loadStockData, 1000);  // 每5秒更新一次股票数据
+        console.log('[调试] 设置定时器: 新闻30秒刷新，股票1秒刷新');
+        const newsInterval = setInterval(function() {
+            console.log('[调试] ===== 定时器触发：刷新新闻 =====');
+            loadNewsData();
+        }, 30000); // 每30秒更新一次新闻
+
+        const stockInterval = setInterval(function() {
+            console.log('[调试] 定时器触发：刷新股票');
+            loadStockData();
+        }, 1000);  // 每1秒更新一次股票数据
+
+        console.log('[调试] 定时器ID - 新闻:', newsInterval, '股票:', stockInterval);
+        console.log('[调试] ========== 初始化完成 ==========');
     });
 
     // 尝试使用WebSocket作为备用选项（如果可用）
