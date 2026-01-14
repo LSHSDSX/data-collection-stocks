@@ -468,10 +468,10 @@ async def main():
     storage = HotNewsStorage()
 
     # 注册爬虫
-    from stock_analysis.News_crawler.kr_36氪 import Kr36Spider
-    from stock_analysis.News_crawler.新浪财经 import SinaSpider
-    from stock_analysis.News_crawler.同花顺 import ThsSpider
-    from stock_analysis.News_crawler.财联社 import ClsSpider
+    from kr_36 import Kr36Spider
+    from sina import SinaSpider
+    from ths import ThsSpider
+    from cls import ClsSpider
 
     # 注册爬虫实例
     storage.register_spider(Kr36Spider())
